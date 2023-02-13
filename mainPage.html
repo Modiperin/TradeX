@@ -46,9 +46,13 @@
             border-right: 2px solid grey;
             padding-left: 80px;
         }
-        .mainBoxDiv{
+
+        .mainBoxDiv {
             display: flex;
+            margin-left: 40px;
+            margin-top: -30px;
         }
+
         .boxContent {
             justify-content: space-around;
             flex-direction: row;
@@ -67,15 +71,46 @@
             cursor: pointer;
             border-top: 9px solid transparent;
         }
-        .boxContentData:hover{
+
+        .boxContentData:hover {
             box-shadow: 0px 3px 17px 0px gainsboro;
             border-top: 5px solid red;
+            color: red;
+        }
+
+        .floater {
+            position: sticky;
+        }
+        .mainSubscription {
+            margin-left: 40px;
+            margin-top: -30px;
+            margin-bottom: 30px;
+        }
+
+        .subscription {
+            justify-content: space-around;
+            display: flex;
+        }
+
+        .subscriptionData {
+            flex-direction: column;
+            outline: #ebebeb solid 1px;
+            max-width: 23%;
+            padding: 24px 0 41px 30px;
+            width: 700px;
+            height: 480px;
+            margin-left: 30px;
+            border-radius: 5px;
+            margin-top: 50px;
+            position: relative;
+            cursor: pointer;
+            border-top: 9px solid transparent;
         }
     </style>
 </head>
 
 <body>
-    <section class="d-flex container-fluid">
+    <section class="d-flex container sensexNifty">
         <div id="t1">
             <p><b>NIFTY 50 </b> 17856.50<span class="text-danger"> &nabla;-36.95(-0.21%) </span></p>
         </div>
@@ -121,7 +156,6 @@
             </ul>
         </div>
     </nav>
-
     <div class="container" style="margin-top:20px ;">
         <div class="row">
             <div class="col-md-4 content">
@@ -145,47 +179,188 @@
         </div>
     </div>
 
-    <div class="container" style="margin-top: 50px; margin-bottom: 30px;">
+    <div class="container" style="margin-top: 100px;">
         <center>
             <h1>Products for all your need</h1>
         </center>
         <div class="mainBoxDiv">
-        <div class="d-flex boxContent">
-            <div class="boxContentData">
-                <div class="row">
-                    Stocks
+            <div class="d-flex flex-column p-3">
+                <div class="d-flex boxContent">
+                    <div class="boxContentData">
+                        <div class="row">
+                            Stocks
+                        </div>
+                        <div class="row">
+                            <img src="https://www.nuvamawealth.com/assets/images/home/home_tile1.svg"
+                                style="width: 250px; height:200px">
+                        </div>
+                    </div>
+                    <div class="boxContentData">
+                        <div class="row">
+                            Stocks
+                        </div>
+                        <div class="row">
+                            <img src="https://www.nuvamawealth.com/assets/images/home/home_tile1.svg"
+                                style="width: 250px; height:200px">
+                        </div>
+                    </div>
+                    <div class="boxContentData">
+                        <div class="row">
+                            Stocks
+                        </div>
+                        <div class="row">
+                            <img src="https://www.nuvamawealth.com/assets/images/home/home_tile1.svg"
+                                style="width: 250px; height:200px">
+                        </div>
+                    </div>
+                    <div class="boxContentData">
+                        <div class="row">
+                            Stocks
+                        </div>
+                        <div class="row">
+                            <img src="https://www.nuvamawealth.com/assets/images/home/home_tile1.svg"
+                                style="width: 250px; height:200px">
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <img src="https://www.nuvamawealth.com/assets/images/home/home_tile1.svg" style="width: 250px; height:200px">
-                </div>
-            </div>
-            <div class="boxContentData">
-                <div class="row">
-                    Stocks
-                </div>
-                <div class="row">
-                    <img src="https://www.nuvamawealth.com/assets/images/home/home_tile1.svg" style="width: 250px; height:200px">
-                </div>
-            </div>
-            <div class="boxContentData">
-                <div class="row">
-                    Stocks
-                </div>
-                <div class="row">
-                    <img src="https://www.nuvamawealth.com/assets/images/home/home_tile1.svg" style="width: 250px; height:200px">
-                </div>
-            </div>
-            <div class="boxContentData">
-                <div class="row">
-                    Stocks
-                </div>
-                <div class="row">
-                    <img src="https://www.nuvamawealth.com/assets/images/home/home_tile1.svg" style="width: 250px; height:200px">
+                <div class="d-flex boxContent">
+                    <div class="boxContentData">
+                        <div class="row">
+                            Stocks
+                        </div>
+                        <div class="row">
+                            <img src="https://www.nuvamawealth.com/assets/images/home/home_tile1.svg"
+                                style="width: 250px; height:200px">
+                        </div>
+                    </div>
+                    <div class="boxContentData">
+                        <div class="row">
+                            Stocks
+                        </div>
+                        <div class="row">
+                            <img src="https://www.nuvamawealth.com/assets/images/home/home_tile1.svg"
+                                style="width: 250px; height:200px">
+                        </div>
+                    </div>
+                    <div class="boxContentData">
+                        <div class="row">
+                            Stocks
+                        </div>
+                        <div class="row">
+                            <img src="https://www.nuvamawealth.com/assets/images/home/home_tile1.svg"
+                                style="width: 250px; height:200px">
+                        </div>
+                    </div>
+                    <div class="boxContentData">
+                        <div class="row">
+                            Stocks
+                        </div>
+                        <div class="row">
+                            <img src="https://www.nuvamawealth.com/assets/images/home/home_tile1.svg"
+                                style="width: 250px; height:200px">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="container mainSubscription" style="margin-top: 100px;">
+        <center style="text-align:center">
+            <h1>Trade More and Pay less</h1><br>
+            Choose a pricing plan suited to your needs and start<br>
+            the journey to financial security
+        </center>
+        <div class="d-flex subscription">
+            <div class="subscriptionData">
+                <div class="row">
+                    Stocks
+                </div>
+            </div>
+            <div class="subscriptionData">
+                <div class="row">
+                    Stocks
+                </div>
+            </div>
+            <div class="subscriptionData">
+                <div class="row">
+                    Stocks
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
+
+    <div class="container-fluid bg-light d-flex">
+        <img src="https://www.nuvamawealth.com/assets/images/home/emt_screen1.png" alt="" width="650px" height="450px">
+        <div class="container " style="padding: 200px;">
+            <b>Making Market Accessible </b>
+            <p>Download Our Mobile App to find Insightful charts, Advanced Watchlists, and a comprehensive market
+                section with easy access. Stay on top of your game to become financially secure in no time.
+            </p>
+            <button class="btn  btn-dark link-hover-color:danger"><a href="#" style="text-decoration: none;">Download
+                    app</a></button>
+        </div>
+    </div>
+    <div style="padding: 100px; background-color: darkblue;" class="container-fluid">
+        <p style="color: white;" class="align-items-center">
+            <b style="font-size: x-large;" class="align-content-center">Take your first step towards unlimited financial
+                opportunities</b>
+            <br>
+            Open a trading account today and get personalized advice for lifetime
+            <br>
+        </p>
+        <p style="margin:auto;">
+            <button class="bth btn-info btn-lg rounded-pill">Get Started</button>
+        </p>
+    </div>
+    <footer class="container">
+        <table class="table table-bordered">
+            <th class="">TOP COMPANIES IN INDIA</th>
+        <tr>
+            <td>Company Name</td>
+            <td>Last Price</td>
+            <td>Change</td>
+            <td>Market cap</td>
+            <td>Net Sales</td>
+            <td>Net Profit</td>
+        </tr>
+        <tr>
+            <td><b>Reliance</b></td>
+            <td>2336.65</td>
+            <td class="text-danger">-19.40</td>
+            <td>1,580,903.13</td>
+            <td>423703.00</td>
+            <td>39084.00</td>
+        </tr>
+        <tr>
+            <td><b>TCS</b></td>
+            <td>3537.65</td>
+            <td class="text-danger">-3.30            </td>
+            <td>1,294,407.72	</td>
+            <td>160341.00</td>
+            <td>38187.00	</td>
+        </tr>
+        <tr>
+            <td><b>HDFC BANK</b></td>
+            <td>1608.55</td>
+            <td class="text-success">6.55 </td>
+            <td>924,296.00		</td>
+            <td>127753.12</td>
+            <td>21899.52</td>
+        </tr>
+        <tr>
+            <td><b>Infosys</b></td>
+            <td>1608</td>
+            <td class="text-danger">-3.30            </td>
+            <td>676,890.84	</td>
+            <td>21235.00</td>
+            <td>46,063.00           </td>
+        </tr>
+        </table>
+    </footer>
 </body>
 <script>
 
