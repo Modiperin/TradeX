@@ -1,0 +1,94 @@
+.searchBox {
+    border-radius: 20px;
+    background-color: #343150;
+    width: 300px;
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 30px;
+}
+
+.mainNavCss {
+    background-color: #03002f;
+}
+
+.navList {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.infoContent {
+    width: 140.2px;
+    height: 53px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 0 0 30px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.content {
+    border-right: 2px solid grey;
+    padding-left: 80px;
+}
+
+.mainBoxDiv {
+    display: flex;
+    margin-left: 40px;
+    margin-top: -30px;
+}
+
+.boxContent {
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.boxContentData {
+    outline: #ebebeb solid 1px;
+    max-width: 23%;
+    padding: 24px 0 41px 30px;
+    width: 100%;
+    height: 270px;
+    margin-left: 30px;
+    border-radius: 5px;
+    margin-top: 50px;
+    position: relative;
+    cursor: pointer;
+    border-top: 9px solid transparent;
+}
+
+.boxContentData:hover {
+    box-shadow: 0px 3px 17px 0px gainsboro;
+    border-top: 5px solid red;
+    color: red;
+}
+
+.floater {
+    position: sticky;
+}
+.mainSubscription {
+    margin-left: 40px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+.subscription {
+    justify-content: space-around;
+    display: flex;
+}
+
+.subscriptionData {
+    flex-direction: column;
+    outline: #ebebeb solid 1px;
+    max-width: 23%;
+    padding: 24px 0 41px 30px;
+    width: 700px;
+    height: 480px;
+    margin-left: 30px;
+    border-radius: 5px;
+    margin-top: 50px;
+    position: relative;
+    cursor: pointer;
+    border-top: 9px solid transparent;
+}
