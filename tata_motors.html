@@ -15,12 +15,14 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="tata_motors.css">
-    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script>
-    $ (function ()
-    { $ ("#nav").load ('nav.html'); });
-</script>
+        $(function () { $("#nav").load('nav.html'); });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
     <div id="nav"></div>
     <!-- <section class="d-flex container sensexNifty">
@@ -69,7 +71,7 @@
             </ul>
         </div>
     </nav> -->
-    
+
     <div class="container justify-content-center" id="mainbox">
         <div class="fw-bold row flex-row">
             <p>
@@ -79,43 +81,44 @@
                 Tata Motors Ltd Share Price
             </p>
         </div>
-            <ul class="list-inline">
-                <li class="list-inline-item dropdown">
-                    <a class="btn btn-dark  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        NSE</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">NSE</a></li>
-                        <li><a class="dropdown-item" href="#">BSE</a></li>
-                    </ul>
-                </li>
-                <li class="list-inline-item">AutoMobile</li>
-                <li class="list-inline-item">HCVs</li>
-                <li class="list-inline-item">Large</li>
-                <li class="list-inline-item" style="float: right;"> <a class="btn btn-outline-dark " href="#" role="button" style="background-color: darkblue; color:white;">Trade</a></li>
-                <li class="list-inline-item" style="float: right;">
-                    <button class="btn btn-light btn-outline-light text-dark">+ Add to Watchlist </button>
-                </li>
-                <li class="list-inline-item" style="float: right;">
-                    <button class="btn btn-light">set alert</button>
-                </li>
-            </ul>
-            <div class="container-fluid">
-                <p class="fw-bold fs-2">
+        <ul class="list-inline">
+            <li class="list-inline-item dropdown">
+                <a class="btn btn-dark  dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    NSE</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">NSE</a></li>
+                    <li><a class="dropdown-item" href="#">BSE</a></li>
+                </ul>
+            </li>
+            <li class="list-inline-item">AutoMobile</li>
+            <li class="list-inline-item">HCVs</li>
+            <li class="list-inline-item">Large</li>
+            <li class="list-inline-item" style="float: right;"> <a class="btn btn-outline-dark " href="#" role="button"
+                    style="background-color: darkblue; color:white;">Trade</a></li>
+            <li class="list-inline-item" style="float: right;">
+                <button class="btn btn-light btn-outline-light text-dark">+ Add to Watchlist </button>
+            </li>
+            <li class="list-inline-item" style="float: right;">
+                <button class="btn btn-light">set alert</button>
+            </li>
+        </ul>
+        <div class="container-fluid">
+            <p class="fw-bold fs-2">
                 &#8377;441.08 <span class="text-danger">-4.80 (-1.08%)</span>
-                </p>
-                Figures as of 13 Feb 2023, 5:51 PM
-                <a class="text-decoration-none text-dark" href="#" role="button">Share</a>
-            </div>
-            <ul class="list-inline">
-                <li class="list-inline-item p-4  border-end active">Overview</li>
-                <li class="list-inline-item p-4  border-end">Graph</li>
-                <li class="list-inline-item p-4  border-end">Ratio</li>
-                <li class="list-inline-item p-4  border-end">Financials</li>
-                <li class="list-inline-item p-4  border-end">ShareHolding Pattern</li>
-                <li class="list-inline-item p-4  border-end">About</li>
-            </ul>
-            <div class="border border-dark" style="padding: 20px;">
+            </p>
+            Figures as of 13 Feb 2023, 5:51 PM
+            <a class="text-decoration-none text-dark" href="#" role="button">Share</a>
+        </div>
+        <ul class="list-inline">
+            <li class="list-inline-item p-4  border-end active">Overview</li>
+            <li class="list-inline-item p-4  border-end">Graph</li>
+            <li class="list-inline-item p-4  border-end">Ratio</li>
+            <li class="list-inline-item p-4  border-end">Financials</li>
+            <li class="list-inline-item p-4  border-end">ShareHolding Pattern</li>
+            <li class="list-inline-item p-4  border-end">About</li>
+        </ul>
+        <div class="border border-dark" style="padding: 20px;">
             <h1>Overview</h1>
             <div class="  row">
                 <!-- <p class="flex-lg-fill">Day's Open</p>
@@ -133,7 +136,7 @@
                 <p class="col-sm-3 fw-bold fs-2">&#8377; 438.91</p>
                 <p class="col-sm-3 fw-bold fs-2">&#8377; 445.85</p>
             </div>
-            
+
             <div class=" row">
                 <p class="col-sm-3">Best Bid</p>
                 <p class="col-sm-3">Best Ask</p>
@@ -153,22 +156,26 @@
                     Show More
                 </p>
             </div>
-            </div>
-            <!-- <div class="border border-dark w-100 h-50">
+        </div>
+        <input type="button" name="SUBMIT" id="submit" value="Click Here To Submit" onclick="onsub1()">
+        <div id="div1">
+            <canvas id="myChart" class="myChart"></canvas>
+        </div>
+        <!-- <div class="border border-dark w-100 h-50">
                 <div class="left">
                     Tata Motors Ltd Share Price
                 </div>
             </div> -->
-            <div class="bg-primary mt-5 w-100 h-75" style="padding: 100px;">
-                <p class="fw-bold fs-1 text-light">
-                    TRADE WITH NUVAMA
-                    Flat Rs.10/order for
-                    Intraday F&O
-                    <button class="btn btn-outline-light">Open an account </button>
-                </p>    
-            </div>
-            <div class="mt-5 border border-dark boxes w-100">
-                <h1>Key Ratios </h1>
+        <div class="bg-primary mt-5 w-100 h-75" style="padding: 100px;">
+            <p class="fw-bold fs-1 text-light">
+                TRADE WITH NUVAMA
+                Flat Rs.10/order for
+                Intraday F&O
+                <button class="btn btn-outline-light">Open an account </button>
+            </p>
+        </div>
+        <div class="mt-5 border border-dark boxes w-100">
+            <h1>Key Ratios </h1>
             <div class=" row">
                 <p class="col-sm-3">EPS</p>
                 <p class="col-sm-3">P/E</p>
@@ -182,80 +189,80 @@
                 <p class="col-sm-3 fw-bold fs-2">&#8377; 5.68</p>
                 <p class="col-sm-3 fw-bold fs-2">&#8377; -22.51</p>
             </div>
-                <p class="righte">Learn</p>
-                <p>
-                    Show More
-                </p>
-            </div>
-            <table class="table table-bordered table-hover ">
-                <tr>
-                    <td></td>
-                    <td>FY22</td>
-                    <td>Fy21</td>
-                    <td>FY20</td>
-                    <!-- <td>Trend 2018-22</td> -->
-                </tr>
-                <tr>
-                    <td>Sales</td>
-                    <td>2,78,454.00</td>
-                    <td>2,49,795.00</td>
-                    <td>261068.00</td>
-                </tr>
-                <tr>
-                    <td>Direct Expenditure</td>
-                    <td>1,90,901.00</td>
-                    <td>1,62,993.00</td>
-                    <td>1,77,706.00</td>
-                </tr>
-                <tr>
-                    <td>Gross Profit</td>
-                    <td>87,552.60</td>
-                    <td>86,801.40</td>
-                    <td>83,361.70</td>
-                </tr>
-                <tr>
-                    <td>Operating Profit</td>
-                    <td>27,144.14</td>
-                    <td>21,169.60</td>
-                    <td>18,088.78</td>
-                </tr>
-                <tr>
-                    <td>Interest</td>
-                    <td>9,311.86</td>
-                    <td>8,097.17</td>
-                    <td>7,243.33</td>
-                </tr>
-                <tr>
-                    <td>Depreciation</td>
-                    <td>24,835.70</td>
-                    <td>23,546.70</td>
-                    <td>21,425.40</td>
-                </tr>
-                <tr>
-                    <td>Profit Before Tax</td>
-                    <td>-7,003.41</td>
-                    <td>-10,474.30</td>
-                    <td>-10,580.00</td>
-                </tr>
-                <tr>
-                    <td>Tax</td>
-                    <td>4,231.29</td>
-                    <td>2,541.86</td>
-                    <td>395.25</td>
-                </tr>
-                <tr>
-                    <td>Profit After Tax</td>
-                    <td>-11,235.00</td>
-                    <td>-13,016.00</td>
-                    <td>-10,975.00</td>
-                </tr>
-                <tr>
-                    <td>Dividend Payout (%)</td>
-                    <td>24,835.70</td>
-                    <td>23,546.70</td>
-                    <td>21,425.70</td>
-                </tr>
-            </table>
+            <p class="righte">Learn</p>
+            <p>
+                Show More
+            </p>
+        </div>
+        <table class="table table-bordered table-hover ">
+            <tr>
+                <td></td>
+                <td>FY22</td>
+                <td>Fy21</td>
+                <td>FY20</td>
+                <!-- <td>Trend 2018-22</td> -->
+            </tr>
+            <tr>
+                <td>Sales</td>
+                <td>2,78,454.00</td>
+                <td>2,49,795.00</td>
+                <td>261068.00</td>
+            </tr>
+            <tr>
+                <td>Direct Expenditure</td>
+                <td>1,90,901.00</td>
+                <td>1,62,993.00</td>
+                <td>1,77,706.00</td>
+            </tr>
+            <tr>
+                <td>Gross Profit</td>
+                <td>87,552.60</td>
+                <td>86,801.40</td>
+                <td>83,361.70</td>
+            </tr>
+            <tr>
+                <td>Operating Profit</td>
+                <td>27,144.14</td>
+                <td>21,169.60</td>
+                <td>18,088.78</td>
+            </tr>
+            <tr>
+                <td>Interest</td>
+                <td>9,311.86</td>
+                <td>8,097.17</td>
+                <td>7,243.33</td>
+            </tr>
+            <tr>
+                <td>Depreciation</td>
+                <td>24,835.70</td>
+                <td>23,546.70</td>
+                <td>21,425.40</td>
+            </tr>
+            <tr>
+                <td>Profit Before Tax</td>
+                <td>-7,003.41</td>
+                <td>-10,474.30</td>
+                <td>-10,580.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>4,231.29</td>
+                <td>2,541.86</td>
+                <td>395.25</td>
+            </tr>
+            <tr>
+                <td>Profit After Tax</td>
+                <td>-11,235.00</td>
+                <td>-13,016.00</td>
+                <td>-10,975.00</td>
+            </tr>
+            <tr>
+                <td>Dividend Payout (%)</td>
+                <td>24,835.70</td>
+                <td>23,546.70</td>
+                <td>21,425.70</td>
+            </tr>
+        </table>
     </div>
     <nav class="navbar navbar-expand-sm mainNavCss mt-5" style="padding:30px ">
         <div class="container-fluid justify-content-evenly">
@@ -313,4 +320,6 @@
         </div>
     </nav>
 </body>
+<script src="chart.js"></script>
+
 </html>
