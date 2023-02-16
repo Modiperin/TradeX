@@ -15,47 +15,33 @@
     color: rgba(255, 255, 255, 0.7);
 }
 
-.infoContent {
-    width: 140.2px;
-    height: 53px;
-    font-size: 18px;
-    font-weight: 700;
+.openAccount{
+    width: 150px;
+    height: 30px;
+    background-color: red;
+    color: white;
     text-align: center;
-    padding-top: 10px;
-    margin: 0 0 0 30px;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin-top: 5px;
 }
-
-.content {
-    border-right: 2px solid grey;
-    padding-left: 80px;
+.openAccount:hover{
+    border: 2px solid white;
+    background-color: #03002f;
+    transition: 2s;
 }
-
-.mainBoxDiv {
-    display: flex;
-    margin-left: 40px;
-    margin-top: -30px;
+.login{
+    width: 100px;
+    height: 30px;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
-#mainbox
-{
-    padding-left: 15%;
-    padding-right: 15%;
-}
-.rightside
-{
-    display: inline;
-}
-.left
-{
-    float: left;
-}
-.righte
-{
-    float: right;
-}
-.boxes
-{
-    padding: 20px;
+.login:hover{
+    border: 2px solid transparent;
+    background-color: red;
+    transition: 2s;
 }
