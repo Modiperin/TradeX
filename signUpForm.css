@@ -355,6 +355,7 @@ body {
 	padding-bottom: 18px;
 	margin-bottom: 35px;
 	border-bottom: 1px solid #DDE3EC;
+	/* margin-left: -40px; */
 }
 
 .formbold-steps ul {
@@ -362,7 +363,9 @@ body {
 	margin: 0;
 	list-style: none;
 	display: flex;
-	gap: 40px;
+	gap: 70px;
+	margin-left: -160px;
+	width: 835px;
 }
 
 .formbold-steps li {
