@@ -24,14 +24,19 @@ const formBackBtn2 = document.querySelector('.formbold-back-btn2')
 
 formSubmitBtn.addEventListener("click", function(event) {
 	event.preventDefault()
-
+	
 	if (stepMenuOne.className == 'formbold-step-menu1 active') {
 		event.preventDefault()
 		found = true;
 		console.log("stepone to stepTwo ")
+		var firstname=document.getElementById('firstName').value;
+		let dob=document.getElementById('dob').value;
+		let mobile=document.getElementById('mobile').value;
+		let aadhar=document.getElementById('aadhar').value;
+		let pan=document.getElementById('pan').value;
+		let address=document.getElementById('Address').value;
 		stepMenuOne.classList.remove('active')
 		stepMenuTwo.classList.add('active')
-
 		stepOne.classList.remove('active')
 		stepTwo.classList.add('active')
 
@@ -56,11 +61,15 @@ formSubmitBtn.addEventListener("click", function(event) {
 		
 	} else if (stepMenuTwo.className == 'formbold-step-menu2 active') {
 		event.preventDefault()
+		let accountName=document.getElementById('accountName').value;
+		let accountNo=document.getElementById('accountNo').value;
+		let ifsc=document.getElementById('ifsc').value;
+		let branchName=document.getElementById('BranchName').value;
+		let bAddress=document.getElementById('bAddress').value;
 		found = true;
 		console.log("stepTwo to stepThree")
 		stepMenuTwo.classList.remove('active')
 		stepMenuThree.classList.add('active')
-
 		stepTwo.classList.remove('active')
 		stepThree.classList.add('active')
 		formBackBtn.classList.remove('active')
@@ -89,6 +98,9 @@ formSubmitBtn.addEventListener("click", function(event) {
 
 	} else if (stepMenuThree.className == 'formbold-step-menu3 active') {
 		event.preventDefault()
+		let email=document.getElementById('email').value;
+		let password=document.getElementById('password').value;
+		let cpassword=document.getElementById('cpassword').value;
 		found = true;
 		console.log("stepThree to stepFour")
 		stepMenuThree.classList.remove('active')
@@ -101,7 +113,7 @@ formSubmitBtn.addEventListener("click", function(event) {
 			formBackBtn2.classList.add('active')
 		}
 
-		formSubmitBtn.textContent = 'Submit'
+		formSubmitBtn.textContent='Submit'
 		formBackBtn2.addEventListener("click", function(event) {
 			event.preventDefault()
 
@@ -119,5 +131,6 @@ formSubmitBtn.addEventListener("click", function(event) {
 	}
 	else if (stepMenuFour.className == 'formbold-step-menu4 active') {
 		document.querySelector('form').submit()
+		window.location.href='mainPage.html'
 	}
 })
