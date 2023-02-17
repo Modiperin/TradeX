@@ -26,6 +26,10 @@ let textOnly = /^[a-zA-Z ]+$/
 let digitsOnly = /^[0-9]+$/
 let emailOnly = /^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]+$/
 var passwordOnly=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+var finalName=""
+var finalMobile
+var finalEmail
+var finalPassword
 
 
 var isError3=false
@@ -46,6 +50,7 @@ subBtn.addEventListener("click",function(event){
         }
 		else{
 			document.getElementById('erremail').innerHTML = ""
+			finalEmail=email
 		}
 		var password=document.getElementById('password').value;
 		console.log(password)
@@ -61,6 +66,7 @@ subBtn.addEventListener("click",function(event){
         }
 		else{
 			document.getElementById('errpass').innerHTML = ""
+			finalPassword=password
 		}
 		let cpassword=document.getElementById('cpassword').value;
 		console.log(cpassword)
@@ -94,6 +100,7 @@ formSubmitBtn.addEventListener("click", function(event) {
         }
 		else{
 			document.getElementById('errFn').innerHTML = ""
+			finalName=firstname
 		}
 
 
@@ -116,6 +123,7 @@ formSubmitBtn.addEventListener("click", function(event) {
         }
 		else{
 			document.getElementById('errmob').innerHTML = ""
+			finalMobile=mobile
 		}
 
 
@@ -329,13 +337,13 @@ formSubmitBtn.addEventListener("click", function(event) {
 		if(!isError3)
 		{
 			var user={
-				name:firstname,
-				mobile:mobile,
-				email:email,
-				password:password
+				name:finalName,
+				mobile:finalMobile,
+				email:finalEmail,
+				password:finalPassword
 			}
 			console.log(user)
-			window.localStorage.setItem(email, JSON.stringify(user));
+			window.localStorage.setItem(finalEmail, JSON.stringify(user));
 			document.querySelector('form').submit()
 			window.location.href='mainPage.html'
 		}
