@@ -20,52 +20,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
 </head>
-
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<script>
+$ (function ()
+{ $ ("#nav").load ('nav.html'); });
+</script>
 <body>
-    <section class="d-flex container sensexNifty h-20" id="section" style="font-family: 'Roboto', sans-serif;">
-        <div id="t1 " class="d-inline-block pe-4" >
-            <p><b>NIFTY 50 </b> 17856.50<span class="text-danger"> &nabla;-36.95(-0.21%) </span></p>
-        </div>
-        <div id="t2" class="d-inline-block pe-4">
-            <p><b>NIFTY BANK</b> 41559.40 <span class="text-success"> &Delta;5.1 (+0.01%) </span></p>
-        </div>
-        <div id="t3" class="d-inline-block pe-4">
-            <p><b>SENSEX</b> 60682.70 <span class="text-danger">&nabla;-123.52 (-0.20%) </span></p>
-        </div>
-        <div id="t4" class="d-inline-block pe-4">
-            <p><b>NIFTY MIDCAP 100 </b> 31029.45 <span class="text-success">&Delta; 72.80 (+0.24%) </span></p>
-        </div>
-    </section>
-
-    <nav class="navbar navbar-expand-sm mainNavCss">
-        <div class="container-fluid justify-content-evenly">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="#" class="navbar-brand navList"><img src="homebanner.png" class="rounded-pill"
-                            style="width: 40px;"></a>
-                </li>
-                <li class="nav-item" style="padding: 0 20px 0 0px;">
-                    <a class="nav-link navList" href="#">Invest</a>
-                </li>
-                <li class="nav-item" style="padding: 0 20px 0 20px;">
-                    <a class="nav-link navList" href="#">Resources</a>
-                </li>
-                <li class="nav-item" style="padding: 0 20px 0 20px;">
-                    <a class="nav-link navList" href="#">Markets</a>
-                </li>
-                <li class="nav-item" style="padding: 0 20px 0 20px;">
-                    <a class="nav-link navList" href="#">Pricing</a>
-                </li>
-                <li class="nav-item" style="padding: 0 20px 0 20px;">
-                    <a class="nav-link navList" href="#">Support</a>
-                </li>
-                <li class="nav-item" style="padding: 0 20px 0 20px;">
-                    <input type="text" placeholder="What Are you looking for?" class="searchBox">
-                </li>
-            </ul>
-        </div>
-        <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#form1" ><a href="#form" >Open Account</a></button>
-    </nav>
+    <div id="nav"></div>
     <svg width="100%" height="460" style="border:5px solid black; background-color:  rgb(2,5,42);">
         <circle cx="580" cy="560" r="260" stroke="rgb(44,45,101)" stroke-width="170" fill="rgb(2,5,42,0)"></circle><!--blue-->
         <circle cx="930" cy="-25" r="250" stroke="rgb(234, 82, 68)" stroke-width="170" fill="  rgb(2,5,42)"></circle><!--red-->
