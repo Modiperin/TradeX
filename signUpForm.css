@@ -481,12 +481,12 @@ body {
 }
 
 .formbold-form-step-1, .formbold-form-step-2, .formbold-form-step-3,
-	.formbold-form-step-4 {
+	.formbold-form-step-4,.subBtn {
 	display: none;
 }
 
 .formbold-form-step-1.active, .formbold-form-step-2.active,
-	.formbold-form-step-3.active, .formbold-form-step-4.active {
+	.formbold-form-step-3.active, .formbold-form-step-4.active,.subBtn.active {
 	display: block;
 }
 
