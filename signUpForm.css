@@ -397,7 +397,7 @@ body {
 }
 
 .formbold-steps li.active span {
-	background: #6A64F1;
+	background: #03002f;
 	color: #FFFFFF;
 }
 
@@ -409,6 +409,7 @@ body {
 
 .formbold-input-flex>div {
 	width: 50%;
+	margin-top: 20px;
 }
 
 .formbold-form-input {
@@ -422,10 +423,12 @@ body {
 	color: #536387;
 	outline: none;
 	resize: none;
+	margin-bottom: 20px;
+
 }
 
 .formbold-form-input:focus {
-	border-color: #6a64f1;
+	border-color: #03002f;
 	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
 }
 
@@ -476,17 +479,17 @@ body {
 }
 
 .formbold-confirm-btn.active {
-	background: #6A64F1;
+	background: #03002f;
 	color: #FFFFFF;
 }
 
 .formbold-form-step-1, .formbold-form-step-2, .formbold-form-step-3,
-	.formbold-form-step-4 {
+	.formbold-form-step-4,.subBtn,.agree {
 	display: none;
 }
 
 .formbold-form-step-1.active, .formbold-form-step-2.active,
-	.formbold-form-step-3.active, .formbold-form-step-4.active {
+	.formbold-form-step-3.active, .formbold-form-step-4.active,.subBtn.active,.agree.active {
 	display: block;
 }
 
@@ -502,7 +505,7 @@ body {
 	cursor: pointer;
 	background: #FFFFFF;
 	border: none;
-	color: #07074D;
+	color: #03002f;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 24px;
@@ -517,7 +520,7 @@ body {
 	cursor: pointer;
 	background: #FFFFFF;
 	border: none;
-	color: #07074D;
+	color: #03002f;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 24px;
@@ -532,7 +535,7 @@ body {
 	cursor: pointer;
 	background: #FFFFFF;
 	border: none;
-	color: #07074D;
+	color: #03002f;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 24px;
@@ -552,11 +555,11 @@ body {
 	padding: 10px 25px;
 	border: none;
 	font-weight: 500;
-	background-color: #6A64F1;
+	background-color: #03002f;
 	color: white;
 	cursor: pointer;
 }
 
 .formbold-btn:hover {
-	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 3px 8px #03002f;
 }
