@@ -25,72 +25,71 @@
 				<div class="formbold-form-step-1 active">
 					<div>
 						<div>
-								Full name  <span id="errFn" style="color: red;"></span><input type="text"
-								placeholder="YourName FatherName SurName" id="firstName"
-								class="formbold-form-input" />
+							Full name <span id="errFn" style="color: red;"></span><input type="text"
+								placeholder="YourName FatherName SurName" id="firstName" class="formbold-form-input" />
 						</div>
 					</div>
 
 					<div class="formbold-input-flex">
 						<div>
-							<label for="dob" class="formbold-form-label"> Birth date <span id="errdob" style="color: red;"></span>
+							Birth date <span id="errdob" style="color: red;"></span>
 							</label> <input type="date" name="dob" id="dob" required class="formbold-form-input" />
 						</div>
 						<div>
-							<label for="mobile" class="formbold-form-label"> Mobile Number <span id="errmob" style="color: red;"></span>
+							Mobile Number <span id="errmob" style="color: red;"></span>
 							</label> <input type="tel" pattern="[0-9]{10}" name="startTime" id="mobile"
 								required="required" class="formbold-form-input" />
 						</div>
 					</div>
 					<div class="formbold-input-flex">
 						<div>
-							<label for="aadhar" class="formbold-form-label"> AadharCard No. <span id="erraadhar" style="color: red;"></span> </label> <input type="tel"
+							AadharCard No. <span id="erraadhar" style="color: red;"></span> </label> <input type="tel"
 								name="aadhar" id="aadhar" class="formbold-form-input" />
 						</div>
 						<div>
-							<label for="pan" class="formbold-form-label"> PanCard No. <span id="errpan" style="color: red;"></span> </label> <input type="tel"
+							PanCard No. <span id="errpan" style="color: red;"></span> </label> <input type="tel"
 								name="pan" id="pan" class="formbold-form-input" />
 						</div>
 					</div>
 					<div>
-						<label for="address" class="formbold-form-label">
-							Address <span id="erradd" style="color: red;"></span> </label> <input type="text" name="Address" id="Address"
-							placeholder="Flat 4, 24 Castle Street, Perth, PH1 3JY" class="formbold-form-input" />
+						Address <span id="erradd" style="color: red;"></span> </label> <input type="text" name="Address"
+							id="Address" placeholder="Flat 4, 24 Castle Street, Perth, PH1 3JY"
+							class="formbold-form-input" />
 					</div>
 				</div>
 
 				<div class="formbold-form-step-2">
 					<div>
-						<label for="accountName" class="formbold-form-label"> Account Holder Full Name <span id="erraccname" style="color: red;"></span>
+						Account Holder Full Name <span id="erraccname" style="color: red;"></span>
 						</label> <input type="text" name="accountName" placeholder="As per in PassBook" id="accountName"
 							required class="formbold-form-input" />
 					</div>
 					<div>
-						<label for="accountNo" class="formbold-form-label"> Account No. <span id="erraccno" style="color: red;"></span>
+						Account No. <span id="erraccno" style="color: red;"></span>
 						</label> <input type="number" name="accountNo" placeholder="Account Number" id="accountNo"
 							required class="formbold-form-input" />
 					</div>
 					<div>
-						<label for="ifsc" class="formbold-form-label"> IFSC Code <span id="errifsc" style="color: red;"></span>
+						IFSC Code <span id="errifsc" style="color: red;"></span>
 						</label> <input type="number" name="ifsc" placeholder="IFSC Code" id="ifsc" required
 							class="formbold-form-input" />
 					</div>
 					<div>
-						<label for="branchName" class="formbold-form-label"> Branch Name <span id="errbn" style="color: red;"></span>
+						Branch Name <span id="errbn" style="color: red;"></span>
 						</label> <input type="text" name="BranchName" placeholder="Branch Name" id="BranchName" required
 							class="formbold-form-input" />
 					</div>
 					<div>
-						<label for="address" class="formbold-form-label">
-							Branch Address <span id="errbadd" style="color: red;"></span> </label> <input type="text" name="bAddress" id="bAddress" 
-							placeholder="Flat 4, 24 Castle Street, Perth, PH1 3JY" class="formbold-form-input" />
+
+						Branch Address <span id="errbadd" style="color: red;"></span> </label> <input type="text"
+							name="bAddress" id="bAddress" placeholder="Flat 4, 24 Castle Street, Perth, PH1 3JY"
+							class="formbold-form-input" />
 					</div>
 				</div>
 				<div class="formbold-form-step-3">
 					<div>
 						<label for="message" class="formbold-form-label"> Uplode
-							banner </label><img
-							src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
+							banner </label><img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
 						<div class="frame">
 							<div class="center">
 								<form action="UploadFileController" method="post" enctype="multipart/form-data">
@@ -98,7 +97,7 @@
 										<h1>Upload Aadhar Card</h1>
 									</div>
 									<div class="dropzone">
-										<input type="file" name="file" id="inputFile" onclick="showImage()" /> 
+										<input type="file" name="file" id="inputFile" onclick="showImage()" />
 									</div>
 									<input type="submit" class="btn" name="uploadbutton" value="Upload file"
 										onclick="reload1()" />
@@ -106,7 +105,7 @@
 										<h1>Upload Pan Card</h1>
 									</div>
 									<div class="dropzone">
-										<input type="file" name="file" id="inputFile" onclick="showImage()" /> 
+										<input type="file" name="file" id="inputFile" onclick="showImage()" />
 									</div>
 									<input type="submit" class="btn" name="uploadbutton" value="Upload file"
 										onclick="reload1()" />
@@ -127,20 +126,21 @@
 
 				<div class="formbold-form-step-4">
 					<div>
-						<label for="email" class="formbold-form-label"> Email <span id="erremail" style="color: red;"></span><br>
-							 </label> <input type="text" name="email"
-							placeholder="Email" id="email" required
+						<label for="email" class="formbold-form-label"> Email <span id="erremail"
+								style="color: red;"></span><br>
+						</label> <input type="text" name="email" placeholder="Email" id="email" required
 							class="formbold-form-input" />
 					</div>
 					<div>
-						<label for="text" class="formbold-form-label"> PassWord <span id="errpass" style="color: red;"></span><br>
-							 </label> <input type="text" name="password"
-							placeholder="password" id="password" required
+						<label for="text" class="formbold-form-label"> PassWord <span id="errpass"
+								style="color: red;"></span><br>
+						</label> <input type="text" name="password" placeholder="password" id="password" required
 							class="formbold-form-input" />
 					</div>
 					<div>
-						<label for="cpassword" class="formbold-form-label"> Confirm PassWord <span id="errcpass" style="color: red;"></span><br>
-							 </label> <input type="password" name="cpassword" id="cpassword" required
+						<label for="cpassword" class="formbold-form-label"> Confirm PassWord <span id="errcpass"
+								style="color: red;"></span><br>
+						</label> <input type="password" name="cpassword" id="cpassword" required
 							class="formbold-form-input" />
 					</div>
 					<div class="formbold-form-confirm">
@@ -168,6 +168,9 @@
 					</button>
 					<button class="subBtn" value="1234">1234</button>
 				</div>
+				<div class="agree">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, officiis quia? Accusantium
+					nostrum modi reprehenderit provident animi repudiandae eveniet, consequatur quas iste veritatis
+					quam, nisi magni optio vel quod obcaecati?</div>
 			</form>
 		</div>
 	</div>

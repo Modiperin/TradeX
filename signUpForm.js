@@ -22,6 +22,7 @@ const formBackBtn = document.querySelector('.formbold-back-btn')
 const formBackBtn1 = document.querySelector('.formbold-back-btn1')
 const formBackBtn2 = document.querySelector('.formbold-back-btn2')
 const subBtn=document.querySelector('.subBtn')
+const agree=document.querySelector('agree')
 let textOnly = /^[a-zA-Z ]+$/
 let digitsOnly = /^[0-9]+$/
 let emailOnly = /^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]+$/
@@ -93,6 +94,7 @@ formSubmitBtn.addEventListener("click", function(event) {
             isError1 = true
             // error += "First name is Required.. \n"
             document.getElementById('errFn').innerHTML = " * First name is Required.."
+			document.getElementById('firstName').style.border='2px solid red'
         }
         else if(textOnly.test(firstname)==false){
             document.getElementById('errFn').innerHTML = " * First name should be in aphabates only"
@@ -100,6 +102,7 @@ formSubmitBtn.addEventListener("click", function(event) {
         }
 		else{
 			document.getElementById('errFn').innerHTML = ""
+			document.getElementById('firstName').style.border='1px solid #DDE3EC'
 			finalName=firstname
 		}
 
@@ -175,7 +178,7 @@ formSubmitBtn.addEventListener("click", function(event) {
 			stepMenuTwo.classList.add('active')
 			stepOne.classList.remove('active')
 			stepTwo.classList.add('active')
-
+			// agree.classList.remove('active')
 			if (found == true) {
 				formBackBtn.classList.add('active')
 			}
@@ -275,6 +278,7 @@ formSubmitBtn.addEventListener("click", function(event) {
 			stepTwo.classList.remove('active')
 			stepThree.classList.add('active')
 			formBackBtn.classList.remove('active')
+			// agree.classList.remove('active')
 			if (found == true) {
 				formBackBtn1.classList.add('active')
 			}
@@ -308,9 +312,11 @@ formSubmitBtn.addEventListener("click", function(event) {
 		stepMenuFour.classList.add('active')
 
 		subBtn.classList.add('active')
+		// agree.classList.add('active')
 		stepThree.classList.remove('active')
 		stepFour.classList.add('active')
 		formBackBtn1.classList.remove('active')
+		// agree.classList.remove('active')
 		if (found == true) {
 			formBackBtn2.classList.add('active')
 		}
@@ -322,6 +328,7 @@ formSubmitBtn.addEventListener("click", function(event) {
 			stepMenuFour.classList.remove('active')
 			stepMenuTwo.classList.remove('active')
 			subBtn.classList.remove('active')
+			// agree.classList.remove('active')
 			stepThree.classList.add('active')
 			stepFour.classList.remove('active')
 			stepTwo.classList.remove('active')
