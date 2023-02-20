@@ -1,3 +1,51 @@
+.searchBox {
+    border-radius: 20px;
+    background-color: #343150;
+    width: 300px;
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 30px;
+}
+
+.mainNavCss {
+    background-color: #03002f;
+}
+
+.navList {
+    color: rgba(255, 255, 255, 0.7);
+}
+.openAccount{
+    color: white;
+    margin-top: 6px;
+    width: 130px;
+    height: 30px;
+    background-color: red;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: -20px;
+    border: 2px solid transparent;
+}
+.openAccount:hover{
+    color: white;
+    border: 2px solid white;
+    background-color: #03002f;
+    transition: 2s;
+}
+.login{
+    color: white;
+    margin-top: 6px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: -35px;
+    border: 2px solid white;
+}
+.login:hover{
+    background-color: red;
+    border: 2px solid transparent;
+    transition: 2s;
+}
 .infoContent {
     width: 140.2px;
     height: 53px;
