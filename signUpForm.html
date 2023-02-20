@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="signUpForm.css">
+</head>
+
+<body>
+	<div class="formbold-main-wrapper">
+		<div class="formbold-form-wrapper">
+			<form>
+				<div class="formbold-steps">
+					<ul>
+						<li class="formbold-step-menu1 active"><span>1</span> PersonalDetails</li>
+						<li class="formbold-step-menu2"><span>2</span> Bank Details</li>
+						<li class="formbold-step-menu3"><span>3</span> Upload Documents</li>
+						<li class="formbold-step-menu4"><span>4</span> Confirm</li>
+					</ul>
+				</div>
+
+				<div class="formbold-form-step-1 active">
+					<div>
+						<div>
+							Full name <span id="errFn" style="color: red;"></span><input type="text"
+								placeholder="YourName FatherName SurName" id="firstName" class="formbold-form-input" />
+						</div>
+					</div>
+
+					<div class="formbold-input-flex">
+						<div>
+							Birth date <span id="errdob" style="color: red;"></span>
+							</label> <input type="date" name="dob" id="dob" required class="formbold-form-input" />
+						</div>
+						<div>
+							Mobile Number <span id="errmob" style="color: red;"></span>
+							</label> <input type="tel" pattern="[0-9]{10}" name="startTime" id="mobile"
+								required="required" class="formbold-form-input" />
+						</div>
+					</div>
+					<div class="formbold-input-flex">
+						<div>
+							AadharCard No. <span id="erraadhar" style="color: red;"></span> </label> <input type="tel"
+								name="aadhar" id="aadhar" class="formbold-form-input" />
+						</div>
+						<div>
+							PanCard No. <span id="errpan" style="color: red;"></span> </label> <input type="tel"
+								name="pan" id="pan" class="formbold-form-input" />
+						</div>
+					</div>
+					<div>
+						Address <span id="erradd" style="color: red;"></span> </label> <input type="text" name="Address"
+							id="Address" placeholder="Flat 4, 24 Castle Street, Perth, PH1 3JY"
+							class="formbold-form-input" />
+					</div>
+				</div>
+
+				<div class="formbold-form-step-2">
+					<div>
+						Account Holder Full Name <span id="erraccname" style="color: red;"></span>
+						</label> <input type="text" name="accountName" placeholder="As per in PassBook" id="accountName"
+							required class="formbold-form-input" />
+					</div>
+					<div>
+						Account No. <span id="erraccno" style="color: red;"></span>
+						</label> <input type="number" name="accountNo" placeholder="Account Number" id="accountNo"
+							required class="formbold-form-input" />
+					</div>
+					<div>
+						IFSC Code <span id="errifsc" style="color: red;"></span>
+						</label> <input type="number" name="ifsc" placeholder="IFSC Code" id="ifsc" required
+							class="formbold-form-input" />
+					</div>
+					<div>
+						Branch Name <span id="errbn" style="color: red;"></span>
+						</label> <input type="text" name="BranchName" placeholder="Branch Name" id="BranchName" required
+							class="formbold-form-input" />
+					</div>
+					<div>
+
+						Branch Address <span id="errbadd" style="color: red;"></span> </label> <input type="text"
+							name="bAddress" id="bAddress" placeholder="Flat 4, 24 Castle Street, Perth, PH1 3JY"
+							class="formbold-form-input" />
+					</div>
+				</div>
+				<div class="formbold-form-step-3">
+					<div>
+						<label for="message" class="formbold-form-label"> Uplode
+							banner </label><img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
+						<div class="frame">
+							<div class="center">
+								<form action="UploadFileController" method="post" enctype="multipart/form-data">
+									<div class="title">
+										<h1>Upload Aadhar Card</h1>
+									</div>
+									<div class="dropzone">
+										<input type="file" name="file" id="inputFile" onclick="showImage()" />
+									</div>
+									<input type="submit" class="btn" name="uploadbutton" value="Upload file"
+										onclick="reload1()" />
+									<div class="title">
+										<h1>Upload Pan Card</h1>
+									</div>
+									<div class="dropzone">
+										<input type="file" name="file" id="inputFile" onclick="showImage()" />
+									</div>
+									<input type="submit" class="btn" name="uploadbutton" value="Upload file"
+										onclick="reload1()" />
+									<div class="title">
+										<h1>Upload Pass Book</h1>
+									</div>
+									<div class="dropzone">
+										<input type="file" name="file" id="inputFile" onclick="showImage()" />
+									</div>
+									<input type="submit" class="btn" name="uploadbutton" value="Upload file"
+										onclick="reload1()" />
+								</form>
+							</div>
+						</div>
+						<img alt="" src="Image/<%=coo.getValue()%>">
+					</div>
+				</div>
+
+				<div class="formbold-form-step-4">
+					<div>
+						<label for="email" class="formbold-form-label"> Email <span id="erremail"
+								style="color: red;"></span><br>
+						</label> <input type="text" name="email" placeholder="Email" id="email" required
+							class="formbold-form-input" />
+					</div>
+					<div>
+						<label for="text" class="formbold-form-label"> PassWord <span id="errpass"
+								style="color: red;"></span><br>
+						</label> <input type="text" name="password" placeholder="password" id="password" required
+							class="formbold-form-input" />
+					</div>
+					<div>
+						<label for="cpassword" class="formbold-form-label"> Confirm PassWord <span id="errcpass"
+								style="color: red;"></span><br>
+						</label> <input type="password" name="cpassword" id="cpassword" required
+							class="formbold-form-input" />
+					</div>
+					<div class="formbold-form-confirm">
+					</div>
+				</div>
+
+				<div class="formbold-form-btn-wrapper">
+					<button class="formbold-back-btn">Back</button>
+					<button class="formbold-back-btn1">Back</button>
+					<button class="formbold-back-btn2">Back</button>
+					<button class="formbold-btn">
+						Next Step
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_1675_1807)">
+								<path
+									d="M10.7814 7.33312L7.20541 3.75712L8.14808 2.81445L13.3334 7.99979L8.14808 13.1851L7.20541 12.2425L10.7814 8.66645H2.66675V7.33312H10.7814Z"
+									fill="white" />
+							</g>
+							<defs>
+								<clipPath id="clip0_1675_1807">
+									<rect width="16" height="16" fill="white" />
+								</clipPath>
+							</defs>
+						</svg>
+					</button>
+					<button class="subBtn" value="1234">1234</button>
+				</div>
+				<div class="agree">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, officiis quia? Accusantium
+					nostrum modi reprehenderit provident animi repudiandae eveniet, consequatur quas iste veritatis
+					quam, nisi magni optio vel quod obcaecati?</div>
+			</form>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="signUpForm.js"></script>
+
+</html>
