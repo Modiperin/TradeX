@@ -287,9 +287,12 @@
             },
             options: {
                 scales: {
-                    y: {
-                        beginAtZero: true
-                    }
+                    x:{
+                        type: 'timeseries',
+                    },
+                    // y: {
+                    //     beginAtZero: true
+                    // }
                 }
             }
         });
@@ -297,7 +300,7 @@
         {
             // chart.data.datasets[0].data=[465, 459, 480, 481,456, 455, 440];
             chart.data.labels=['12th feb','13th feb','14th feb','15th feb','16th feb','18th feb'];
-            chart.data.datasets[0].data=[465,460,459,445 ,435,405];
+            chart.data.datasets[0].data=[465,444,440,450,470,480,406,460,450,406,460,459,445 ,435,405];
             chart.update();
         };
         function reversechart()
