@@ -6,3 +6,7 @@ if(loggedUser!=null)
     console.log(loggedUser.name)
     document.getElementById('welcome').innerHTML='Welcome '+loggedUser.name
 }
+function callStock(stockname){
+    window.sessionStorage.setItem('stockname',stockname)
+    window.location.href='stockStructure.html'
+}
