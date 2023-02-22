@@ -1,6 +1,6 @@
 async function apicall() {
 
-    var url = 'http://localhost:3000/stock/getStock'
+    var url = 'http://localhost:3000/stock/getStock/'+window.sessionStorage.getItem('stockname')
     var res= await fetch(url,{
         "method":"GET"
     })
@@ -46,7 +46,7 @@ async function apicall() {
             document.getElementsByClassName('divi')[i].innerHTML=data.profitLoss[i].dividend
             document.getElementsByClassName('tax')[i].innerHTML=data.profitLoss[i].tax
         }
-        document.getElementById('chair').innerHTML="<b>"+data.chair+"</b>"
+        document.getElementById('chair').innerHTML="<b>"+data.chairmain+"</b>"
         document.getElementById('indeDir').innerHTML="<b>"+data.indeDir+"</b>"
         document.getElementById('nonIndeDir').innerHTML="<b>"+data.nonIndeDir+"</b>"
         document.getElementById('ceo').innerHTML="<b>"+data.ceo+"</b>"
