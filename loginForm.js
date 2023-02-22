@@ -18,6 +18,8 @@ document.getElementsByClassName('css1')[2].addEventListener('click', () => {
                 console.log(user)
                 // document.getElementById('detail').innerHTML = "Welcome" + " " + user.name
                 window.sessionStorage.setItem(1, JSON.stringify(user))
+                // document.cookie = email+"="+user.email+"; expires=Wed, 05 Aug 2020 23:00:00 UTC";
+                document.cookie = "username=Max Brown; expires=Wed, 05 Aug 2020 23:00:00 UTC";
                 window.location.href='mainPage.html'
             }
         }
