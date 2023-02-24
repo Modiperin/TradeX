@@ -52,3 +52,18 @@ a{
     color: white;
     /* width: 20px; */
 }
+.logout{
+    width: 100px;
+    height: 30px;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.logout:hover{
+    border: 2px solid transparent;
+    background-color: red;
+    transition: 2s;
+}
