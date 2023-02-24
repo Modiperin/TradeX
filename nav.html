@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +16,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="nav.css">
 </head>
+
 <body>
     <marquee class="blink" behavior="" direction="left" scrollamount="15">
     <section class="d-flex container sensexNifty m-0 p-0 w-100">
@@ -41,7 +43,7 @@
         </div> -->
     </marquee>
     </section>
-</marquee>
+    </marquee>
     <nav class="navbar navbar-expand-sm mainNavCss">
         <div class="container-fluid justify-content-evenly">
             <ul class="navbar-nav">
@@ -65,17 +67,25 @@
                     <a class="nav-link navList" href="#">Support</a>
                 </li>
                 <li class="nav-item" style="padding: 0 20px 0 20px;">
-                    <input type="text" placeholder="What Are you looking for?" class="searchBox">
+                    <form>
+                        <input type="text" placeholder="What Are you looking for?" class="searchBox" id="searchBox">
+                    </form>
                 </li>
                 <li id="signUp">
-                    <a href="signUpForm.html"><div class="openAccount" id="signUp">Open Account</div></a>
+                    <a href="signUpForm.html">
+                        <div class="openAccount" id="signUp">Open Account</div>
+                    </a>
                 </li>
                 <li id="signUp1">
-                    <a href="login form 2.html" target="_parent"><div class="login" id="signUp1">Login</div></a>
+                    <a href="login form 2.html">
+                        <div class="login" id="signUp1">Login</div>
+                    </a>
                 </li>
             </ul>
         </div>
     </nav>
+    <div id="writer"></div>
 </body>
 <script src="nav.js"></script>
+
 </html>
