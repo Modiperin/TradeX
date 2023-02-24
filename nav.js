@@ -3,11 +3,21 @@ console.log(loggedUser)
 var data
 var stockNames=[]
 var find=[]
+const logout=document.querySelector('.logout')
 if(loggedUser!=null)
 {
    document.getElementById('signUp').style.display="none";
    document.getElementById('signUp1').style.display="none";
+//    logout.classList.add('active')
+document.getElementById('logout').style.display="block";
 }
+if(loggedUser==null)
+{
+    document.getElementById('logout').style.display="none";
+}
+document.getElementById('logout').addEventListener('click',()=>{
+    window.sessionStorage.removeItem('1')
+})
 // var stockNames=['Adani','tcs','reliance','wipro','adani power','airtel','vodaphone','tarang','perin','yogi','varang','vinit']
 // document.getElementById('searchBox').addEventListener("keyup",()=>{
 //    var txt=document.getElementById('searchBox').value
