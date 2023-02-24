@@ -1,0 +1,85 @@
+{
+    "shortName": "TCS",
+    "fullName": "Tata Consultancy Services Ltd Share Price",
+    "crrPrice": 3501.15,
+    "changed": -56.90,
+    "perChanged": -1.60,
+    "overView": {
+        "daysOpen": 3526.15,
+        "daysLow": 3538.90,
+        "daysHigh": 3490.00,
+        "previousClose": 3558.05,
+        "bestBid": 0.0,
+        "bestAsk": 3501.15,
+        "volume": 1061369,
+        "marketCap": 1301908.77
+    },
+    "keyRatios": {
+        "eps": 104.70,
+        "pe": 35.97,
+        "pbv": 13.41,
+        "roe": 44.13,
+        "debt": 0.09,
+        "netMargin": 0,
+        "cagrSales": 9.40%,
+        "cagrProfit": 6.84%
+    },
+    "profitLoss": [
+        {
+            "sales": 191754.00,
+            "directExpendiature": 1163.00,
+            "grossProfit": 190591.60,
+            "operatingProfit": 133516.00,
+            "otherIncome": 4018.88,
+            "interest": 784.00,
+            "depreciation": 4604.70,
+            "profitBeforeTax": 501687.00,
+            "profitAfterTax": 38449.00,
+            "tax": 13238.00,
+            "eps": 104.72,
+            "dividend": 4604.00
+        },
+        {
+            "sales": 191754.00,
+            "directExpendiature": 1163.00,
+            "grossProfit": 190591.60,
+            "operatingProfit": 133516.00,
+            "otherIncome": 4018.88,
+            "interest": 784.00,
+            "depreciation": 4604.70,
+            "profitBeforeTax": 501687.00,
+            "profitAfterTax": 38449.00,
+            "tax": 13238.00,
+            "eps": 104.72,
+            "dividend": 4604.00
+        },
+        
+        {
+            "sales": 191754.00,
+            "directExpendiature": 1163.00,
+            "grossProfit": 190591.60,
+            "operatingProfit": 133516.00,
+            "otherIncome": 4018.88,
+            "interest": 784.00,
+            "depreciation": 4604.70,
+            "profitBeforeTax": 501687.00,
+            "profitAfterTax": 38449.00,
+            "tax": 13238.00,
+            "eps": 104.72,
+            "dividend": 4604.00
+        }
+        
+    ],
+    "bse": 532540,
+    "nse": "TCS,
+    "isin": "INE467B01029",
+    "compDet": "Tata Consultancy Services Ltd is in the IT - Software sector, having a market capitalization of Rs. 1,300,408.56 crores. It has reported a consolidated sales of Rs. 58,229 crores and a net profit of Rs. 10,846 crores for the quarter ended December 2022. The company management includes N Chandrasekaran (Chairman (Non-Executive)),O P Bhatt(Non Exec. And Independent Dir.), Aarthi Subramaniam (Non-exec And Non-Independent Dir.),Rajesh Gopinathan (Managing Director And CEO), N Ganapathy Subramanium (Executive Director And COO) among others.",
+    "indeDir": "O P Bhatt",
+    "nonIndeDir": "Aathi Subramaniam",
+    "ceo": "Rajesh Gopinathan",
+    "coo": "N Ganapathy Subramaniam",
+    "nonIndeDir1": "Pradeep Kumar Khosla",
+    "nonIndeDir2": "Hanne Birgitte Sorensen",
+    "nonIndeDir3": "Keki M Mistry",
+    "nonIndeDir4": "Don Callahan"
+}

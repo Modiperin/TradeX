@@ -1,0 +1,86 @@
+{
+    "shortName": "TATA MOTORS",
+    "fullName": "TATA MOTORS PVT LTD.",
+    "crrPrice": 441.08,
+    "changed": 4.80,
+    "perChanged": 1.08,
+    "overView": {
+        "daysOpen": 445.50,
+        "daysLow": 446.90,
+        "daysHigh": 438.91,
+        "previousClose": 445.85,
+        "bestBid": 441.05,
+        "bestAsk": 0.00,
+        "volume": 8333767,
+        "marketCap": 159802.08
+    },
+    "keyRatios": {
+        "eps": -29.88,
+        "pe": -13.75,
+        "pbv": 5.68,
+        "roe": -22.51,
+        "debt": 2.89,
+        "netMargin": 0,
+        "cagrSales": -2.66,
+        "cagrProfit": 0
+    },
+    "profitLoss": [
+        {
+            "sales": 278454.00,
+            "directExpendiature": 190901.00,
+            "grossProfit": 87552.60,
+            "operatingProfit": 27144.14,
+            "otherIncome": 3163.88,
+            "interest": 9311.86,
+            "depreciation": 24835.70,
+            "profitBeforeTax": -7003.41,
+            "profitAfterTax": -11235.00,
+            "tax": 4,321.29,
+            "eps": -29.88,
+            "dividend": 24835.70
+        },
+        {
+            "sales": 278454.00,
+            "directExpendiature": 190901.00,
+            "grossProfit": 87552.60,
+            "operatingProfit": 27144.14,
+            "otherIncome": 3163.88,
+            "interest": 9311.86,
+            "depreciation": 24835.70,
+            "profitBeforeTax": -7003.41,
+            "profitAfterTax": -11235.00,
+            "tax": 4,321.29,
+            "eps": -29.88,
+            "dividend": 24835.70
+        },
+        
+        {
+            "sales": 278454.00,
+            "directExpendiature": 190901.00,
+            "grossProfit": 87552.60,
+            "operatingProfit": 27144.14,
+            "otherIncome": 3163.88,
+            "interest": 9311.86,
+            "depreciation": 24835.70,
+            "profitBeforeTax": -7003.41,
+            "profitAfterTax": -11235.00,
+            "tax": 4,321.29,
+            "eps": -29.88,
+            "dividend": 24835.70
+        }
+        
+    ],
+    "bse": 500570,
+    "nse": "TATAMOTORS,
+    "isin": "INE155A01022",
+    "compDet": "Tata Motors Ltd is in the Automobile sector, having a market capitalization of Rs. 156,179.33 crores. It has reported a consolidated sales of Rs. 87,783.21 crores and a net profit of Rs. 2,957.71 crores for the quarter ended December 2022. The company management includes Ratan N Tata (Chairman Emeritus), N Chandrasekaran (Chairman (Non-Executive)), H K Sethna (Company Sec. And Compli. Officer), Om Prakash Bhatt (Independent Director), Hanne Birgitte Sorensen (Independent Director) among others.
+",
+    "indeDir": "Om Prakash Bhatt",
+    "nonIndeDir": "Hanne Birgitte Sorensen",
+    "ceo": "N Chandrasekaran",
+    "coo": "H K Sethna",
+    "nonIndeDir1": "Mitsuhiko Yamaashita",
+    "nonIndeDir2": "Thierry Bollore",
+    "nonIndeDir3": "Vasudeva Maipady K.",
+    "nonIndeDir4": "Dependra Mathur"
+}
