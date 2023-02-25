@@ -14,7 +14,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="tata_motors.css" />
   <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
     crossorigin="anonymous"></script>
   <script>
@@ -75,8 +74,8 @@
 
   <div class="container justify-content-center" id="mainbox">
     <div class="fw-bold row flex-row">
-      <p>TCS</p>
-      <p>Tata Consultancy Services Ltd Share Price</p>
+      <p id="shortName"></p>
+      <p id="fullName"></p>
     </div>
     <ul class="list-inline">
       <li class="list-inline-item dropdown">
@@ -105,9 +104,9 @@
       </li>
     </ul>
     <div class="container-fluid">
-      <p class="fw-bold fs-2">
-        &#8377;3501.15<span class="text-danger m-3"> -56.90 (-1.60%)</span>
-      </p>
+      <span class="fw-bold fs-2" id="crrPrice">
+      </span>
+      <span class="fw-bold fs-2 text-danger m-3" id="changed"></span><br>
       Figures as of 17 Feb 2023, 5:05 PM
       <a class="text-decoration-none text-dark" href="#" role="button">Share</a>
     </div>
@@ -146,37 +145,37 @@
 
     <div class="border border-dark" style="padding: 20px">
       <div class="m-lg-5">
-      <h1 id="section1">Overview</h1>
-      <div class="row">
-        <!-- <p class="flex-lg-fill">Day's Open</p>
+        <h1 id="section1">Overview</h1>
+        <div class="row">
+          <!-- <p class="flex-lg-fill">Day's Open</p>
                 <p class="flex-lg-fill">Day's Low</p>
                 <p class="flex-lg-fill">Day's High</p>
                 <p class="flex-lg-fill">Previous Close</p> -->
-        <p class="col-sm-3">Day's Open</p>
-        <p class="col-sm-3">Day's Low</p>
-        <p class="col-sm-3">Day's High</p>
-        <p class="col-sm-3">Previous Close</p>
-      </div>
-      <div class="row">
-        <p class="col-sm-3 fw-bold fs-2">&#8377; 3526.15</p>
-        <p class="col-sm-3 fw-bold fs-2">&#8377; 3538.90</p>
-        <p class="col-sm-3 fw-bold fs-2">&#8377; 3490.00</p>
-        <p class="col-sm-3 fw-bold fs-2">&#8377; 3558.05</p>
-      </div>
+          <p class="col-sm-3">Day's Open</p>
+          <p class="col-sm-3">Day's Low</p>
+          <p class="col-sm-3">Day's High</p>
+          <p class="col-sm-3">Previous Close</p>
+        </div>
+        <div class="row">
+          <p class="col-sm-3 fw-bold fs-2" id="daysOpen"></p>
+          <p class="col-sm-3 fw-bold fs-2" id="daysLow"></p>
+          <p class="col-sm-3 fw-bold fs-2" id="daysHigh"></p>
+          <p class="col-sm-3 fw-bold fs-2" id="previousClose"></p>
+        </div>
 
-      <div class="row">
-        <p class="col-sm-3">Best Bid</p>
-        <p class="col-sm-3">Best Ask</p>
-        <p class="col-sm-3">Volume</p>
-        <p class="col-sm-3">Market Cap (in crs.)</p>
-      </div>
+        <div class="row">
+          <p class="col-sm-3">Best Bid</p>
+          <p class="col-sm-3">Best Ask</p>
+          <p class="col-sm-3">Volume</p>
+          <p class="col-sm-3">Market Cap (in crs.)</p>
+        </div>
 
-      <div class="row">
-        <p class="col-sm-3 fw-bold fs-2">&#8377; 0.0</p>
-        <p class="col-sm-3 fw-bold fs-2">&#8377; 3501.15</p>
-        <p class="col-sm-3 fw-bold fs-2">&#8377; 10,61,369</p>
-        <p class="col-sm-3 fw-bold fs-2">&#8377; 13,01,908.77</p>
-      </div>
+        <div class="row">
+          <p class="col-sm-3 fw-bold fs-2" id="bestBid"></p>
+          <p class="col-sm-3 fw-bold fs-2" id="bestAsk"></p>
+          <p class="col-sm-3 fw-bold fs-2" id="volume"></p>
+          <p class="col-sm-3 fw-bold fs-2" id="marketCap"></p>
+        </div>
       </div>
     </div>
     <!-- <div class="border border-dark w-100 h-50">
@@ -201,10 +200,10 @@
         </div>
 
         <div class="row">
-          <p class="col-sm-3 fw-bold fs-2">&#8377; 104.72</p>
-          <p class="col-sm-3 fw-bold fs-2">&#8377; 35.97</p>
-          <p class="col-sm-3 fw-bold fs-2">&#8377; 13.41</p>
-          <p class="col-sm-3 fw-bold fs-2">&#8377; 44.13</p>
+          <p class="col-sm-3 fw-bold fs-2" id="eps"></p>
+          <p class="col-sm-3 fw-bold fs-2" id="pe"></p>
+          <p class="col-sm-3 fw-bold fs-2" id="pbv"></p>
+          <p class="col-sm-3 fw-bold fs-2" id="roe"></p>
         </div>
         <div class="row">
           <p class="col-sm-3">Debt/Equity</p>
@@ -214,10 +213,10 @@
         </div>
 
         <div class="row">
-          <p class="col-sm-3 fw-bold fs-2">&#8377; 0.09</p>
-          <p class="col-sm-3 fw-bold fs-2">&#8377; 0%</p>
-          <p class="col-sm-3 fw-bold fs-2">&#8377; 9.40%</p>
-          <p class="col-sm-3 fw-bold fs-2">&#8377; 6.84%</p>
+          <p class="col-sm-3 fw-bold fs-2" id="debt"></p>
+          <p class="col-sm-3 fw-bold fs-2" id="netMargin"></p>
+          <p class="col-sm-3 fw-bold fs-2" id="cagrSales"></p>
+          <p class="col-sm-3 fw-bold fs-2" id="cagrProfit"></p>
         </div>
       </div>
 
@@ -234,83 +233,77 @@
         </tr>
         <tr>
           <td>Sales</td>
-          <td>1,91,754.00</td>
-          <td>1,64,177.00</td>
-          <td>1,56,949.00</td>
+          <td class="sale"></td>
+          <td class="sale"></td>
+          <td class="sale"></td>
         </tr>
         <tr>
           <td>Direct Expenditure</td>
-          <td>1,163.00</td>
-          <td>1,462.00</td>
-          <td>1,905.00</td>
+          <td class="direct"></td>
+          <td class="direct"></td>
+          <td class="direct"></td>
         </tr>
         <tr>
           <td>Gross Profit</td>
-          <td>1,90,591.00</td>
-          <td>1,62,715.00</td>
-          <td>1,55,044.00</td>
+          <td class="gross"></td>
+          <td class="gross"></td>
+          <td class="gross"></td>
         </tr>
         <tr>
           <td>Operating Profit</td>
-          <td>1,33,516.00</td>
-          <td>1,14,253.00</td>
-          <td>1,08.343.00
-          <td>
+          <td class="operating"></td>
+          <td class="operating"></td>
+          <td class="operating">
+          </td>
         </tr>
         <tr>
           <td>Other Income</td>
-          <td>57,075.00</td>
-          <td>48,462.00</td>
-          <td>46,701.00</td>
-        </tr>
-        <tr>
-          <td>Other Income</td>
-          <td>4,018.00</td>
-          <td>3,134.00</td>
-          <td>4,592.00</td>
+          <td class="income"></td>
+          <td class="income"></td>
+          <td class="income"></td>
         </tr>
         <tr>
           <td>Interest</td>
-          <td>784.00</td>
-          <td>637.00</td>
-          <td>924.00</td>
+          <td class="interest"></td>
+          <td class="interest"></td>
+          <td class="interest"></td>
         </tr>
         <tr>
           <td>Depreciation</td>
-          <td>4,604.00</td>
-          <td>4,065.00</td>
-          <td>3,529.00</td>
+          <td class="depriciation"></td>
+          <td class="depriciation"></td>
+          <td class="depriciation"></td>
         </tr>
         <tr>
           <td>Profit Before Tax</td>
-          <td>5k1,687.00</td>
-          <td>43,760.00</td>
-          <td>42,248.00</td>
+          <td class="pbTax"></td>
+          <td class="pbTax"></td>
+          <td class="pbTax"></td>
         </tr>
         <tr>
           <td>Tax</td>
-          <td>13,238.00</td>
-          <td>11,198.00</td>
-          <td>9,801.00
+          <td class="tax"></td>
+          <td class="tax"></td>
+          <td class="tax">
           <td>
         </tr>
         <tr>
           <td>Profit After Tax</td>
-          <td>38,449.00</td>
-          <td>32,562.00</td>
-          <td>32,447.00</td>
+          <td class="paTax"></td>
+          <td class="paTax"></td>
+          <td class="paTax"></td>
         </tr>
         <tr>
           <td>EPS</td>
-          <td>104.72</td>
-          <td>87.65</td>
-          <td>86.24</td>
+          <td class="eps"></td>
+          <td class="eps"></td>
+          <td class="eps"></td>
         </tr>
         <tr>
           <td>Dividend Payout (%)</td>
-          <td>4,604.00</td>
-          <td>4,065.00</td>
-          <td>3,529.00</td>
+          <td class="divi"></td>
+          <td class="divi"></td>
+          <td class="divi"></td>
         </tr>
       </table>
     </div>
@@ -324,16 +317,16 @@
         function drawChart() {
           var data = google.visualization.arrayToDataTable([
             ["Task", "Hours per Day"],
-            ["Promoters", 72.30],
-            ["FII", 12.94],
-            ["DII & MF", 8.79],
-            ["Others", 5.97],
+            ["Promoters", 45.24],
+            ["FII", 19.14],
+            ["DII & MF", 22.52],
+            ["Others", 13.10],
           ]);
 
           var options = {
             title: "",
             pieHole: 0.5,
-            colors:["red","blue","green","orange"]
+            colors: ["red", "blue", "green", "orange"]
           };
 
           var chart = new google.visualization.PieChart(
@@ -344,7 +337,7 @@
       </script>
       <div id="donutchart" style="width: 900px; height: 500px"></div>
       <!-- -------------------------------------------------------------------------- -->
-      <h5>AUMs with <span class="fw-bold">Tata Consultancy Services Ltd</span></h5>
+      <h5>AUMs with <span class="fw-bold">LIC Housing Finance Ltd</span></h5>
       <table class="table table-borderless table-hover">
         <tr>
           <td></td>
@@ -354,104 +347,99 @@
           <td>Current Value</td>
         </tr>
         <tr>
-          <td>SBI Nifty 50 ETF</td>
-          <td>1,49,112.75</td>
-          <td>4.41</td>
-          <td>0.506</td>
-          <td>6,575.87</td>
+          <td>Nippon India Arbitrage Fund</td>
+          <td>9,087.86</td>
+          <td>0.07</td>
+          <td>0.032</td>
+          <td>6.36</td>
         </tr>
         <tr>
-          <td>ICICI Pru Equity-Arbitrage Fund</td>
-          <td>11,127.09</td>
+          <td>DSP Equity Opportunities Fund</td>
+          <td>7,224.71</td>
           <td>2.42</td>
           <td>0.021</td>
           <td>269.28</td>
         </tr>
         <tr>
-          <td>ICICI Pru Flexicap Fund</td>
-          <td>11,035.50</td>
+          <td>Nippon India Balanced Advantage Fund</td>
+          <td>6,709.50</td>
           <td>0.31</td>
           <td>0.003</td>
           <td>34.21</td>
         </tr>
         <tr>
-          <td>ICICI Pru Technology Fund</td>
+          <td>Tata Digital India Fund</td>
           <td>9,061.67</td>
           <td>18.10</td>
           <td>0.127</td>
           <td>1,645.59</td>
         </tr>
         <tr>
-          <td>SBI Arbitrage Opportunities Fund</td>
-          <td>8,396.94</td>
-          <td>0.23</td>
-          <td>0.001</td>
-          <td>19.31</td>
+          <td>ICICI Pru Focused Equity Fund</td>
+          <td>3,868.94</td>
+          <td>4.15</td>
+          <td>0.707</td>
+          <td>160.52</td>
         </tr>
       </table>
     </div>
     <!-- ---------------------------------------------------------------------------- -->
     <div id="section6" class="mt-5 border border-dark boxes p-2" style="width:70%;">
-      <h5>About Tata Consultancy Services Ltd</h5>
+      <h5>About LIC Housing Finance Ltd</h5>
       <div style="width: 50%">
         <table class="table table-borderless">
           <tr>
-            <td class="text-left">BSE: 532540</td>
-            <td class="text-left">NSE: TCS</td>
-            <td class="text-left">ISIN: INE467B01029</td>
+            <td class="text-left" id="bse">BSE: 500253</td>
+            <td class="text-left" id="nse">NSE: LICHSGFIN</td>
+            <td class="text-left" id="isin">ISIN: INE115A01026</td>
           </tr>
         </table>
       </div>
       <br>
       <p>
         Company Website:
-        <a href="http://www.tcs.com/">tcs.com</a>
+        <a href="http://www.tcs.com/">lichousing.com</a>
       </p>
+      <p id="compDet"></p>
       <div style="width: 100%">
         <table class="table justify-content-center width-100 table-borderless">
           <tr>
             <td>Board of Directors:</td>
           </tr>
           <tr>
-            Tata Consultancy Services Ltd is in the IT - Software sector, having a market capitalization of Rs.
-            1,300,408.56 crores. It has reported a consolidated sales of Rs. 58,229 crores and a net profit of Rs.
-            10,846 crores for the quarter ended December 2022. The company management includes N Chandrasekaran
-            (Chairman (Non-Executive)),O P Bhatt(Non Exec. And Independent Dir.), Aarthi Subramaniam (Non-exec And
-            Non-Independent Dir.),Rajesh Gopinathan (Managing Director And CEO), N Ganapathy Subramanium (Executive
-            Director And COO) among others.
-            <td><b>N Chandrasekaran</b></td>
+            <b><td id="chair"></td></b>
             <td>Chairman (Non-Executive)</td>
           </tr>
           <tr>
-            <td><b>O P Bhatt</b></td>
+            <b><td id="indeDir"></td></b>
             <td>Non-Exec. & Independent Dir.</td>
           </tr>
           <tr>
-            <td><b>Aathi Subramaniam</b></td>
+            <b><td id="nonIndeDir"></td></b>
             <td>Non-Exec. & Non-Independent Dir.</td>
           </tr>
           <tr>
-            <td><b>Rajesh Gopinathan</b></td>
+            <td id="ceo"></td>
             <td>Managing Director & CEO</td>
           </tr>
           <tr>
-            <td><b>N Ganapathy Subramaniam</b></td>
+            <td id="coo"></td>
             <td>Managing Director & COO</td>
           </tr>
           <tr>
-            <td><b>Pradeep Kumar Khosla</b></td>
+            <td id="nonIndeDir1"></td>
             <td>Non-Exe. & Independent Dir.</td>
           </tr>
           <tr>
-            <td><b>Hanne Birgitte Sorensen</b></td>
+            <td id="nonIndeDir2"></td>
             <td>Non-Exe. & Independent Dir.</td>
           </tr>
           <tr>
-            <td><b>Keki M Mistry</b></td>
+            <td id="nonIndeDir3"></td>
             <td>Non-Exe. & Independent Dir.</td>
           </tr>
           <tr>
-            <td><b>Don Callahan</b></td>
+            <td id="nonIndeDir4"></td>
             <td>Non-Exe. & Independent Dir.</td>
           </tr>
         </table>
@@ -518,5 +506,5 @@
     </div>
   </nav>
 </body>
-
+<script src="stockStructure.js"></script>
 </html>

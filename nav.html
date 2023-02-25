@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,38 +16,30 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="nav.css">
 </head>
+
 <body>
-    <marquee behavior="100%" direction="" scrollamount="15">
-    <section class="d-flex container sensexNifty m-0 p-0 w-100">
-        <div id="t1" class="pe-4">
-            <p><b>NIFTY 50 </b> 17856.50<span class="text-danger"> &nabla;-36.95(-0.21%) </span></p>
-        </div>
-        <div id="t2" class="pe-4">
-            <p><b>NIFTY BANK</b> 41559.40 <span class="text-success"> &Delta;5.1 (+0.01%) </span></p>
-        </div>
-        <div id="t3" class="pe-4">
-            <p><b>SENSEX</b> 60682.70 <span class="text-danger">&nabla;-123.52 (-0.20%) </span></p>
-        </div>
-        <div id="t4" class="pe-4">
-            <p><b>NIFTY MIDCAP 100 </b> 31029.45 <span class="text-success">&Delta;; 72.80 (+0.24%) </span></p>
-        </div>
-        <div id="t4" class="pe-4">
-            <p><b>NIFTY MIDCAP 100 </b> 31029.45 <span class="text-success">&Delta;; 72.80 (+0.24%) </span></p>
-        </div>
-        <div id="t4" class="pe-4">
-            <p><b>NIFTY MIDCAP 100 </b> 31029.45 <span class="text-success">&Delta;; 72.80 (+0.24%) </span></p>
-        </div>
-        <div id="t4" class="pe-4">
-            <p><b>NIFTY MIDCAP 100 </b> 31029.45 <span class="text-success">&Delta;; 72.80 (+0.24%) </span></p>
-        </div>
+    <marquee behavior="scroll" direction="left" width="100%" scrollamount="15" style="height: 20px;">
+        <section class="d-flex container sensexNifty m-0 p-0 w-100">
+            <div id="t1" class="pe-4">
+                <p><b>NIFTY 50 </b> 17856.50<span class="text-danger"> &nabla;-36.95(-0.21%) </span></p>
+            </div>
+            <div id="t2" class="pe-4">
+                <p><b>NIFTY BANK</b> 41559.40 <span class="text-success"> &Delta;5.1 (+0.01%) </span></p>
+            </div>
+            <div id="t3" class="pe-4">
+                <p><b>SENSEX</b> 60682.70 <span class="text-danger">&nabla;-123.52 (-0.20%) </span></p>
+            </div>
+            <div id="t4" class="pe-4">
+                <p><b>NIFTY MIDCAP 100 </b> 31029.45 <span class="text-success">&Delta;; 72.80 (+0.24%) </span></p>
+            </div>
     </marquee>
     </section>
-</marquee>
+    </marquee>
     <nav class="navbar navbar-expand-sm mainNavCss">
         <div class="container-fluid justify-content-evenly">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="#" class="navbar-brand navList"><img src="homebanner.png" class="rounded-pill"
+                    <a href="#" class="navbar-brand navList"><img src="stock-market.png" class="rounded-pill"
                             style="width: 40px;"></a>
                 </li>
                 <li class="nav-item" style="padding: 0 20px 0 0px;">
@@ -65,16 +58,30 @@
                     <a class="nav-link navList" href="#">Support</a>
                 </li>
                 <li class="nav-item" style="padding: 0 20px 0 20px;">
-                    <input type="text" placeholder="What Are you looking for?" class="searchBox">
+                    <form>
+                        <input type="text" placeholder="What Are you looking for?" class="searchBox" id="searchBox">
+                    </form>
                 </li>
-                <li>
-                    <a href="signUpForm.html"><div class="openAccount">Open Account</div></a>
+                <li id="signUp">
+                    <a href="signUpForm.html">
+                        <div class="openAccount" id="signUp">Open Account</div>
+                    </a>
                 </li>
-                <li>
-                    <a href="login form 2.html"><div class="login">Login</div></a>
+                <li id="signUp1">
+                    <a href="login form 2.html">
+                        <div class="login" id="signUp1">Login</div>
+                    </a>
+                </li>
+                <li id="logout">
+                    <a href="nav.html">
+                        <div class="logout" id="logout">Logout</div>
+                    </a>
                 </li>
             </ul>
         </div>
     </nav>
+    <div id="writer"></div>
 </body>
+<script src="nav.js"></script>
+
 </html>
