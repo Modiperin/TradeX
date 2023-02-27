@@ -68,9 +68,11 @@
     padding-left: 210px;
 }
 .welcome{
-    position: relative;
-    bottom: 300px;
-    color: white;
+    /* position: relative; */
+    /* bottom: 300px; */
+    /* margin-bottom: 20px; */
+    padding-bottom: 30px;
+    color: black;
     font-size: 60px;
     text-align: center;
     height: 20px;

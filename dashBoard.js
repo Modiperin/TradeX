@@ -116,3 +116,8 @@ var areaChartOptions = {
 
 var areaChart = new ApexCharts(document.querySelector("#area-chart"), areaChartOptions);
 areaChart.render();
+
+var loggedUser=window.sessionStorage.getItem('1')
+loggedUser=JSON.parse(loggedUser)
+  console.log(loggedUser.name)
+  document.getElementById('dashName').innerHTML=loggedUser.name+"'s Inventory"
