@@ -10,35 +10,45 @@ function callStock(stockname){
     window.sessionStorage.setItem('stockname',stockname)
     window.location.href='stockStructure.html'
 }
+document.querySelectorAll(".planButton").forEach(elem => elem.addEventListener("click", ()=>{
+    console.log('perin')
+    if(loggedUser!=null)
+    {
+        window.location.href='stockStructure.html'
+    }
+    document.getElementById('myModal').style.paddingLeft="400px"
 
-// let elementsArray = document.querySelectorAll("planButton");
 
-// elementsArray.forEach(function(elem) {
-//     elem.addEventListener("click", function() {
-//         console.log('perin')
-//     });
-// });
+    document.getElementById('mainLogin').addEventListener('click', function() {
+        var email = document.getElementById('emailCss').value
+        var pass = document.getElementById('passCss').value
+        console.log(email, pass)
+        if (email.trim().length > 0 && pass.trim().length > 0) {
+            console.log(email, pass)
+            var users = window.localStorage.getItem(email)
+            console.log(users)
+            if (users == null) {
+                console.log('no user')
+                document.getElementById('noUser').innerHTML = "No User Found"
+            }
+            else {
+                var user = JSON.parse(users)
+                console.log(user)
+                if (pass == user.password) {
+                    console.log('Login successfully')
+                    console.log(user)
+                    // document.getElementById('detail').innerHTML = "Welcome" + " " + user.name
+                    window.sessionStorage.setItem(1, JSON.stringify(user))
+                    // document.cookie = email+"="+user.email+"; expires=Wed, 05 Aug 2020 23:00:00 UTC";
+                    document.cookie = "username=Max Brown; expires=Wed, 05 Aug 2020 23:00:00 UTC";
+                    window.location.href='dashBoard.html'
+                }
+            }
+        }
+        else {
+            console.log('Please Enter email ans pass')
+            document.getElementById('noUser').innerHTML = "Please Enter email and password"
+        }
+    })
+}))
 
-// document.querySelectorAll(".planButton").forEach(elem => elem.addEventListener("click", ()=>{
-//     console.log('perin')
-//     if(loggedUser!=null)
-// {
-//     document.getElementById('myModal').style.display="none"
-// }
-// }))
-// document.getElementById('go').addEventListener('click',()=>{
-//     // if(loggedUser==null)
-//     // {
-//         $('#myModal').modal('hide');
-//     // }
-//     $("#myModal").on('hide.bs.modal',()=> {
-//         alert('The modal is about to be hidden.');
-//     });
-// })
-// $('#go').click(function() {
-//     // var test1 = $('#test').val();
-//     if(loggedUser==null)
-//     {
-//         $('#\\#myModal').modal('hide');
-//     }
-//   });

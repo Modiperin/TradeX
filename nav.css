@@ -25,6 +25,7 @@
     border: 2px solid transparent;
     border-radius: 10px;
     margin-top: 5px;
+    padding-top: 1.5px;
 }
 .openAccount:hover{
     border: 2px solid white;
@@ -41,6 +42,7 @@
     border-radius: 10px;
     margin-top: 5px;
     margin-left: 5px;
+    padding-top: 1.5px;
 }
 .login:hover{
     border: 2px solid transparent;
@@ -61,6 +63,7 @@ a{
     border-radius: 10px;
     margin-top: 5px;
     margin-left: 5px;
+    padding-top: 1.5px;
 }
 .logout:hover{
     border: 2px solid transparent;

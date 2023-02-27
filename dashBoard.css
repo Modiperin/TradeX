@@ -134,7 +134,7 @@ body {
   grid-area: main;
   overflow-y: auto;
   padding: 0px 20px;
-  margin-top: -5px;
+  margin-top: 20px;
 }
 
 .main-title {
@@ -151,6 +151,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
   margin: 20px 0px;
+  margin-bottom: 50px;
 }
 
 .card {

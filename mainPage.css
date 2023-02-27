@@ -261,8 +261,21 @@
 .partner-img {
     width: 200px;
 }
-
-/* .svg
-{
-/
-} */
+#footer{
+    background-color: gainsboro;
+}
+#loginBtn{
+    width: 200px;
+    height: 10%;
+    background-color: rgb(249, 59, 59);
+    color: whitesmoke;
+    text-align: center;
+}
+.loginBtn2{
+    width: 465px;
+    height: 10%;
+    background-color: rgb(249, 59, 59);
+    color: whitesmoke;
+    text-align: center;
+    border-radius: 6px;
+}

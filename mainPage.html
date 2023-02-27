@@ -157,9 +157,10 @@
                     Flat Brokerages
                 </p>
                 <p style="padding-top: 20%;">View Full Plan</p>
-                <p>
-                    <span class="planButton">Choose Plan</span>
-                </p>
+                <button type="button" class="btn btn-primary planButton" id="go" data-bs-toggle="modal"
+                        data-bs-target="#myModal">
+                        Choose Plan
+                    </button>
             </div>
             <div class="subscriptionData">
                 <div class="row" style="justify-content: flex-end; font-size: 15px;color: orange;">
@@ -186,9 +187,10 @@
                     Flat Brokerages
                 </p>
                 <p style="padding-top: 20%;">View Full Plan</p>
-                <p>
-                    <span class="planButton" style="background-color:orange ;">Choose Plan</span>
-                </p>
+                <button type="button" class="btn btn-primary planButton" id="go" data-bs-toggle="modal"
+                    data-bs-target="#myModal" style="background-color: orange">
+                    Choose Plan
+                </button>
             </div>
             <div class="subscriptionData">
                 <div class="row" style="justify-content: flex-end; font-size: 15px;color: rgb(251, 64, 64);">
@@ -217,10 +219,11 @@
                 <p style="padding-top: 20%;">View Full Plan</p>
                 <p>
                     <!-- <span class="planButton" style="background-color: rgb(251, 64, 64);">Choose Plan</span> -->
-                    <button type="button" class="btn btn-primary planButton" id="go" data-bs-toggle="modal" data-bs-target="#myModal" style="background-color: rgb(251, 64, 64);">
-                        Open modal
+                    <button type="button" class="btn btn-primary planButton" id="go" data-bs-toggle="modal"
+                        data-bs-target="#myModal" style="background-color: rgb(251, 64, 64);">
+                        Choose Plan
                     </button>
-                <div class="modal modalCheck" id="myModal">
+                    <!-- <div class="modal modalCheck" id="myModal">
                     <div class="modal-dialog modal-sm">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -228,10 +231,48 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                             <div class="modal-body">
-                                Modal body..
+                                
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="modal fade modal-xl" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="padding-left: 200px;">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header ">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">LOGIN</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control emailCss" id="emailCss"
+                                            aria-describedby="emailHelp" placeholder="Enter your email address">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone
+                                            else.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control passCss" id="passCss"
+                                            placeholder="Enter your password">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+                                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                    </div>
+                                    <div class="loginBtn2" id="mainLogin">
+                                        <span id="loginBtn">Login</span>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="">Forgot Password ?</a>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
