@@ -1,6 +1,6 @@
 async function apicall() {
 
-    var url = 'http://192.168.11.187:3000/stock/getStock/'+window.sessionStorage.getItem('stockname')
+    var url = 'http://192.168.225.117:3000/stock/getStock/'+window.sessionStorage.getItem('stockname')
     var res= await fetch(url,{
         "method":"GET"
     })
