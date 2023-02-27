@@ -139,7 +139,7 @@
     max-width: 23%;
     padding: 24px 30px 41px 30px;
     width: 300px;
-    height: 480px;
+    height: 520px;
     margin-left: 30px;
     border-radius: 5px;
     margin-top: 50px;
@@ -261,8 +261,15 @@
 .partner-img {
     width: 200px;
 }
-
-/* .svg
-{
-/
-} */
+#footer{
+    background-color: white;
+}
+#loginDiv{
+    width: 465px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    padding-top: 5px;
+}

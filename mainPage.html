@@ -45,7 +45,7 @@
     <div class="container-fluid bottomSvgMain">
         <div class="row bottomSvgRow">
 
-    
+
             <div class="col-md-4 mt-5">
                 <img src="https://www.nuvamawealth.com/assets/images/home/home_icon1.svg" alt="">
                 <span class="infoContent">Trusted by over<br>
@@ -130,11 +130,15 @@
         <div class="d-flex subscription">
             <div class="subscriptionData">
                 <!-- <div class="row" style="margin-left: 10px;"> -->
-                <div class="row" style="justify-content: flex-end;">
-                    Stocks
+                <div class="row" style="justify-content: flex-end;font-size: 12px;">
+                    Brokerage Plan
                 </div>
-                <p>Lite</p>
-                <p>&#8377;10/Order</p>
+                <b>
+                    <p style="font-weight: 60px;font-size: 20px;">Lite</p>
+                </b>
+                <b>
+                    <p style="font-size: 25px;">&#8377;10/Order</p>
+                </b>
                 <p>
                     <span>Digital-only Services</span>
                     with great brokerages rate
@@ -152,16 +156,63 @@
                     Flat Brokerages
                 </p>
                 <p style="padding-top: 20%;">View Full Plan</p>
-                <p>
-                    <span class="planButton">Choose Plan</span>
-                </p>
+                <button type="button" class="btn btn-primary planButton" data-bs-toggle="modal"
+                    data-bs-target="#myModal">
+                    Choose Plan
+                </button>
+                <div class="modal fade modal-xl" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header ">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">LOGIN</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="emailVal"
+                                            aria-describedby="emailHelp" placeholder="Enter your email address">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone
+                                            else.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="passVal"
+                                            placeholder="Enter your password">
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+                                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                    </div>
+                                    <div id="loginDiv">
+                                        <span id="login">Login</span>
+                                    </div>
+                                    <div class="text-center">
+                                        <a href="#" class="">Forgot Password ?</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div> -->
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="subscriptionData">
-                <div class="row" style="justify-content: flex-end;">
-                    Stocks
+                <div class="row" style="justify-content: flex-end;font-size: 12px; color: orange;">
+                    Brokerage Plan
                 </div>
-                <p>Lite</p>
-                <p>&#8377;10/Order</p>
+                <b>
+                    <p style="font-weight: 60px;font-size: 20px; color: orange">Lite</p>
+                </b>
+                <b>
+                    <p style="font-size: 25px;">&#8377;10/Order</p>
+                </b>
                 <p>
                     <span>Digital-only Services</span>
                     with great brokerages rate
@@ -179,16 +230,21 @@
                     Flat Brokerages
                 </p>
                 <p style="padding-top: 20%;">View Full Plan</p>
-                <p>
-                    <span class="planButton">Choose Plan</span>
-                </p>
+                <button type="button" class="btn btn-primary planButton" data-bs-toggle="modal"
+                    data-bs-target="#myModal" style="background-color: orange;">
+                    Choose Plan
+                </button>
             </div>
             <div class="subscriptionData">
-                <div class="row" style="justify-content: flex-end;">
-                    Stocks
+                <div class="row" style="justify-content: flex-end;font-size: 12px; color: rgb(250, 71, 71);">
+                    Brokerage Plan
                 </div>
-                <p>Lite</p>
-                <p>&#8377;10/Order</p>
+                <b>
+                    <p style="font-weight: 60px;font-size: 20px;color: rgb(250, 71, 71);">Lite</p>
+                </b>
+                <b>
+                    <p style="font-size: 25px;color: rgb(250, 71, 71);">&#8377;10/Order</p>
+                </b>
                 <p>
                     <span>Digital-only Services</span>
                     with great brokerages rate
@@ -206,9 +262,10 @@
                     Flat Brokerages
                 </p>
                 <p style="padding-top: 20%;">View Full Plan</p>
-                <p>
-                    <span class="planButton">Choose Plan</span>
-                </p>
+                <button type="button" class="btn btn-primary planButton" data-bs-toggle="modal"
+                    data-bs-target="#myModal" style="background-color:  rgb(250, 71, 71);">
+                    Choose Plan
+                </button>
             </div>
         </div>
     </div>
