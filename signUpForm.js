@@ -47,6 +47,7 @@ subBtn.addEventListener("click",function(event){
         }
         else if(emailOnly.test(email)==false){
             document.getElementById('erremail').innerHTML = " * email should be in Proper format only"
+			document.getElementById('erremail').style.fontSize="12px"
 			isError3 = true
         }
 		else{
@@ -60,9 +61,11 @@ subBtn.addEventListener("click",function(event){
             isError3 = true
             // error += "First name is Required.. \n"
             document.getElementById('errpass').innerHTML = " * Password is Required.."
+			document.getElementById('errpass').style.fontSize="12px"
         }
         else if(passwordOnly.test(password)==false){
             document.getElementById('errpass').innerHTML = " * Password must contain uppercase,lowercase,special characters and digits"
+			document.getElementById('errpass').style.fontSize="12px"
 			isError3 = true
         }
 		else{
@@ -71,17 +74,24 @@ subBtn.addEventListener("click",function(event){
 		}
 		let cpassword=document.getElementById('cpassword').value;
 		console.log(cpassword)
-		if(cpassword!=password)
+		if(cpassword.trim().length==0)
+		{
+			isError3 = true
+			document.getElementById('errcpass').innerHTML = " *Confirm Password is required"
+			document.getElementById('errcpass').style.fontSize="12px"
+		}
+		else if(cpassword!=password)
 		{
 			isError3 = true
 			document.getElementById('errcpass').innerHTML = " *confirm password and password must be same"
+			document.getElementById('errcpass').style.fontSize="12px"
 		}
 		else{
 			document.getElementById('errcpass').innerHTML = ""
 		}
 })
 
-formSubmitBtn.addEventListener("click", function(event) {
+formSubmitBtn.addEventListener("click", async function(event) {
 	event.preventDefault()
 	let isError1=false
 	if (stepMenuOne.className == 'formbold-step-menu1 active') {
@@ -95,9 +105,11 @@ formSubmitBtn.addEventListener("click", function(event) {
             // error += "First name is Required.. \n"
             document.getElementById('errFn').innerHTML = " * First name is Required.."
 			document.getElementById('firstName').style.border='2px solid red'
+			document.getElementById('errFn').style.fontSize="12px"
         }
         else if(textOnly.test(firstname)==false){
             document.getElementById('errFn').innerHTML = " * First name should be in aphabates only"
+			document.getElementById('errFn').style.fontSize="12px"
 			isError1 = true
         }
 		else{
@@ -111,6 +123,8 @@ formSubmitBtn.addEventListener("click", function(event) {
 		if (dob == "" || dob.trim().length == 0) {
             isError1 = true
             document.getElementById('errdob').innerHTML = " * Birth name is Required.."
+			document.getElementById('errdob').style.fontSize="12px"
+			// document.getElementById('erraadhar').style.fontSize="12px"
         }
 		else{
 			document.getElementById('errdob').innerHTML = ""
@@ -123,6 +137,7 @@ formSubmitBtn.addEventListener("click", function(event) {
             isError1 = true
             // error += "First name is Required.. \n"
             document.getElementById('errmob').innerHTML = " * Mobile Number is Required.."
+			document.getElementById('errmob').style.fontSize="12px"
         }
 		else{
 			document.getElementById('errmob').innerHTML = ""
@@ -135,10 +150,12 @@ formSubmitBtn.addEventListener("click", function(event) {
             // alert("First name is Required..")
             isError1 = true
             // error += "First name is Required.. \n"
-            document.getElementById('erraadhar').innerHTML = " * Aadhar Card Number is Required.."
+            document.getElementById('erraadhar').innerHTML = " * Aadhar Number is Required.."
+			document.getElementById('erraadhar').style.fontSize="12px"
         }
         else if(digitsOnly.test(aadhar)==false){
             document.getElementById('erraadhar').innerHTML = " * Aadhar Card should be in digits only"
+			document.getElementById('erraadhar').style.fontSize="12px"
 			isError1 = true
         }
 		else{
@@ -152,9 +169,11 @@ formSubmitBtn.addEventListener("click", function(event) {
             isError1 = true
             // error += "First name is Required.. \n"
             document.getElementById('errpan').innerHTML = " * Pan Number is Required.."
+			document.getElementById('errpan').style.fontSize="12px"
         }
         else if(digitsOnly.test(pan)==false){
             document.getElementById('errpan').innerHTML = " * Pan No should be in digits only"
+			document.getElementById('errpan').style.fontSize="12px"
 			isError1 = true
         }
 		else{
@@ -168,6 +187,7 @@ formSubmitBtn.addEventListener("click", function(event) {
             isError1 = true
             // error += "First name is Required.. \n"
             document.getElementById('erradd').innerHTML = " * Address is Required.."
+			document.getElementById('erradd').style.fontSize="12px"
         }
 		else{
 			document.getElementById('erradd').innerHTML = ""
@@ -208,9 +228,11 @@ formSubmitBtn.addEventListener("click", function(event) {
             isError2 = true
             // error += "First name is Required.. \n"
             document.getElementById('erraccname').innerHTML = " * Account name is Required.."
+			document.getElementById('erraccname').style.fontSize="12px"
         }
         else if(textOnly.test(accountName)==false){
             document.getElementById('erraccname').innerHTML = " * Account name should be in aphabates only"
+			document.getElementById('erraccname').style.fontSize="12px"
 			isError2 = true
         }
 		else{
@@ -224,6 +246,7 @@ formSubmitBtn.addEventListener("click", function(event) {
             isError2 = true
             // error += "First name is Required.. \n"
             document.getElementById('erraccno').innerHTML = " * Account Number is Required.."
+			document.getElementById('erraccno').style.fontSize="12px"
         }
 		else{
 			document.getElementById('erraccno').innerHTML = ""
@@ -236,6 +259,7 @@ formSubmitBtn.addEventListener("click", function(event) {
             isError2 = true
             // error += "First name is Required.. \n"
             document.getElementById('errifsc').innerHTML = " * IFSC Code is Required.."
+			document.getElementById('errifsc').style.fontSize="12px"
         }
 		else{
 			document.getElementById('errifsc').innerHTML = ""
@@ -248,9 +272,11 @@ formSubmitBtn.addEventListener("click", function(event) {
             isError2 = true
             // error += "First name is Required.. \n"
             document.getElementById('errbn').innerHTML = " * Branch name is Required.."
+			document.getElementById('errbn').style.fontSize="12px"
         }
         else if(textOnly.test(branchName)==false){
             document.getElementById('errbn').innerHTML = " * Branch name should be in aphabates only"
+			document.getElementById('errbn').style.fontSize="12px"
 			isError2 = true
         }
 		else{
@@ -264,6 +290,7 @@ formSubmitBtn.addEventListener("click", function(event) {
             isError2 = true
             // error += "First name is Required.. \n"
             document.getElementById('errbadd').innerHTML = " * Branch Address is Required.."
+			document.getElementById('errbadd').style.fontSize="12px"
         }
 		else{
 			document.getElementById('errbadd').innerHTML = ""
@@ -351,6 +378,30 @@ formSubmitBtn.addEventListener("click", function(event) {
 			}
 			console.log(user)
 			window.localStorage.setItem(finalEmail, JSON.stringify(user));
+			let formData = new FormData();           
+			formData.append("file", fileupload.files[0]);
+			// formData.append("file", fileupload1.files[0]);
+			// formData.append("file", fileupload2.files[0]);
+			await fetch('http://192.168.225.117:3000/upload/uploadFile', {
+			  method: "POST", 
+			  body: formData
+			});    
+			let formData1 = new FormData();           
+			// formData.append("file", fileupload.files[0]);
+			formData1.append("file", fileupload1.files[0]);
+			// formData.append("file", fileupload2.files[0]);
+			await fetch('http://192.168.225.117:3000/upload/uploadFile', {
+			  method: "POST", 
+			  body: formData1
+			});    
+			let formData2 = new FormData();           
+			// formData.append("file", fileupload.files[0]);
+			// formData.append("file", fileupload1.files[0]);
+			formData2.append("file", fileupload2.files[0]);
+			await fetch('http://192.168.225.117:3000/upload/uploadFile', {
+			  method: "POST", 
+			  body: formData2
+			});    
 			document.querySelector('form').submit()
 			window.location.href='mainPage.html'
 		}
