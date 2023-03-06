@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Tradex</title>
+    <link rel="icon" href="stock-market.png" type="image/x-icon">
 	<link rel="stylesheet" href="signUpForm.css">
 </head>
 
@@ -37,7 +38,7 @@
 						</div>
 						<div>
 							Mobile Number <span id="errmob" style="color: red;"></span>
-							</label> <input type="tel" pattern="[0-9]{10}" name="startTime" id="mobile"
+							</label> <input type="tel" pattern="[0-9]{10}" id="mobile"
 								required="required" class="formbold-form-input" />
 						</div>
 					</div>
@@ -92,31 +93,25 @@
 							banner </label><img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
 						<div class="frame">
 							<div class="center">
-								<form action="UploadFileController" method="post" enctype="multipart/form-data">
+								<form method="post">
 									<div class="title">
 										<h1>Upload Aadhar Card</h1>
 									</div>
 									<div class="dropzone">
-										<input type="file" name="file" id="inputFile" onclick="showImage()" />
+										<input type="file" name="file" id="fileupload" name="fileupload" />
 									</div>
-									<input type="submit" class="btn" name="uploadbutton" value="Upload file"
-										onclick="reload1()" />
 									<div class="title">
 										<h1>Upload Pan Card</h1>
 									</div>
 									<div class="dropzone">
-										<input type="file" name="file" id="inputFile" onclick="showImage()" />
+										<input type="file" name="file" id="fileupload1" name="fileupload" />
 									</div>
-									<input type="submit" class="btn" name="uploadbutton" value="Upload file"
-										onclick="reload1()" />
 									<div class="title">
 										<h1>Upload Pass Book</h1>
 									</div>
 									<div class="dropzone">
-										<input type="file" name="file" id="inputFile" onclick="showImage()" />
+										<input type="file" name="file" id="fileupload2" name="fileupload" />
 									</div>
-									<input type="submit" class="btn" name="uploadbutton" value="Upload file"
-										onclick="reload1()" />
 								</form>
 							</div>
 						</div>

@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Tradex</title>
+  <link rel="icon" href="stock-market.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -20,7 +21,26 @@
     $(function () {
       $("#nav").load("nav.html");
     });
+    $(function () { $("#footer").load('Footerr.html'); });
   </script>
+
+  <script>
+    window.Promise ||
+      document.write(
+        '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
+      )
+    window.Promise ||
+      document.write(
+        '<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
+      )
+    window.Promise ||
+      document.write(
+        '<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
+      )
+  </script>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </head>
 
 <body data-bs-spy="scroll">
@@ -141,6 +161,43 @@
         </ul>
       </div>
     </nav>
+
+    <div id="chart">
+      <div class="toolbar">
+        <button id="one_month"
+            
+            >
+          1M
+        </button>
+        
+        <button id="six_months"
+            
+            >
+          6M
+        </button>
+        
+        <button id="one_year"
+            class="active"
+            
+            >
+          1Y
+        </button>
+        
+        <button id="ytd"
+            
+            >
+          YTD
+        </button>
+        
+        <button id="all"
+            
+            >
+          ALL
+        </button>
+      </div>
+    
+      <div id="chart-timeline"></div>
+    </div>
 
 
     <div class="border border-dark" style="padding: 20px">
@@ -447,7 +504,7 @@
     </div>
     <!-- ---------------------------------------------------------------------------- -->
   </div>
-  <nav class="navbar navbar-expand-sm mainNavCss mt-5" style="padding: 30px">
+  <!-- <nav class="navbar navbar-expand-sm mainNavCss mt-5" style="padding: 30px">
     <div class="container-fluid justify-content-evenly">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -504,7 +561,8 @@
         </li>
       </ul>
     </div>
-  </nav>
+  </nav> -->
+  <div id="footer"></div>
 </body>
 <script src="stockStructure.js"></script>
 </html>
