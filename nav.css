@@ -70,3 +70,7 @@ a{
     background-color: red;
     transition: 2s;
 }
+.navbar .nav-link:hover
+{
+    color: red;
+}

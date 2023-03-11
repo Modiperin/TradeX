@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="mainPage.css">
     <title>Tradex</title>
-    <link rel="icon" href="stock-market.png" type="image/x-icon">
+    <link rel="icon" href="homebanner.png" type="image/x-icon">
     <!-- <style>
         @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&display=swap');
       </style> -->
@@ -36,29 +36,26 @@
         <svg width="100%" height="460" style="background-color:  #03002f;" id="svg" class="svgg">
             <circle cx="580" cy="560" r="260" stroke="rgb(44,45,101)" stroke-width="170" fill="rgb(2,5,42,0)"></circle>
             <!--blue-->
-            <circle cx="930" cy="-25" r="250" stroke="rgb(234, 82, 68)" stroke-width="170" fill="  rgb(2,5,42)">
-            </circle>
+            <circle cx="930" cy="-25" r="250" stroke="rgb(234, 82, 68)" stroke-width="170" fill="  rgb(2,5,42)"></circle>
             <!--red-->
         </svg>
         <center><span class="welcome" id="welcome">Welcome MyDear</span></center>
     </div>
     <div class="container-fluid bottomSvgMain">
         <div class="row bottomSvgRow">
-
-
-            <div class="col-md-4 mt-5">
+            <div class="col-md-4 mt-5 svgrow">
                 <img src="https://www.nuvamawealth.com/assets/images/home/home_icon1.svg" alt="">
                 <span class="infoContent">Trusted by over<br>
                     8 million users
                 </span>
             </div>
-            <div class="col-md-4 mt-5">
+            <div class="col-md-4 mt-5 svgrow">
                 <img src="https://www.nuvamawealth.com/assets/images/home/home_icon1.svg" alt="">
                 <span class="infoContent">Trusted by over<br>
                     8 million users
                 </span>
             </div>
-            <div class="col-md-4 mt-5">
+            <div class="col-md-4 mt-5 svgrow">
                 <img src="https://www.nuvamawealth.com/assets/images/home/home_icon1.svg" alt="">
                 <span class="infoContent">Trusted by over<br>
                     8 million users
@@ -128,7 +125,7 @@
             the journey to financial security
         </center>
         <div class="d-flex subscription">
-            <div class="subscriptionData">
+            <div class="subscriptionData subscriptionblue">
                 <!-- <div class="row" style="margin-left: 10px;"> -->
                 <div class="row" style="justify-content: flex-end;font-size: 12px;">
                     Brokerage Plan
@@ -203,7 +200,7 @@
                     </div>
                 </div>
             </div>
-            <div class="subscriptionData">
+            <div class="subscriptionData subscriptionyellow">
                 <div class="row" style="justify-content: flex-end;font-size: 12px; color: orange;">
                     Brokerage Plan
                 </div>
@@ -235,7 +232,7 @@
                     Choose Plan
                 </button>
             </div>
-            <div class="subscriptionData">
+            <div class="subscriptionData subscriptionred">
                 <div class="row" style="justify-content: flex-end;font-size: 12px; color: rgb(250, 71, 71);">
                     Brokerage Plan
                 </div>
@@ -262,7 +259,7 @@
                     Flat Brokerages
                 </p>
                 <p style="padding-top: 20%;">View Full Plan</p>
-                <button type="button" class="btn btn-primary planButton" data-bs-toggle="modal"
+                <button type="button" class="btn btn-primary planButton " data-bs-toggle="modal"
                     data-bs-target="#myModal" style="background-color:  rgb(250, 71, 71);">
                     Choose Plan
                 </button>
@@ -291,7 +288,7 @@
             <p>Download Our Mobile App to find Insightful charts, Advanced Watchlists, and a comprehensive market
                 section with easy access. Stay on top of your game to become financially secure in no time.
             </p>
-            <button class="btn  btn-dark link-hover-color:danger"><a href="#" style="text-decoration: none;">Download
+            <button class="btn  btn-dark link-color:white link-hover-color:danger"><a href="#" style="text-decoration: none;">Download
                     app</a></button>
         </div>
     </div>
@@ -306,9 +303,11 @@
     </div>
 
     <footer class="container mt-5">
-        <table class="table table-bordered">
-            <th class="">TOP COMPANIES IN INDIA</th>
-            <tr>
+        <table class="table table-bordered table-hover">
+            <tr >
+            <th class="text-center" colspan="6">TOP COMPANIES IN INDIA</th>
+            </tr>
+            <tr class="first-element">
                 <td>Company Name</td>
                 <td>Last Price</td>
                 <td>Change</td>
@@ -317,7 +316,7 @@
                 <td>Net Profit</td>
             </tr>
             <tr>
-                <td><b>Reliance</b></td>
+                <td class="first-element">Reliance</td>
                 <td>2336.65</td>
                 <td class="text-danger">-19.40</td>
                 <td>1,580,903.13</td>
@@ -325,7 +324,7 @@
                 <td>39084.00</td>
             </tr>
             <tr>
-                <td><b>TCS</b></td>
+                <td class="first-element">TCS</td>
                 <td>3537.65</td>
                 <td class="text-danger">-3.30 </td>
                 <td>1,294,407.72 </td>
@@ -333,7 +332,7 @@
                 <td>38187.00 </td>
             </tr>
             <tr>
-                <td><b>HDFC BANK</b></td>
+                <td class="first-element">HDFC BANK</td>
                 <td>1608.55</td>
                 <td class="text-success">6.55 </td>
                 <td>924,296.00 </td>
@@ -341,7 +340,7 @@
                 <td>21899.52</td>
             </tr>
             <tr>
-                <td><b>Infosys</b></td>
+                <td class="first-element">Infosys</td>
                 <td>1608</td>
                 <td class="text-danger">-3.30 </td>
                 <td>676,890.84 </td>

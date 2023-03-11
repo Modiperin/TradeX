@@ -67,6 +67,29 @@
 .bottomSvgRow {
     padding-left: 210px;
 }
+.bottomSvgMain:hover
+{
+    box-shadow: -10px 4px 40px gainsboro;
+}
+/* .svgDiv
+{
+    box-shadow: -10px 4px 4px red;
+} */
+.svgDiv:hover
+{
+    box-shadow: -10px 4px 40px red;
+    height: 600px;
+    
+}
+.svgrow
+{
+    transition: all 1s;
+}
+.svgrow:hover
+{
+    font-size: 2em;
+    font-weight: bolder;
+}
 .welcome{
     /* position: relative; */
     /* bottom: 300px; */
@@ -99,7 +122,6 @@
     justify-content: space-around;
     flex-direction: row;
 }
-
 .boxContentData {
     outline: #ebebeb solid 1px;
     max-width: 23%;
@@ -115,7 +137,7 @@
 }
 
 .boxContentData:hover {
-    box-shadow: 0px 3px 17px 0px gainsboro;
+    box-shadow: 0px 3px 17px 0px red;
     border-top: 5px solid red;
     color: red;
 }
@@ -148,8 +170,34 @@
     position: relative;
     cursor: pointer;
     border-top: 9px solid transparent;
+    transition: all 1s;
+    font-weight: bold;
 }
-
+.subscriptionData:hover
+{
+    height: 540px;
+    width: 320px;
+}
+.subscriptionyellow
+{
+    font-weight: bold;
+}
+.subscriptionred{
+    font-weight: bold;
+}
+.subscriptionblue{
+    font-weight: bold;
+}
+.subscriptionyellow:hover
+{
+    box-shadow: 10px 10px 20px 6px yellow;
+}
+.subscriptionblue:hover{
+    box-shadow: 10px 10px 20px 6px blue;
+}
+.subscriptionred:hover{
+    box-shadow: 10px 10px 20px 5px red;
+}
 .planButton {
     width: 203px;
     height: 47.6px;
@@ -159,7 +207,7 @@
     opacity: .8;
     font-family: Roboto-Medium;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -168,6 +216,11 @@
     color: #fff;
     border-radius: 4px;
     display: inline-block;
+    transition: all 2s;
+}
+.planButton:hover
+{
+    font-weight: bold;
 }
 
 .research-report-block {
@@ -274,4 +327,12 @@
     border-radius: 6px;
     text-align: center;
     padding-top: 5px;
+}
+/* tr
+{
+    font-weight: bold;
+} */
+.first-element
+{
+    font-weight: bolder;
 }
