@@ -33,7 +33,9 @@
     background-color: #03002f;
     transition: 2s;
 }
-
+.makingmarket{
+    font-size: 1.5em;
+}
 .login {
     color: white;
     margin-top: 6px;
@@ -71,30 +73,14 @@
 {
     box-shadow: -10px 4px 40px gainsboro;
 }
-/* .svgDiv
-{
-    box-shadow: -10px 4px 4px red;
-} */
-.svgDiv:hover
-{
-    box-shadow: -10px 4px 40px red;
-    height: 600px;
-    
-}
-.svgrow
-{
-    transition: all 1s;
-}
-.svgrow:hover
-{
-    font-size: 2em;
-    font-weight: bolder;
-}
+
 .welcome{
     /* position: relative; */
     /* bottom: 300px; */
+    /* margin: auto; */
+
     /* margin-bottom: 20px; */
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     color: black;
     font-size: 60px;
     text-align: center;
@@ -137,8 +123,9 @@
 }
 
 .boxContentData:hover {
-    box-shadow: 0px 3px 17px 0px red;
-    border-top: 5px solid red;
+    /* box-shadow: 5px 3px 3px  red; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* border-top: 3px solid red; */
     color: red;
 }
 
@@ -170,12 +157,12 @@
     position: relative;
     cursor: pointer;
     border-top: 9px solid transparent;
-    transition: all 1s;
+    transition: all 250ms;
     font-weight: bold;
 }
 .subscriptionData:hover
 {
-    height: 540px;
+    height: 520px;
     width: 320px;
 }
 .subscriptionyellow
@@ -186,22 +173,26 @@
     font-weight: bold;
 }
 .subscriptionblue{
-    font-weight: bold;
+    font-weight: bold;  
 }
 .subscriptionyellow:hover
 {
-    box-shadow: 10px 10px 20px 6px yellow;
+    /* box-shadow: 1px 1px 1px 3px yellow; */
+    box-shadow: 0px 5px 25px 0px #fffc5b;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) */
 }
 .subscriptionblue:hover{
-    box-shadow: 10px 10px 20px 6px blue;
+/* box-shadow: 10px 1px 1px 1px blue; */
+    box-shadow: 0px 5px 25px 0px #5773f0;
 }
 .subscriptionred:hover{
-    box-shadow: 10px 10px 20px 5px red;
+    /* box-shadow: 10px 10px 20px 5px red; */
+    box-shadow: 0px 5px 25px 0px #ff453e;
 }
 .planButton {
     width: 203px;
     height: 47.6px;
-    margin: 6px 0 0 15px;
+    margin: 6px 0 0px;
     padding: 12.7px 50px 13.9px 51px;
     background-color: #03002f;
     opacity: .8;
@@ -304,7 +295,7 @@
 }
 
 .get-started-btn:hover {
-    box-shadow: 0px 0px 30px 3px white;
+    box-shadow: 0px 0px 30px 1px white;
 }
 
 .partner-text {
