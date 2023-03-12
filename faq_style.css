@@ -3794,6 +3794,9 @@ li:last-child .cd-faq__category {
         background: hsl(213, 7%, 36.3%);
         background: hsl(var(--cd-color-6-h), var(--cd-color-6-s), calc(var(--cd-color-6-l)*1.1))
     }
+    .ttt:hover{
+        color: black;
+    }
 }
 
 @media (min-width: 80rem) {
