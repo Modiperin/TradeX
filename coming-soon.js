@@ -2,16 +2,6 @@ console.log("Function load now");
 
 var i = 0;
 // Get the element you want to add the span to
-var element = document.getElementById("Welcome");
-
-// Create a new span element
-
-var span = document.createElement("span");
-// Set the innerHTML of the span element
-span.innerHTML = ".";
-
-// Add the span element to the existing element
-element.appendChild(span);
 var txt = 'Coming Soon..';
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
@@ -21,12 +11,33 @@ function welcome() {
     i++;
     setTimeout(welcome, speed);
   } else {
-    var dots = document.querySelectorAll("#Welcome > span");
-    setInterval(function() {
-      if (dots.length > 0) {
-        var lastDot = dots[dots.length - 1];
-        lastDot.style.visibility = lastDot.style.visibility === "hidden" ? "visible" : "hidden";
+    // var dots = document.querySelectorAll("#Welcome > span");
+    // Change the duration of the blink as desired
+    var element = document.getElementById("Welcome");
+
+    var span = document.createElement("span");
+    // Set the innerHTML of the span element
+    span.innerHTML = ".";
+
+    // Add the span element to the existing element
+    element.appendChild(span);
+    setInterval(function () {
+      if (element.length > txt) {
+        // var lastDot = dots[dots.length - 1];
+        span.style.visibility = span.style.visibility === "hidden" ? "visible" : "hidden";
       }
-    }, 500); // Change the duration of the blink as desired
+      else
+      {
+        span.style.visibility = span.style.visibility === "hidden" ? "visible" : "hidden";
+      }
+    }, 500);
   }
 }
+// var element = document.getElementById("Welcome");
+
+// var span = document.createElement("span");
+// // Set the innerHTML of the span element
+// span.innerHTML = ".";
+
+// // Add the span element to the existing element
+// element.appendChild(span);
