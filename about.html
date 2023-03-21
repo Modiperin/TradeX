@@ -12,11 +12,19 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="about-style.css">
-
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        $(function () { $("#nav").load('nav.html'); });
+        $(function () { $("#footer").load('Footerr.html'); });
+    </script>
 </head>
 
 <body>
+    <div id="nav"></div>
+    <div id="con">
     <div class="slide-container swiper">
+        
         <div class="slide-content">
             <div class="card-wrapper swiper-wrapper">
                 <div class="card swiper-slide">
@@ -112,7 +120,8 @@
         <div class="swiper-button-prev swiper-navBtn"></div>
         <div class="swiper-pagination"></div>
     </div>
-
+</div>
+    <div id="footer"></div>
 </body>
 
 <!-- Swiper JS -->
