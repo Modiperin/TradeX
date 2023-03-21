@@ -1,9 +1,13 @@
+body{
+    font-family: 'Arima', cursive;
+}
 .searchBox {
     border-radius: 20px;
     background-color: #343150;
     width: 300px;
     height: 30px;
     margin-top: 5px;
+    font-family: 'Arima', cursive;
     padding-left: 30px;
 }
 
@@ -62,6 +66,7 @@
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
+    /* font-family: 'Rubik', sans-serif; */
 }
 
 .bottomSvgRow {
@@ -76,6 +81,9 @@
     font-size: 60px;
     text-align: center;
     height: 20px;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Rubik', sans-serif;
+
 }
 /* center{
     position: relative;
@@ -112,6 +120,7 @@
     position: relative;
     cursor: pointer;
     border-top: 9px solid transparent;
+    font-family: 'Rubik', sans-serif;
 }
 
 .boxContentData:hover {
@@ -148,6 +157,7 @@
     position: relative;
     cursor: pointer;
     border-top: 9px solid transparent;
+    font-family: 'Rubik', sans-serif;
 }
 
 .planButton {
@@ -176,6 +186,7 @@
     height: 400px;
     padding-top: 60px;
     margin-bottom: 80px;
+    font-family: 'Rubik', sans-serif;
 }
 
 .research-image-block {
@@ -201,6 +212,7 @@
     /* margin-bottom: 100px; */
     padding-left: 300px;
     /* max-width: 300px; */
+    font-family: 'Rubik', sans-serif;
 }
 
 .research-text-inner {
@@ -223,6 +235,7 @@
     font-size: 40px;
     font-weight: 80px;
     text-align: center;
+    font-family: 'Rubik', sans-serif;
     /* margin-right: 375px; */
 }
 
@@ -258,6 +271,7 @@
     font-size: xx-large;
     font-weight: bolder;
     text-align: center;
+    font-family: 'Rubik', sans-serif;
 }
 
 .partner-img {
@@ -275,3 +289,11 @@
     text-align: center;
     padding-top: 5px;
 }
+::selection {
+    color: whitesmoke;
+    background: #03002f;
+  }
+  .partner-img-stra{
+    width: 200px;
+    margin-top: -10px;
+  }
