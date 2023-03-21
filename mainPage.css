@@ -167,9 +167,7 @@ body{
     position: relative;
     cursor: pointer;
     border-top: 9px solid transparent;
-<<<<<<< HEAD
     font-family: 'Rubik', sans-serif;
-=======
     transition: all 250ms;
     font-weight: bold;
 }
@@ -201,7 +199,6 @@ body{
 .subscriptionred:hover{
     /* box-shadow: 10px 10px 20px 5px red; */
     box-shadow: 0px 5px 25px 0px #ff453e;
->>>>>>> 0cef622e1a25aee1f1cd3649bd275b5db4331ac6
 }
 .planButton {
     width: 203px;
@@ -337,7 +334,6 @@ body{
     text-align: center;
     padding-top: 5px;
 }
-<<<<<<< HEAD
 ::selection {
     color: whitesmoke;
     background: #03002f;
@@ -346,13 +342,7 @@ body{
     width: 200px;
     margin-top: -10px;
   }
-=======
-/* tr
-{
-    font-weight: bold;
-} */
 .first-element
 {
     font-weight: bolder;
 }
->>>>>>> 0cef622e1a25aee1f1cd3649bd275b5db4331ac6
