@@ -7,19 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="mainPage.css">
     <title>Tradex</title>
-    <link rel="icon" href="stock-market.png" type="image/x-icon">
+    <link rel="icon" href="homebanner.png" type="image/x-icon">
     <!-- <style>
         @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&display=swap');
       </style> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet"> -->
     <script src="https://code.jquery.com/jquery-3.6.3.js"
         integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script>
@@ -27,6 +31,7 @@
         $(function () { $("#footer").load('Footerr.html'); });
 
     </script>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,6 +39,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Arima:wght@300&family=Barlow+Condensed:ital,wght@1,200&family=Heebo:wght@600&family=Permanent+Marker&family=Raleway:wght@300&family=Rubik:wght@400;500;900&display=swap"
         rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
 </head>
 
 <body>
@@ -42,32 +48,29 @@
         <svg width="100%" height="460" style="background-color:  #03002f;" id="svg" class="svgg">
             <circle cx="580" cy="560" r="260" stroke="rgb(44,45,101)" stroke-width="170" fill="rgb(2,5,42,0)"></circle>
             <!--blue-->
-            <circle cx="930" cy="-25" r="250" stroke="rgb(234, 82, 68)" stroke-width="170" fill="  rgb(2,5,42)">
-            </circle>
+            <circle cx="930" cy="-25" r="250" stroke="rgb(234, 82, 68)" stroke-width="170" fill="  rgb(2,5,42)"></circle>
             <!--red-->
+           <text x="400" y="400">Welcome User</text>
         </svg>
-        <center><span class="welcome" id="welcome">Welcome MyDear</span></center>
     </div>
     <div class="container-fluid bottomSvgMain">
         <div class="row bottomSvgRow">
-
-
-            <div class="col-md-4 mt-5">
+            <div class="col-md-4 mt-5 svgrow">
+                <img src="https://www.nuvamawealth.com/assets/images/home/home_icon1.svg" alt="">
+                <span class="infoContent">One site for<br>
+                    all your trading needs
+                </span>
+            </div>
+            <div class="col-md-4 mt-5 svgrow">
                 <img src="https://www.nuvamawealth.com/assets/images/home/home_icon1.svg" alt="">
                 <span class="infoContent">Trusted by over<br>
                     8 million users
                 </span>
             </div>
-            <div class="col-md-4 mt-5">
+            <div class="col-md-4 mt-5 svgrow">
                 <img src="https://www.nuvamawealth.com/assets/images/home/home_icon1.svg" alt="">
-                <span class="infoContent">Trusted by over<br>
-                    8 million users
-                </span>
-            </div>
-            <div class="col-md-4 mt-5">
-                <img src="https://www.nuvamawealth.com/assets/images/home/home_icon1.svg" alt="">
-                <span class="infoContent">Trusted by over<br>
-                    8 million users
+                <span class="infoContent">Deep and latest<br>
+                    analysis everyday
                 </span>
             </div>
         </div>
@@ -81,7 +84,7 @@
     <hr class="mt-5">
     <div class="container" style="margin-top: 100px;">
         <center>
-            <h1>Products for all your Needs </h1>
+            <h1>Finance and Market Today</h1>
         </center>
         <div class="mainBoxDiv">
             <div class="d-flex flex-column p-3">
@@ -91,34 +94,34 @@
                             Stocks
                         </div>
                         <div class="row">
-                            <img src="https://www.nuvamawealth.com/assets/images/home/home_tile1.svg"
+                            <img src="stock.jpg"
                                 style="width: 250px; height:200px">
                         </div>
                     </div>
                     <div class="boxContentData">
                         <div class="row">
-                            Stocks
+                            Mutual Funds
                         </div>
                         <div class="row">
-                            <img src="https://www.nuvamawealth.com/assets/images/home/home_tile1.svg"
+                            <img src="mutual funds.jpg"
                                 style="width: 250px; height:200px">
                         </div>
                     </div>
                     <div class="boxContentData">
                         <div class="row">
-                            Stocks
+                            Derivatives
                         </div>
                         <div class="row">
-                            <img src="https://www.nuvamawealth.com/assets/images/home/home_tile1.svg"
+                            <img src="derivatives.png"
                                 style="width: 250px; height:200px">
                         </div>
                     </div>
                     <div class="boxContentData">
                         <div class="row">
-                            Stocks
+                            IPO
                         </div>
                         <div class="row">
-                            <img src="https://www.nuvamawealth.com/assets/images/home/home_tile1.svg"
+                            <img src="ipo.png"
                                 style="width: 250px; height:200px">
                         </div>
                     </div>
@@ -134,7 +137,7 @@
             the journey to financial security
         </center>
         <div class="d-flex subscription">
-            <div class="subscriptionData">
+            <div class="subscriptionData subscriptionblue">
                 <!-- <div class="row" style="margin-left: 10px;"> -->
                 <div class="row" style="justify-content: flex-end;font-size: 12px;">
                     Brokerage Plan
@@ -155,13 +158,13 @@
                 </p>
                 <p>
                     <span class="bi bi-check green-color"> </span>
-                    Flat Brokerages
+                    A digital-only plan
                 </p>
                 <p>
                     <span class="bi bi-check green-color"> </span>
-                    Flat Brokerages
+                    Pay as you use the tools<br><br>
                 </p>
-                <p style="padding-top: 20%;">View Full Plan</p>
+                <!-- <p style="padding-top: 20%;">View Full Plan</p> -->
                 <button type="button" class="btn btn-primary planButton" data-bs-toggle="modal"
                     data-bs-target="#myModal">
                     Choose Plan
@@ -207,65 +210,65 @@
                     </div>
                 </div>
             </div>
-            <div class="subscriptionData">
+            <div class="subscriptionData subscriptionyellow">
                 <div class="row" style="justify-content: flex-end;font-size: 12px; color: orange;">
                     Brokerage Plan
                 </div>
                 <b>
-                    <p style="font-weight: 60px;font-size: 20px; color: orange">Lite</p>
+                    <p style="font-weight: 60px;font-size: 20px; color: orange">Elite</p>
                 </b>
                 <b>
-                    <p style="font-size: 25px;">&#8377;10/Order</p>
+                    <p style="font-size: 25px;">&#8377;7/Order</p>
                 </b>
                 <p>
-                    <span>Digital-only Services</span>
-                    with great brokerages rate
+                    <span>Rich on features,</span>
+                    Rich on features, high on privileges
                 </p>
                 <p>
                     <span class="bi bi-check green-color"> </span>
-                    Flat Brokerages
+                    Free access to tools
                 </p>
                 <p>
                     <span class="bi bi-check green-color"> </span>
-                    Flat Brokerages
+                    No minimum orders
                 </p>
                 <p>
                     <span class="bi bi-check green-color"> </span>
-                    Flat Brokerages
+                    Value-added services included
                 </p>
-                <p style="padding-top: 20%;">View Full Plan</p>
+                <!-- <p style="padding-top: 20%;">View Full Plan</p> -->
                 <button type="button" class="btn btn-primary planButton" data-bs-toggle="modal"
                     data-bs-target="#myModal" style="background-color: orange;">
                     Choose Plan
                 </button>
             </div>
-            <div class="subscriptionData">
+            <div class="subscriptionData subscriptionred">
                 <div class="row" style="justify-content: flex-end;font-size: 12px; color: rgb(250, 71, 71);">
                     Brokerage Plan
                 </div>
                 <b>
-                    <p style="font-weight: 60px;font-size: 20px;color: rgb(250, 71, 71);">Lite</p>
+                    <p style="font-weight: 60px;font-size: 20px;color: rgb(250, 71, 71);">Infinite</p>
                 </b>
                 <b>
-                    <p style="font-size: 25px;color: rgb(250, 71, 71);">&#8377;10/Order</p>
+                    <p style="font-size: 25px;color: rgb(250, 71, 71);">0.30%/Order</p>
                 </b>
                 <p>
-                    <span>Digital-only Services</span>
-                    with great brokerages rate
+                    <span>All the benefits of Elite,</span>
+                    plus a whole lot more
                 </p>
                 <p>
                     <span class="bi bi-check green-color"> </span>
-                    Flat Brokerages
+                    Direct access
                 </p>
                 <p>
                     <span class="bi bi-check green-color"> </span>
-                    Flat Brokerages
+                    Discounted demat charges
                 </p>
                 <p>
                     <span class="bi bi-check green-color"> </span>
-                    Flat Brokerages
+                    Digital add on plan<br>
                 </p>
-                <p style="padding-top: 20%;">View Full Plan</p>
+                <!-- <p style="padding-top: 20%;">View Full Plan</p> -->
                 <button type="button" class="btn btn-primary planButton" data-bs-toggle="modal"
                     data-bs-target="#myModal" style="background-color:  rgb(250, 71, 71);">
                     Choose Plan
@@ -278,7 +281,7 @@
             <div class="research-image"><img src="https://www.nuvamawealth.com/assets/images/home/home_research.svg">
             </div>
             <div class="research-text">Research Reports & Recommendations
-                <p class="research-text-inner">Nuvama conducts extensive research for its clients. We delve deep into
+                <p class="research-text-inner">We conduct extensive research for our clients. We delve deep into
                     over 250 stocks to generate
                     over 200 institutional-grade research reports a year.</p>
             </div>
@@ -291,11 +294,11 @@
     <div class="container-fluid d-flex mb-5 mt-2">
         <img src="https://www.nuvamawealth.com/assets/images/home/emt_screen1.png" alt="" width="650px" height="450px">
         <div class="container" style="padding-left: 60px; padding-top: 130px; width: 500px;">
-            <b>Making Market Accessible </b>
+            <b class="makingmarket">Making Market Accessible </b>
             <p>Download Our Mobile App to find Insightful charts, Advanced Watchlists, and a comprehensive market
                 section with easy access. Stay on top of your game to become financially secure in no time.
             </p>
-            <button class="btn  btn-dark link-hover-color:danger"><a href="#" style="text-decoration: none;">Download
+            <button class="btn  btn-dark link-color:white link-hover-color:danger"><a href="#" style="text-decoration: none; color: white;">Download
                     app</a></button>
         </div>
     </div>
@@ -310,9 +313,11 @@
     </div>
 
     <footer class="container mt-5">
-        <table class="table table-bordered">
-            <th class="">TOP COMPANIES IN INDIA</th>
-            <tr>
+        <table class="table table-bordered table-hover">
+            <tr >
+            <th class="text-center" colspan="6">TOP COMPANIES IN INDIA</th>
+            </tr>
+            <tr class="first-element">
                 <td>Company Name</td>
                 <td>Last Price</td>
                 <td>Change</td>
@@ -321,7 +326,7 @@
                 <td>Net Profit</td>
             </tr>
             <tr>
-                <td><b>Reliance</b></td>
+                <td class="first-element">Reliance</td>
                 <td>2336.65</td>
                 <td class="text-danger">-19.40</td>
                 <td>1,580,903.13</td>
@@ -329,7 +334,7 @@
                 <td>39084.00</td>
             </tr>
             <tr>
-                <td><b>TCS</b></td>
+                <td class="first-element">TCS</td>
                 <td>3537.65</td>
                 <td class="text-danger">-3.30 </td>
                 <td>1,294,407.72 </td>
@@ -337,7 +342,7 @@
                 <td>38187.00 </td>
             </tr>
             <tr>
-                <td><b>HDFC BANK</b></td>
+                <td class="first-element">HDFC BANK</td>
                 <td>1608.55</td>
                 <td class="text-success">6.55 </td>
                 <td>924,296.00 </td>
@@ -345,7 +350,7 @@
                 <td>21899.52</td>
             </tr>
             <tr>
-                <td><b>Infosys</b></td>
+                <td class="first-element">Infosys</td>
                 <td>1608</td>
                 <td class="text-danger">-3.30 </td>
                 <td>676,890.84 </td>

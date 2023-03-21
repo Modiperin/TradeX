@@ -20,6 +20,7 @@
     width: 150px;
     height: 30px;
     background-color: red;
+    text-decoration: none;
     color: white;
     text-align: center;
     border: 2px solid transparent;
@@ -70,7 +71,6 @@ a{
     background-color: red;
     transition: 2s;
 }
-
 nav ul {
     list-style: none;
     margin: 0;
@@ -111,3 +111,7 @@ nav ul {
   table{
     width: 40px;
   }
+.navbar .nav-link:hover
+{
+    color: red;
+}
