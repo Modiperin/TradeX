@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Tradex</title>
+  <link rel="icon" href="homebanner.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -22,6 +23,24 @@
     });
     $(function () { $("#footer").load('Footerr.html'); });
   </script>
+
+  <script>
+    window.Promise ||
+      document.write(
+        '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
+      )
+    window.Promise ||
+      document.write(
+        '<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
+      )
+    window.Promise ||
+      document.write(
+        '<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
+      )
+  </script>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </head>
 
 <body data-bs-spy="scroll">
@@ -143,6 +162,43 @@
       </div>
     </nav>
 
+    <div id="chart">
+      <div class="toolbar">
+        <button id="one_month"
+            
+            >
+          1M
+        </button>
+        
+        <button id="six_months"
+            
+            >
+          6M
+        </button>
+        
+        <button id="one_year"
+            class="active"
+            
+            >
+          1Y
+        </button>
+        
+        <button id="ytd"
+            
+            >
+          YTD
+        </button>
+        
+        <button id="all"
+            
+            >
+          ALL
+        </button>
+      </div>
+    
+      <div id="chart-timeline"></div>
+    </div>
+
 
     <div class="border border-dark" style="padding: 20px">
       <div class="m-lg-5">
@@ -222,7 +278,7 @@
       </div>
 
     </div>
-    <div id="section4" class="mt-5 border border-dark boxes w-100 p-2">
+    <div id="section4" class="mt-5 border border-dark boxes w-100 p-2 table-responsive-sm">
       <p><b>Profit & Loss</b></p>
       <table class="table table-hover" style="border-bottom: 1px">
         <tr>
@@ -339,6 +395,7 @@
       <div id="donutchart" style="width: 900px; height: 500px"></div>
       <!-- -------------------------------------------------------------------------- -->
       <h5>AUMs with <span class="fw-bold">LIC Housing Finance Ltd</span></h5>
+      <div class="table-responsive-sm">
       <table class="table table-borderless table-hover">
         <tr>
           <td></td>
@@ -383,11 +440,12 @@
           <td>160.52</td>
         </tr>
       </table>
+      </div>
     </div>
     <!-- ---------------------------------------------------------------------------- -->
     <div id="section6" class="mt-5 border border-dark boxes p-2" style="width:70%;">
       <h5>About LIC Housing Finance Ltd</h5>
-      <div style="width: 50%">
+      <div style="width: 50%" class="table-responsive-sm">
         <table class="table table-borderless">
           <tr>
             <td class="text-left" id="bse">BSE: 500253</td>

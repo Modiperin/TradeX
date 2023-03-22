@@ -1,11 +1,16 @@
+body{
+    font-family: 'Arima', cursive;
+}
 .searchBox {
     border-radius: 20px;
     background-color: #343150;
     width: 300px;
     height: 30px;
     margin-top: 5px;
+    font-family: 'Arima', cursive;
     padding-left: 30px;
 }
+
 
 .mainNavCss {
     background-color: #03002f;
@@ -33,7 +38,9 @@
     background-color: #03002f;
     transition: 2s;
 }
-
+.makingmarket{
+    font-size: 1.5em;
+}
 .login {
     color: white;
     margin-top: 6px;
@@ -62,18 +69,31 @@
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
+    /* font-family: 'Rubik', sans-serif; */
 }
 
 .bottomSvgRow {
     padding-left: 210px;
 }
+.bottomSvgMain:hover
+{
+    box-shadow: -10px 4px 40px gainsboro;
+}
+
 .welcome{
-    position: relative;
-    bottom: 300px;
-    color: white;
+    /* position: relative; */
+    /* bottom: 300px; */
+    /* margin: auto; */
+
+    /* margin-bottom: 20px; */
+    /* padding-bottom: 30px; */
+    color: black;
     font-size: 60px;
     text-align: center;
     height: 20px;
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Rubik', sans-serif;
+
 }
 /* center{
     position: relative;
@@ -97,7 +117,6 @@
     justify-content: space-around;
     flex-direction: row;
 }
-
 .boxContentData {
     outline: #ebebeb solid 1px;
     max-width: 23%;
@@ -110,11 +129,13 @@
     position: relative;
     cursor: pointer;
     border-top: 9px solid transparent;
+    font-family: 'Rubik', sans-serif;
 }
 
 .boxContentData:hover {
-    box-shadow: 0px 3px 17px 0px gainsboro;
-    border-top: 5px solid red;
+    /* box-shadow: 5px 3px 3px  red; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* border-top: 3px solid red; */
     color: red;
 }
 
@@ -140,24 +161,56 @@
     padding: 24px 30px 41px 30px;
     width: 300px;
     height: 520px;
+    height: 520px;
     margin-left: 30px;
     border-radius: 5px;
     margin-top: 50px;
     position: relative;
     cursor: pointer;
     border-top: 9px solid transparent;
+    font-family: 'Rubik', sans-serif;
+    transition: all 250ms;
+    font-weight: bold;
 }
-
+.subscriptionData:hover
+{
+    height: 520px;
+    width: 320px;
+}
+.subscriptionyellow
+{
+    font-weight: bold;
+}
+.subscriptionred{
+    font-weight: bold;
+}
+.subscriptionblue{
+    font-weight: bold;  
+}
+.subscriptionyellow:hover
+{
+    /* box-shadow: 1px 1px 1px 3px yellow; */
+    box-shadow: 0px 5px 25px 0px #fffc5b;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) */
+}
+.subscriptionblue:hover{
+/* box-shadow: 10px 1px 1px 1px blue; */
+    box-shadow: 0px 5px 25px 0px #5773f0;
+}
+.subscriptionred:hover{
+    /* box-shadow: 10px 10px 20px 5px red; */
+    box-shadow: 0px 5px 25px 0px #ff453e;
+}
 .planButton {
     width: 203px;
     height: 47.6px;
-    margin: 6px 0 0 15px;
+    margin: 6px 0 0px;
     padding: 12.7px 50px 13.9px 51px;
     background-color: #03002f;
     opacity: .8;
     font-family: Roboto-Medium;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -166,6 +219,11 @@
     color: #fff;
     border-radius: 4px;
     display: inline-block;
+    transition: all 2s;
+}
+.planButton:hover
+{
+    font-weight: bold;
 }
 
 .research-report-block {
@@ -174,6 +232,7 @@
     height: 400px;
     padding-top: 60px;
     margin-bottom: 80px;
+    font-family: 'Rubik', sans-serif;
 }
 
 .research-image-block {
@@ -199,6 +258,7 @@
     /* margin-bottom: 100px; */
     padding-left: 300px;
     /* max-width: 300px; */
+    font-family: 'Rubik', sans-serif;
 }
 
 .research-text-inner {
@@ -221,6 +281,7 @@
     font-size: 40px;
     font-weight: 80px;
     text-align: center;
+    font-family: 'Rubik', sans-serif;
     /* margin-right: 375px; */
 }
 
@@ -249,13 +310,14 @@
 }
 
 .get-started-btn:hover {
-    box-shadow: 0px 0px 30px 3px white;
+    box-shadow: 0px 0px 30px 1px white;
 }
 
 .partner-text {
     font-size: xx-large;
     font-weight: bolder;
     text-align: center;
+    font-family: 'Rubik', sans-serif;
 }
 
 .partner-img {
