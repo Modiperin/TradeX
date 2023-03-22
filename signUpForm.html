@@ -57,6 +57,12 @@
 							id="Address" placeholder="Flat 4, 24 Castle Street, Perth, PH1 3JY"
 							class="formbold-form-input" />
 					</div>
+
+					<div class="container">
+						<div class="f" data-text="Select your file!">
+						  <input name="" class="ileUpload123" type="file"  value="">
+						</div>
+					</div>
 				</div>
 
 				<div class="formbold-form-step-2">
@@ -112,7 +118,14 @@
 									<div class="dropzone">
 										<input type="file" name="file" id="fileupload2" name="fileupload" />
 									</div>
+
+									<div class="container">
+										  <div class="file-upload-wrapper" data-text="Select your file!">
+											<input name="file-upload-field" type="file" class="file-upload-field" value="">
+										  </div>
+									  </div>
 								</form>
+								<div id="fileError" style="color: red;"></div>
 							</div>
 						</div>
 						<img alt="" src="Image/<%=coo.getValue()%>">
