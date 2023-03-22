@@ -3794,7 +3794,8 @@ li:last-child .cd-faq__category {
         background: hsl(213, 7%, 36.3%);
         background: hsl(var(--cd-color-6-h), var(--cd-color-6-s), calc(var(--cd-color-6-l)*1.1))
     }
-    .ttt:hover{
+
+    .ttt:hover {
         color: black;
     }
 }
@@ -3807,7 +3808,7 @@ li:last-child .cd-faq__category {
         left: 0;
         height: 100%;
         width: 3px;
-        background-color:#03002f;
+        background-color: #03002f;
         background-color: var(--cd-color-5);
         opacity: 0;
         transition: opacity .2s
