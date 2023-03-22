@@ -380,26 +380,26 @@ formSubmitBtn.addEventListener("click", async function(event) {
 			formData.append("file", fileupload.files[0]);
 			// formData.append("file", fileupload1.files[0]);
 			// formData.append("file", fileupload2.files[0]);
-			await fetch('http://192.168.225.117:3000/upload/uploadFile', {
+			await fetch('http://192.168.43.234:3000/upload/uploadFile', {
 			  method: "POST", 
 			  body: formData
 			});    
-			let formData1 = new FormData();           
-			// formData.append("file", fileupload.files[0]);
-			formData1.append("file", fileupload1.files[0]);
-			// formData.append("file", fileupload2.files[0]);
-			await fetch('http://192.168.225.117:3000/upload/uploadFile', {
-			  method: "POST", 
-			  body: formData1
-			});    
-			let formData2 = new FormData();           
-			// formData.append("file", fileupload.files[0]);
-			// formData.append("file", fileupload1.files[0]);
-			formData2.append("file", fileupload2.files[0]);
-			await fetch('http://192.168.225.117:3000/upload/uploadFile', {
-			  method: "POST", 
-			  body: formData2
-			});    
+			// let formData1 = new FormData();           
+			// // formData.append("file", fileupload.files[0]);
+			// formData1.append("file", fileupload1.files[0]);
+			// // formData.append("file", fileupload2.files[0]);
+			// await fetch('http://192.168.225.117:3000/upload/uploadFile', {
+			//   method: "POST", 
+			//   body: formData1
+			// });    
+			// let formData2 = new FormData();           
+			// // formData.append("file", fileupload.files[0]);
+			// // formData.append("file", fileupload1.files[0]);
+			// formData2.append("file", fileupload2.files[0]);
+			// await fetch('http://192.168.225.117:3000/upload/uploadFile', {
+			//   method: "POST", 
+			//   body: formData2
+			// });    
 			document.querySelector('form').submit()
 			window.location.href='mainPage.html'
 		}
