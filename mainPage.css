@@ -1,15 +1,6 @@
 body{
     font-family: 'Arima', cursive;
 }
-.searchBox {
-    border-radius: 20px;
-    background-color: #343150;
-    width: 300px;
-    height: 30px;
-    margin-top: 5px;
-    font-family: 'Arima', cursive;
-    padding-left: 30px;
-}
 
 
 .mainNavCss {
@@ -81,13 +72,12 @@ body{
 }
 
 .welcome{
-    /* position: relative; */
-    /* bottom: 300px; */
-    /* margin: auto; */
-
-    /* margin-bottom: 20px; */
-    /* padding-bottom: 30px; */
-    color: black;
+    position: relative; 
+    bottom: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    color: rgb(247, 242, 242);
     font-size: 60px;
     text-align: center;
     height: 20px;
@@ -341,3 +331,4 @@ body{
     text-align: center;
     border-radius: 6px;
 }
+

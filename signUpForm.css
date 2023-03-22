@@ -563,3 +563,11 @@ body {
 .formbold-btn:hover {
 	box-shadow: 0px 3px 8px #03002f;
 }
+.subBtn{
+	width: 130px;
+	height: 40px;
+	background-color: red;
+	color: whitesmoke;
+	border-radius: 8px;
+
+}

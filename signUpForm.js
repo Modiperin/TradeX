@@ -81,6 +81,11 @@ subBtn.addEventListener("click",function(event){
 		else{
 			document.getElementById('errcpass').innerHTML = ""
 		}
+
+		if(isError3==false)
+		{
+			formSubmitBtn.disabled=false
+		}
 })
 
 formSubmitBtn.addEventListener("click", async function(event) {
@@ -340,6 +345,7 @@ formSubmitBtn.addEventListener("click", async function(event) {
 			formBackBtn2.classList.add('active')
 		}
 		formSubmitBtn.textContent='Submit'
+		formSubmitBtn.disabled=true
 		formBackBtn2.addEventListener("click", function(event) {
 			event.preventDefault()
 

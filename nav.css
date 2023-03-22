@@ -1,171 +1,146 @@
 .searchBox {
-    border-radius: 20px;
-    background-color: #343150;
-    border-color: #343150;
-    width: 300px;
-    height: 30px;
-    margin-top: 5px;
-    padding-left: 30px;
+  border-radius: 20px;
+  background-color: #343150;
+  border-color: #343150;
+  width: 300px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: -5px;
+  padding-left: 30px;
 }
 
 .mainNavCss {
-    background-color: #03002f;
+  background-color: #03002f;
 }
 
 /* .navList {
-    color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 } */
 
 .openAccount{
-    width: 150px;
-    height: 30px;
-    background-color: red;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    margin-top: 5px;
-    padding-top: 1.5px;
-    padding-top: 1.5px;
+  width: 150px;
+  height: 30px;
+  background-color: red;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  margin-top: -4px;
+  margin-left: -40px;
+  padding-top: 1.5px;
 }
 .openAccount:hover{
-    border: 2px solid white;
-    background-color: #03002f;
-    color:white;
-    transition: 2s;
+  border: 2px solid white;
+  background-color: #03002f;
+  color:white;
+  transition: 2s;
 }
 .login{
-    width: 100px;
-    height: 30px;
-    color: white;
-    border: 2px solid white;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 5px;
-    margin-left: 5px;
+  width: 100px;
+  height: 30px;
+  color: white;
+  border: 2px solid white;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: -25px;
+  /* padding-top: 1.5px; */
 }
 .login:hover{
-    border: 2px solid transparent;
-    background-color: red;
-    transition: 2s;
+  border: 2px solid transparent;
+  background-color: red;
+  transition: 2s;
 }
 .mainNavCss a{
-    text-decoration: none;
-    color: white;
-    /* width: 20px; */
+  text-decoration: none;
+  color: white;
+  /* width: 20px; */
 }
 .logout{
-    width: 100px;
-    height: 30px;
-    color: white;
-    border: 2px solid white;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 5px;
-    margin-left: 5px;
-    padding-top: 1.5px;
+  width: 100px;
+  height: 30px;
+  color: white;
+  border: 2px solid white;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding-top: 1.5px;
 }
 .logout:hover{
-    border: 2px solid transparent;
-    background-color: red;
-    transition: 2s;
+  border: 2px solid transparent;
+  background-color: red;
+  transition: 2s;
 }
 .mainNavCss ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .mainNavCss li {
-    margin-right: 20px;
-  }
-  
-  .mainNavCssav li.dropdown {
-    position: relative;
-  }
-  
-  .mainNavCss li.dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
-  .mainNavCss a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    padding: 10px;
-  }
-  
-  .mainNavCss .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    height: 200px;
-    width:400px;
-    background-color: white;
-    border: 1px solid gray;
-    padding: 10px;
-  }
-  table{
-    width: 40px;
-  }
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.mainNavCss li {
+  margin-right: 20px;
+}
+
+.mainNavCssav li.dropdown {
+  position: relative;
+}
+
+.mainNavCss li.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.mainNavCss a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  margin-left: -4px;
+  margin-top: 5px;
+}
+
+.mainNavCss .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 200px;
+  width:400px;
+  background-color: white;
+  border: 1px solid gray;
+  padding: 10px;
+}
+table{
+  width: 40px;
+}
 .mainNavCss .nav-link:hover
 {
-    color: red;
+  color: red;
+}
+.dropdown1 {
+display: none;
+position: absolute;
+top: 50px;
+left: 54.5%;
+z-index: 1;
+background-color: white;
+color: #03002f;
+width: 280px;
+border-radius: 5px;
 }
 
-/* Extra HArd CSS */
-.topnav a {
-  float: left  ;
-  display: block ;
-  color: #f2f2f2 ;
-  text-align: center ;
-  padding: 14px 16px ;
-  text-decoration: none ;
-  font-size: 17px ;
+li:hover .dropdown1 {
+display: block;
 }
-.topnav {
-  background-color: #333 ;
-  overflow: hidden ;
-}
-
-.topnav .icon {
-  display: none ;
-}
-
-@media screen and (max-width:992px) {
-  .topnav a:not(:first-child){
-display: none ;
-}
-  /* .topnav a{
-    float: left !important;
-    display: block !important;
-  } */
-  .topnav .icon {
-    float: right !important;
-    display: block  !important;
-  }
-}
-
-@media screen and (max-width:992px) {
-  .topnav.responsive {
-    position: relative !important;
-  }
-
-  .topnav.responsive a{
-    float: none !important;
-    display: block  !important;
-    text-align: left !important;
-  }
-
-  .topnav.responsive .icon {
-    position: absolute !important;
-    right: 0 !important;
-    top: 0 !important;
-  }
-  .modal-dialog img{
-    display: none;
-  }
+.s{
+position: relative;
+height: 30px;
+width: 30px;
+background-color: white;
+display: inline-block;
+top: 10px;
+right: 40px;
+border-radius: 20px;
 }
