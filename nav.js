@@ -66,7 +66,17 @@ document.getElementById('signUp1').addEventListener('click',()=>{
 //    document.getElementById('writer').innerHTML=find
 // })
 
-document.getElementById('searchBox').addEventListener('click',async ()=>{
+document.getElementById('searchBox').addEventListener('click',handle)
+document.getElementById('searchBox').addEventListener('blur',dehandle)
+
+function dehandle(){
+    document.getElementById('searchImage').src='icons8-search-50.png'
+}
+
+async function handle()
+{
+    document.getElementById('searchImage').src='icons8-search.gif'
+    document.getElementById('searchBox').style.borderRadius='20px'
    var url = 'http://192.168.225.117:3000/stock/getStock'
     var res= await fetch(url,{
         "method":"GET"
@@ -76,25 +86,47 @@ document.getElementById('searchBox').addEventListener('click',async ()=>{
         var data= await res.json()
         for(i=0;i<data.length;i++)
         {
-            stockNames.push(data[i].fullName)
+            stockNames.push(data[i].shortName)
         }
-    //   console.log(stockNames)
+      console.log(stockNames)
     //   console.log(find)
-})
+}
 document.getElementById('searchBox').addEventListener("keyup",()=>{
    var txt=document.getElementById('searchBox').value
    find=[]
-//    console.log(txt.trim().length())
+   console.log(txt.trim().length)
     // console.log(typeof(txt))
-    // console.log(txt.trim().length)
-    // console.log(find)
+    console.log(txt.trim().length)
+    console.log(find)
    if(txt.trim().length>0)
    {
     var find=stockNames.filter(x=>x.startsWith(txt))
-    document.getElementById('writer').innerHTML=find 
+    console.log(typeof(find))
+    let names=""
+    for(var i=0;i<find.length;i++)
+    {
+        names=names+(i+1)+". "+find[i]+"<br>"
+    }
+    // document.getElementById('dropdown1').style.padding='10px'
+    document.getElementById('writer').innerHTML=names
    }
    else{
     document.getElementById('writer').innerHTML=" "
    }
    
+})
+const navbarItem = document.querySelector('li');
+const dropdown = navbarItem.querySelector('.dropdown1');
+
+navbarItem.addEventListener('mouseenter', () => {
+  dropdown.style.display = 'block';
+});
+
+navbarItem.addEventListener('mouseleave', () => {
+  dropdown.style.display = 'none';
+});
+document.getElementById('s').addEventListener('click',()=>{
+    var txt=document.getElementById('searchBox').value
+    window.sessionStorage.setItem('stockname',txt)
+    window.location.href='stockStructure.html'
 })
