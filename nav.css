@@ -4,7 +4,8 @@
     border-color: #343150;
     width: 300px;
     height: 30px;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-left: -5px;
     padding-left: 30px;
 }
 
@@ -12,19 +13,21 @@
     background-color: #03002f;
 }
 
-.navList {
+/* .navList {
     color: rgba(255, 255, 255, 0.7);
-}
+} */
 
 .openAccount{
     width: 150px;
     height: 30px;
     background-color: red;
+    text-decoration: none;
     color: white;
     text-align: center;
     border: 2px solid transparent;
     border-radius: 10px;
-    margin-top: 5px;
+    margin-top: -4px;
+    margin-left: -40px;
     padding-top: 1.5px;
 }
 .openAccount:hover{
@@ -40,8 +43,8 @@
     border: 2px solid white;
     text-align: center;
     border-radius: 10px;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 10px;
+    margin-left: -25px;
     /* padding-top: 1.5px; */
 }
 .login:hover{
@@ -49,7 +52,7 @@
     background-color: red;
     transition: 2s;
 }
-a{
+.mainNavCss a{
     text-decoration: none;
     color: white;
     /* width: 20px; */
@@ -70,34 +73,35 @@ a{
     background-color: red;
     transition: 2s;
 }
-
-nav ul {
+.mainNavCss ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
   }
   
-  nav li {
+  .mainNavCss li {
     margin-right: 20px;
   }
   
-  nav li.dropdown {
+  .mainNavCssav li.dropdown {
     position: relative;
   }
   
-  nav li.dropdown:hover .dropdown-menu {
+  .mainNavCss li.dropdown:hover .dropdown-menu {
     display: block;
   }
   
-  nav a {
+  .mainNavCss a {
     text-decoration: none;
-    color: #333;
+    color: white;
     display: block;
     padding: 10px;
+    margin-left: -4px;
+    margin-top: 5px;
   }
   
-  nav .dropdown-menu {
+  .mainNavCss .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
@@ -111,3 +115,33 @@ nav ul {
   table{
     width: 40px;
   }
+.mainNavCss .nav-link:hover
+{
+    color: red;
+}
+.dropdown1 {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 54.5%;
+  z-index: 1;
+  background-color: white;
+  color: #03002f;
+  width: 280px;
+  border-radius: 5px;
+}
+
+li:hover .dropdown1 {
+  display: block;
+}
+.s{
+  position: relative;
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  display: inline-block;
+  top: 10px;
+  right: 40px;
+  border-radius: 20px;
+}
+
