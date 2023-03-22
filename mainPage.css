@@ -60,7 +60,7 @@ body{
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
-    /* font-family: 'Rubik', sans-serif; */
+    font-family: 'Tilt Warp', cursive;
 }
 
 .bottomSvgRow {
@@ -81,17 +81,11 @@ body{
     font-size: 60px;
     text-align: center;
     height: 20px;
-    /* font-family: 'Raleway', sans-serif; */
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Tilt Warp', cursive;
 
 }
-/* center{
-    position: relative;
-    height: 0px;
-} */
 
 .bottomSvgMain {
-    /* margin-top: 20px; */
     box-shadow: -1px 3px 15px gainsboro;
     height: 150px;
     border-radius: 10px;
@@ -119,13 +113,11 @@ body{
     position: relative;
     cursor: pointer;
     border-top: 9px solid transparent;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Tilt Warp', cursive;
 }
 
 .boxContentData:hover {
-    /* box-shadow: 5px 3px 3px  red; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /* border-top: 3px solid red; */
     color: red;
 }
 
@@ -178,16 +170,12 @@ body{
 }
 .subscriptionyellow:hover
 {
-    /* box-shadow: 1px 1px 1px 3px yellow; */
     box-shadow: 0px 5px 25px 0px #fffc5b;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) */
 }
 .subscriptionblue:hover{
-/* box-shadow: 10px 1px 1px 1px blue; */
     box-shadow: 0px 5px 25px 0px #5773f0;
 }
 .subscriptionred:hover{
-    /* box-shadow: 10px 10px 20px 5px red; */
     box-shadow: 0px 5px 25px 0px #ff453e;
 }
 .planButton {
@@ -221,7 +209,7 @@ body{
     height: 400px;
     padding-top: 60px;
     margin-bottom: 80px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Tilt Warp', cursive;
 }
 
 .research-image-block {
@@ -237,17 +225,13 @@ body{
 
 .research-text {
     padding-top: 70px;
-    /* max-width: 100px; */
     color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 40px;
     font-weight: 80px;
     margin-left: 100px;
-    /* padding-bottom:1000px ; */
-    /* margin-bottom: 100px; */
     padding-left: 300px;
-    /* max-width: 300px; */
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Tilt Warp', cursive;
 }
 
 .research-text-inner {
@@ -270,8 +254,7 @@ body{
     font-size: 40px;
     font-weight: 80px;
     text-align: center;
-    font-family: 'Rubik', sans-serif;
-    /* margin-right: 375px; */
+    font-family: 'Tilt Warp', cursive;
 }
 
 .get-started-inner {
@@ -306,7 +289,7 @@ body{
     font-size: xx-large;
     font-weight: bolder;
     text-align: center;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Tilt Warp', cursive;
 }
 
 .partner-img {

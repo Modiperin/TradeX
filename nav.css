@@ -4,7 +4,7 @@
     border-color: #343150;
     width: 300px;
     height: 30px;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-left: -5px;
     padding-left: 30px;
 }
@@ -43,7 +43,7 @@
     border: 2px solid white;
     text-align: center;
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: -2px;
     margin-left: -25px;
     /* padding-top: 1.5px; */
 }
@@ -64,9 +64,9 @@
     border: 2px solid white;
     text-align: center;
     border-radius: 10px;
-    margin-top: 5px;
     margin-left: 5px;
     padding-top: 1.5px;
+    margin-top: -2px;
 }
 .logout:hover{
     border: 2px solid transparent;
@@ -136,11 +136,10 @@ li:hover .dropdown1 {
 }
 .s{
   position: relative;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   background-color: white;
   display: inline-block;
-  top: 10px;
   right: 40px;
   border-radius: 20px;
 }

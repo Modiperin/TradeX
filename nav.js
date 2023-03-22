@@ -105,7 +105,7 @@ document.getElementById('searchBox').addEventListener("keyup",()=>{
     let names=""
     for(var i=0;i<find.length;i++)
     {
-        names=names+(i+1)+". "+find[i]+"<br>"
+        names=names+find[i]+"<br>"
     }
     // document.getElementById('dropdown1').style.padding='10px'
     document.getElementById('writer').innerHTML=names
