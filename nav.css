@@ -13,9 +13,9 @@
     background-color: #03002f;
 }
 
-.navList {
+/* .navList {
     color: rgba(255, 255, 255, 0.7);
-}
+} */
 
 .openAccount{
     width: 150px;
@@ -52,7 +52,7 @@
     background-color: red;
     transition: 2s;
 }
-a{
+.mainNavCss a{
     text-decoration: none;
     color: white;
     /* width: 20px; */
@@ -73,35 +73,35 @@ a{
     background-color: red;
     transition: 2s;
 }
-nav ul {
+.mainNavCss ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
   }
   
-  nav li {
+  .mainNavCss li {
     margin-right: 20px;
   }
   
-  nav li.dropdown {
+  .mainNavCssav li.dropdown {
     position: relative;
   }
   
-  nav li.dropdown:hover .dropdown-menu {
+  .mainNavCss li.dropdown:hover .dropdown-menu {
     display: block;
   }
   
-  nav a {
+  .mainNavCss a {
     text-decoration: none;
-    color: #333;
+    color: white;
     display: block;
     padding: 10px;
     margin-left: -4px;
     margin-top: 5px;
   }
   
-  nav .dropdown-menu {
+  .mainNavCss .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
@@ -115,7 +115,7 @@ nav ul {
   table{
     width: 40px;
   }
-.navbar .nav-link:hover
+.mainNavCss .nav-link:hover
 {
     color: red;
 }
@@ -144,3 +144,4 @@ li:hover .dropdown1 {
   right: 40px;
   border-radius: 20px;
 }
+

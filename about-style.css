@@ -7,13 +7,19 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body{
+#con{
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #EFEFEF;
 }
+/* body #nav
+{
+  padding: 0;
+  margin: 0  0 0 0;
+  display: block;
+} */
 .slide-container{
   max-width: 1120px;
   width: 100%;
