@@ -67,7 +67,7 @@ document.getElementById('signUp1').addEventListener('click',()=>{
 // })
 
 document.getElementById('searchBox').addEventListener('click',async ()=>{
-   var url = 'http://192.168.0.71:3000/stock/getStock'
+   var url = 'http://192.168.225.117:3000/stock/getStock'
     var res= await fetch(url,{
         "method":"GET"
     })
