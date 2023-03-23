@@ -28,9 +28,11 @@ body {
   background-color: #03002f;
   transition: 2s;
 }
+
 .makingmarket {
   font-size: 1.5em;
 }
+
 .login {
   color: white;
   margin-top: 6px;
@@ -49,29 +51,29 @@ body {
 }
 
 .infoContent {
+  position: relative;
   width: 140.2px;
   height: 53px;
   font-size: 18px;
-  font-weight: 700;
   text-align: center;
-  padding-top: 10px;
-  margin: 0 0 0 30px;
+  margin: 0 5px 0 30px;
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
-  font-family: "Tilt Warp", cursive;
+  font-family: 'Inter', sans-serif;
 }
 
 .bottomSvgRow {
   padding-left: 210px;
 }
+
 .bottomSvgMain:hover {
   box-shadow: -10px 4px 40px gainsboro;
 }
 
 .welcome {
   position: relative;
-  bottom: 300px;
+  bottom: 200px;
   margin: auto;
   margin-bottom: 20px;
   padding-bottom: 30px;
@@ -79,7 +81,9 @@ body {
   font-size: 60px;
   text-align: center;
   height: 20px;
-  font-family: "Tilt Warp", cursive;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  pointer-events: none;
 }
 
 .bottomSvgMain {
@@ -98,19 +102,20 @@ body {
   justify-content: space-around;
   flex-direction: row;
 }
+
 .boxContentData {
   outline: #ebebeb solid 1px;
   max-width: 23%;
-  padding: 24px 0 41px 30px;
+  padding: 24px 10px 41px 11px;
   width: 100%;
   height: 270px;
-  margin-left: 30px;
+  margin-left: 80px;
   border-radius: 5px;
   margin-top: 50px;
   position: relative;
   cursor: pointer;
   border-top: 9px solid transparent;
-  font-family: "Tilt Warp", cursive;
+  font-family: 'Inter', sans-serif;
 }
 
 .boxContentData:hover {
@@ -120,6 +125,12 @@ body {
 
 .floater {
   position: sticky;
+}
+
+.svgText {
+  width: 200px;
+  font-size: 50px;
+  pointer-events: none;
 }
 
 .mainSubscription {
@@ -146,26 +157,31 @@ body {
   position: relative;
   cursor: pointer;
   border-top: 9px solid transparent;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Inter', sans-serif;
   transition: all 250ms;
   font-weight: bold;
 }
+
 .subscriptionData:hover {
   height: 520px;
   width: 320px;
 }
+
 .subscriptionyellow:hover {
   /* box-shadow: 0px 5px 25px 0px #fffc5b; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .subscriptionblue:hover {
   /* box-shadow: 0px 5px 25px 0px #5773f0; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .subscriptionred:hover {
   /* box-shadow: 0px 5px 25px 0px #ff453e; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .planButton {
   width: 203px;
   height: 47.6px;
@@ -174,7 +190,7 @@ body {
   padding: 12.7px 50px 13.9px 51px;
   background-color: #03002f;
   opacity: 0.8;
-  font-family: Roboto-Medium;
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
@@ -187,6 +203,7 @@ body {
   display: inline-block;
   transition: all 2s;
 }
+
 .planButton:hover {
   font-weight: bold;
 }
@@ -197,7 +214,7 @@ body {
   height: 400px;
   padding-top: 60px;
   margin-bottom: 80px;
-  font-family: "Tilt Warp", cursive;
+  font-family: 'Inter', sans-serif;
 }
 
 .research-image-block {
@@ -220,7 +237,7 @@ body {
   font-weight: 80px;
   margin-left: 100px;
   padding-left: 300px;
-  font-family: "Tilt Warp", cursive;
+  font-family: 'Inter', sans-serif;
 }
 
 .research-text-inner {
@@ -239,12 +256,10 @@ body {
 
 .get-started-text {
   color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 40px;
   font-weight: 80px;
   text-align: center;
-  font-family: "Tilt Warp", cursive;
+  font-family: 'Inter', sans-serif;
 }
 
 .get-started-inner {
@@ -279,15 +294,17 @@ body {
   font-size: xx-large;
   font-weight: bolder;
   text-align: center;
-  font-family: "Tilt Warp", cursive;
+  font-family: 'Inter', sans-serif;
 }
 
 .partner-img {
   width: 200px;
 }
+
 #footer {
   background-color: white;
 }
+
 #loginDiv {
   width: 465px;
   height: 35px;
@@ -297,14 +314,17 @@ body {
   text-align: center;
   padding-top: 5px;
 }
+
 ::selection {
   color: whitesmoke;
   background: #03002f;
 }
+
 .partner-img-stra {
   width: 200px;
   margin-top: -10px;
 }
+
 .first-element {
   font-weight: bolder;
 }

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="104" viewBox="0 0 120 104">
+    <defs>
+        <clipPath id="pcomvnz2ha">
+            <path data-name="Rectangle 1656" transform="translate(.33)" style="fill:none" d="M0 0h120v104H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="Group 6223">
+        <g data-name="Group 6222" transform="translate(-.331)" style="clip-path:url(#pcomvnz2ha)">
+            <path data-name="Path 1696" d="M109.393 3a8.472 8.472 0 0 0-7.05 3.77H10.426V3H1v16.966h9.426V16.2h91.918A8.482 8.482 0 1 0 109.393 3" transform="translate(.611 2.655)" style="fill:#fff"/>
+            <path data-name="Path 1697" d="M78.979 10C77.254 20.854 54.2 27.554 47.269 29.886 33.163 25.72 18.471 18.673 13 10v82.945h65.979V10" transform="translate(11.232 8.851)" style="fill:#a4d7ef"/>
+            <path data-name="Line 48" transform="translate(11.33 19)" style="stroke:#03002f;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" d="M90 0H0"/>
+            <path data-name="Line 49" transform="translate(11.33 9)" style="stroke:#03002f;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" d="M0 0h90"/>
+            <circle data-name="Ellipse 106" cx="8.5" cy="8.5" r="8.5" transform="translate(101.33 5)" style="stroke:#03002f;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+            <path data-name="Path 1698" d="M1 3h9.426v16.966H1" transform="translate(.611 2.655)" style="stroke:#03002f;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+            <path data-name="Path 1699" d="M47.159 29.865c6.909-2.328 30.092-9 31.819-19.865v82.945H13V10c7.131 11.311 29.8 19.829 46.636 22.842" transform="translate(11.233 8.851)" style="stroke:#03002f;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+            <path data-name="Line 50" transform="translate(44.33 60)" style="stroke:#03002f;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" d="M0 0v16"/>
+            <path data-name="Line 51" transform="translate(51.33 60)" style="stroke:#03002f;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" d="M0 0v16"/>
+            <path data-name="Path 1700" d="M27 43.311h5.655a1.886 1.886 0 0 0 1.885-1.885v-7.54A1.886 1.886 0 0 0 32.655 32H27z" transform="translate(23.623 28.323)" style="stroke:#03002f;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+            <rect data-name="Rectangle 1655" width="9" height="16" rx="2" transform="translate(64.33 60)" style="stroke:#03002f;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+            <path data-name="Line 52" transform="translate(1.33 2)" style="stroke:#03002f;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" d="M0 0v26"/>
+        </g>
+    </g>
+</svg>

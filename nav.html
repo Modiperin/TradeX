@@ -18,7 +18,8 @@
 </head>
 
 <body>
-    <marquee behavior="scroll" direction="left" width="100%" scrollamount="15" style="height: 20px;">
+    
+    <marquee behavior="scroll" direction="left" width="100%" scrollamount="15" style="height: 20px;position: fixed;padding-bottom: 105px;background-color: bisque;z-index: 2;">
         <section class="d-flex container sensexNifty m-0 p-0 w-100">
             <div id="t1" class="pe-4">
                 <p><b>NIFTY 50 </b> 17856.50<span class="text-danger"> &nabla;-36.95(-0.21%) </span></p>
@@ -32,11 +33,10 @@
             <div id="t4" class="pe-4">
                 <p><b>NIFTY MIDCAP 100 </b> 31029.45 <span class="text-success">&Delta;; 72.80 (+0.24%) </span></p>
             </div>
+        </section>
     </marquee>
-    </section>
-    </marquee>
-
-    <nav class="navbar navbar-expand-sm mainNavCss">
+    <nav class="navbar navbar-expand-sm mainNavCss" style="position: fixed; z-index: 2;width: 1520px;height: 120px;margin-top: 20px;">
+        
         <div class="container-fluid justify-content-evenly">
             <ul class="navbar-nav">
                 <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
@@ -44,56 +44,59 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <li class="nav-item dropdown" style="padding: 0 20px 0 0px;">
+                <li class="nav-item dropdown" style="padding: 0 20px 0 0px;" >
                 </li>
-                <nav class="navbar navbar-expand-lg mainNavCss">
-                    <!-- <div class="container-fluid justify-content-evenly"> -->
                     <a href="mainPage.html" class="navbar-brand navList"><img src="homebanner.png" class="rounded-pill"
-                            style="width: 40px;margin-top: -10px;"></a>
-                </li>
-                <li class="nav-item" style="padding: 0 20px 0 20px;margin-top: -5px;">
-                    <a class="nav-link navList" href="mainPage.html">Invest</a>
-                </li>
-                <li class="nav-item" style="padding: 0 20px 0 20px;margin-top: -5px;">
-                    <a class="nav-link navList" href="insurance.html">Insurance</a>
-                </li>
-                <li class="nav-item" style="padding: 0 20px 0 20px;margin-top: -5px;">
-                    <a class="nav-link navList" href="mainPage.html">Markets</a>
-                </li>
-                <li class="nav-item" style="padding: 0 20px 0 20px;margin-top: -5px;">
-                    <a class="nav-link navList" href="#scp">Pricing</a>
-                </li>
-                <li class="nav-item" style="padding: 0 20px 0 20px;margin-top: -5px;">
-                    <a class="nav-link navList" href="faq.html">Support</a>
-                </li>
-                <li class="nav-item" style="padding: 0 20px 0 20px;">
-                    <form>
-                        <input type="text" placeholder="What Are you looking for?" class="searchBox" id="searchBox">
-                        <ul class="dropdown1">
-                            <li id="writer"></li>
-                          </ul>
-                    </form>
-                </li>
-                <span class="s" id="s"><img src="icons8-search-50.png" id="searchImage" style="height: 30px;width: 30px;border-radius: 20px;padding-top: 8px;padding-left: 7px;" ></span>
-                <li id="signUp">
-                    <a href="signUpForm.html">
-                        <div class="openAccount" id="signUp">Open Account</div>
-                    </a>
-                </li>
-                <li id="signUp1">
-                    <div class="login" id="signUp1" data-bs-toggle="modal" data-bs-target="#myModal">Login</div>
-                </li>
-                <li id="logout">
-                    <a href="mainPage.html">
-                        <div class="logout" id="logout">Logout</div>
-                    </a>
-                </li>
+                            style="width: 40px;"></a>
+                    </li>
+                    <li class="nav-item" style="padding: 0 20px 0 20px;">
+                        <a class="nav-link navList" href="mainPage.html">Invest</a>
+                    </li>
+                    <li class="nav-item" style="padding: 0 20px 0 20px;">
+                        <a class="nav-link navList" href="insurance.html">Insurance</a>
+                    </li>
+                    <li class="nav-item" style="padding: 0 20px 0 20px;">
+                        <a class="nav-link navList" href="mainPage.html">Markets</a>
+                    </li>
+                    <li class="nav-item" style="padding: 0 20px 0 20px;">
+                        <a class="nav-link navList" href="#scp">Pricing</a>
+                    </li>
+                    <li class="nav-item" style="padding: 0 20px 0 20px;">
+                        <a class="nav-link navList" href="faq.html">Support</a>
+                    </li>
+                    <li class="nav-item" style="padding: 0 20px 0 20px;">
+                        <form>
+                            <input type="text" placeholder="What Are you looking for?" class="searchBox" id="searchBox">
+                            <ul class="dropdown1">
+                                <li id="writer"></li>
+                            </ul>
+                        </form>
+                    </li>
+                    <span class="s" id="s"><img src="icons8-search-50.png" id="searchImage"
+                            style="height: 30px;width: 30px;border-radius: 20px;padding-top: 8px;padding-left: 7px;"></span>
+                    <li id="signUp">
+                        <a href="signUpForm.html">
+                            <div class="openAccount" id="signUp">Open Account</div>
+                        </a>
+                    </li>
+                    <li id="signUp1">
+                        <div class="login" id="signUp1" data-bs-toggle="modal" data-bs-target="#myModal">Login</div>
+                    </li>
+                    <li id="logout">
+                        <a href="mainPage.html">
+                            <div class="logout" id="logout">Logout</div>
+                        </a>
+                    </li>
+                    <li id="logout1">
+                        <a href="dashBoard.html">
+                            <div class="logout1" id="logout1">Dashboard</div>
+                        </a>
+                    </li>
             </ul>
         </div>
         </div>
     </nav>
     </div>
-    </nav>
 </body>
 <script src="nav.js"></script>
 
