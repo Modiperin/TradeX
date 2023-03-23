@@ -9,8 +9,10 @@ if (loggedUser != null) {
   document.getElementById("signUp1").style.display = "none";
   //    logout.classList.add('active')
   document.getElementById("logout").style.display = "block";
+  document.getElementById("logout1").style.display = "block";
 }
 if (loggedUser == null) {
+  document.getElementById("logout1").style.display = "none";
   document.getElementById("logout").style.display = "none";
   // window.location.href='mainPage.html'
 }

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="107" height="89" viewBox="0 0 107 89">
+    <defs>
+        <clipPath id="akequ7obia">
+            <path data-name="Rectangle 1664" transform="translate(-.037)" style="fill:none" d="M0 0h107v89H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="Group 6258">
+        <path data-name="Rectangle 1662" transform="translate(2 29)" style="fill:#fff" d="M0 0h14v37H0z"/>
+        <g data-name="Group 6233">
+            <g data-name="Group 6232" transform="translate(.037)" style="clip-path:url(#akequ7obia)">
+                <path data-name="Rectangle 1663" transform="translate(1.963 29)" style="stroke-linejoin:round;stroke:#03002f;stroke-width:2px;fill:none" d="M0 0h14v37H0z"/>
+            </g>
+        </g>
+        <path data-name="Rectangle 1665" transform="translate(24 11)" style="fill:#fff" d="M0 0h14v41H0z"/>
+        <path data-name="Rectangle 1666" transform="translate(24 11)" style="stroke-linejoin:round;stroke:#03002f;stroke-width:2px;fill:none" d="M0 0h14v41H0z"/>
+        <path data-name="Rectangle 1667" transform="translate(46 38)" style="fill:#a4d7ef" d="M0 0h14v40H0z"/>
+        <path data-name="Rectangle 1668" transform="translate(46 38)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#03002f;stroke-width:2px;fill:none" d="M0 0h14v40H0z"/>
+        <path data-name="Rectangle 1669" transform="translate(69 25)" style="fill:#fff" d="M0 0h14v27H0z"/>
+        <path data-name="Rectangle 1670" transform="translate(69 25)" style="stroke-linejoin:round;stroke:#03002f;stroke-width:2px;fill:none" d="M0 0h14v27H0z"/>
+        <path data-name="Line 61" transform="translate(9 16)" style="stroke-linejoin:round;stroke:#03002f;stroke-width:2px;fill:none" d="M0 13V0"/>
+        <path data-name="Line 62" transform="translate(9 66)" style="stroke-linejoin:round;stroke:#03002f;stroke-width:2px;fill:none" d="M0 16V0"/>
+        <g data-name="Group 6235">
+            <g data-name="Group 6234" transform="translate(.037)" style="clip-path:url(#akequ7obia)">
+                <path data-name="Line 63" transform="translate(30.963)" style="stroke-linejoin:round;stroke:#03002f;stroke-width:2px;fill:none" d="M0 11V0"/>
+            </g>
+        </g>
+        <path data-name="Line 64" transform="translate(31 52)" style="stroke-linejoin:round;stroke:#03002f;stroke-width:2px;fill:none" d="M0 14V0"/>
+        <path data-name="Path 1761" d="M0 9.934V0" transform="translate(53.927 28.17)" style="stroke:#03002f;stroke-width:2px;fill:none"/>
+        <g data-name="Group 6237">
+            <g data-name="Group 6236" transform="translate(.037)" style="clip-path:url(#akequ7obia)">
+                <path data-name="Line 66" transform="translate(53.963 78)" style="stroke-linejoin:round;stroke:#03002f;stroke-width:2px;fill:none" d="M0 11V0"/>
+            </g>
+        </g>
+        <path data-name="Line 67" transform="translate(75 11)" style="stroke-linejoin:round;stroke:#03002f;stroke-width:2px;fill:none" d="M0 14V0"/>
+        <path data-name="Line 68" transform="translate(75 52)" style="stroke-linejoin:round;stroke:#03002f;stroke-width:2px;fill:none" d="M0 23V0"/>
+        <path data-name="Rectangle 1673" transform="translate(91 16)" style="fill:#a4d7ef" d="M0 0h14v17H0z"/>
+        <g data-name="Group 6239">
+            <g data-name="Group 6238" transform="translate(.037)" style="clip-path:url(#akequ7obia)">
+                <path data-name="Rectangle 1674" transform="translate(90.963 16)" style="stroke-linecap:round;stroke-linejoin:round;stroke:#03002f;stroke-width:2px;fill:none" d="M0 0h14v17H0z"/>
+                <path data-name="Line 69" transform="translate(97.963 2)" style="stroke-linejoin:round;stroke:#03002f;stroke-width:2px;fill:none" d="M0 14V0"/>
+            </g>
+        </g>
+        <path data-name="Line 70" transform="translate(98 33)" style="stroke-linejoin:round;stroke:#03002f;stroke-width:2px;fill:none" d="M0 19V0"/>
+    </g>
+</svg>
