@@ -45,336 +45,341 @@
 
 <body>
     <div id="nav"></div>
-    <div class="svgDiv">
-        <svg width="100%" height="460" style="background-color:  #03002f;" id="svg" class="svgg">
-            <circle cx="580" cy="560" r="260" stroke="rgb(44,45,101)" stroke-width="170" fill="rgb(2,5,42,0)"></circle>
-            <!--blue-->
-            <circle cx="930" cy="-25" r="250" stroke="rgb(234, 82, 68)" stroke-width="170" fill="  rgb(2,5,42)">
-            </circle>
-            <text x="150" y="200" class="svgText" fill="rgb(249, 245, 235)">Invest in Stocks and make your Portfolio in
-                simple steps</text>
-        </svg>
-        <center><span class="welcome" id="welcome">Welcome User</span></center>
-    </div>
-    <div class="container-fluid bottomSvgMain">
-        <div class="row bottomSvgRow">
-            <div class="col-md-4 mt-5 svgrow">
-                <img src="site.png" alt="" style="width: 70px; height:70px">
-                <span class="infoContent">One site for<br>
-                    all your trading needs
-                </span>
-            </div>
-            <div class="col-md-4 mt-5 svgrow">
-                <img src="people.png" alt="" style="width: 70px; height:70px">
-                <span class="infoContent">Trusted by over<br>
-                    8 million users
-                </span>
-            </div>
-            <div class="col-md-4 mt-5 svgrow">
-                <img src="analysis.png" alt="" style="width: 70px; height:70px">
-                <span class="infoContent">Deep and latest<br>
-                    analysis everyday
-                </span>
-            </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="up-arrow.png" style="height: 30px; width: 30px;"></button>
+    <div style="padding-top: 50px;" id="topper">
+        <div class="svgDiv">
+            <svg width="100%" height="460" style="background-color:  #03002f;" id="svg" class="svgg">
+                <circle cx="580" cy="560" r="260" stroke="rgb(44,45,101)" stroke-width="170" fill="rgb(2,5,42,0)">
+                </circle>
+                <!--blue-->
+                <circle cx="930" cy="-25" r="250" stroke="rgb(234, 82, 68)" stroke-width="170" fill="  rgb(2,5,42)">
+                </circle>
+                <text x="150" y="200" class="svgText" fill="rgb(249, 245, 235)">Invest in Stocks and make your Portfolio
+                    in
+                    simple steps</text>
+            </svg>
+            <center><span class="welcome" id="welcome">Welcome User</span></center>
         </div>
-    </div>
-    <!-- <div class="container-fluid">
-        <h2 onclick="callStock('ADANIPOWER')">Adani</h2>
-        <h2 onclick="callStock('LICHSGFIN')">LIC</h2>
-        <h2 onclick="callStock('TATA MOTORS')">TATA MOTORS</h2>
-        <h2 onclick="callStock('TCS')">TCS</h2>
-    </div> -->
-    <hr class="mt-5">
-    <div class="container" style="margin-top: 100px;">
-        <center>
-            <h1>Finance and Market Today</h1>
-        </center>
-        <div class="mainBoxDiv">
-            <div class="d-flex flex-column p-3">
-                <div class="d-flex boxContent">
-                    <div class="boxContentData">
-                        <div class="row" style="padding-left: 12px;">
-                            Stocks
-                        </div>
-                        <div class="row">
-                            <img src="home_tile1.svg" style="width: 250px; height:170px">
-                        </div>
-                    </div>
-                    <div class="boxContentData">
-                        <div class="row" style="padding-left: 12px;">
-                            Mutual Funds
-                        </div>
-                        <div class="row">
-                            <img src="home_tile2.svg" style="width: 200px; height:150px">
-                        </div>
-                    </div>
-                    <div class="boxContentData">
-                        <div class="row" style="padding-left: 12px;">
-                            Derivatives
-                        </div>
-                        <div class="row">
-                            <img src="home_tile3.svg" style="width: 250px; height:200px">
-                        </div>
-                    </div>
-                    <div class="boxContentData">
-                        <div class="row" style="padding-left: 12px;">
-                            IPO
-                        </div>
-                        <div class="row">
-                            <img src="home_tile7.svg" style="width: 250px; height:200px">
-                        </div>
-                    </div>
+        <div class="container-fluid bottomSvgMain">
+            <div class="row bottomSvgRow">
+                <div class="col-md-4 mt-5 svgrow">
+                    <img src="site.png" alt="" style="width: 70px; height:70px">
+                    <span class="infoContent">One site for<br>
+                        all your trading needs
+                    </span>
+                </div>
+                <div class="col-md-4 mt-5 svgrow">
+                    <img src="people.png" alt="" style="width: 70px; height:70px">
+                    <span class="infoContent">Trusted by over<br>
+                        8 million users
+                    </span>
+                </div>
+                <div class="col-md-4 mt-5 svgrow">
+                    <img src="analysis.png" alt="" style="width: 70px; height:70px">
+                    <span class="infoContent">Deep and latest<br>
+                        analysis everyday
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
-    <hr class="mt-5">
-    <div class="container mainSubscription" style="margin-top: 50px;">
-        <center style="text-align:center">
-            <h1>Trade More and Pay less</h1><br>
-            Choose a pricing plan suited to your needs and start<br>
-            the journey to financial security
-        </center>
-        <div class="d-flex subscription" id="scp">
-            <div class="subscriptionData subscriptionblue">
-                <!-- <div class="row" style="margin-left: 10px;"> -->
-                <div class="row" style="justify-content: flex-end;font-size: 12px; color: #0d6efd;">
-                    Brokerage Plan
-                </div>
-                <b>
-                    <p style="font-weight: 60px;font-size: 20px; color:#0d6efd">Lite</p>
-                </b>
-                <b>
-                    <p style="font-size: 25px;">&#8377;10/Order</p>
-                </b>
-                <p>
-                    <span>Digital-only Services</span>
-                    with great brokerages rate
-                </p>
-                <p>
-                    <span class="bi bi-check green-color"> </span>
-                    Flat Brokerages
-                </p>
-                <p>
-                    <span class="bi bi-check green-color"> </span>
-                    A digital-only plan
-                </p>
-                <p>
-                    <span class="bi bi-check green-color"> </span>
-                    Pay as you use the tools<br><br>
-                </p>
-                <!-- <p style="padding-top: 20%;">View Full Plan</p> -->
-                <button type="button" class="btn btn-primary planButton" data-bs-toggle="modal"
-                    data-bs-target="#myModal">
-                    Choose Plan
-                </button>
-                <div class="modal fade modal-xl" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false"
-                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header ">
-                                <h1 class="modal-title fs-5" id="staticBackdropLabel">LOGIN</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+        <hr class="mt-5">
+        <div class="container" style="margin-top: 100px;">
+            <center>
+                <h1>Finance and Market Today</h1>
+            </center>
+            <div class="mainBoxDiv">
+                <div class="d-flex flex-column p-3">
+                    <div class="d-flex boxContent">
+                        <div class="boxContentData">
+                            <div class="row" style="padding-left: 12px;">
+                                Stocks
                             </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                        <input type="email" class="form-control" id="emailVal"
-                                            aria-describedby="emailHelp" placeholder="Enter your email address">
-                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone
-                                            else.</div>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="passVal"
-                                            placeholder="Enter your password">
-                                    </div>
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
-                                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
-                                    </div>
-                                    <div id="loginDiv">
-                                        <span id="login">Login</span>
-                                    </div>
-                                    <center><div>
-                                        <span>new user??  </span><span><a href="signUpForm.html">signup now</a></span>
-                                    </div></center>
-                                    <div class="text-center">
-                                        <a href="#" class="">Forgot Password ?</a>
-                                    </div>
-                                </form>
+                            <div class="row">
+                                <img src="home_tile1.svg" style="width: 250px; height:170px">
                             </div>
-
+                        </div>
+                        <div class="boxContentData">
+                            <div class="row" style="padding-left: 12px;">
+                                Mutual Funds
+                            </div>
+                            <div class="row">
+                                <img src="home_tile6.svg" style="width: 200px; height:150px">
+                            </div>
+                        </div>
+                        <div class="boxContentData">
+                            <div class="row" style="padding-left: 12px;">
+                                Insurance
+                            </div>
+                            <div class="row">
+                                <img src="home_tile3.svg" style="width: 250px; height:200px">
+                            </div>
+                        </div>
+                        <div class="boxContentData">
+                            <div class="row" style="padding-left: 12px;">
+                                IPO
+                            </div>
+                            <div class="row">
+                                <img src="home_tile7.svg" style="width: 250px; height:200px">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="subscriptionData subscriptionyellow">
-                <div class="row" style="justify-content: flex-end;font-size: 12px; color: orange;">
-                    Brokerage Plan
+        </div>
+        <hr class="mt-5">
+        <div class="container mainSubscription" style="margin-top: 50px;">
+            <center style="text-align:center">
+                <h1>Trade More and Pay less</h1><br>
+                Choose a pricing plan suited to your needs and start<br>
+                the journey to financial security
+            </center>
+            <div class="d-flex subscription" id="scp">
+                <div class="subscriptionData subscriptionblue">
+                    <!-- <div class="row" style="margin-left: 10px;"> -->
+                    <div class="row" style="justify-content: flex-end;font-size: 12px; color: #0d6efd;">
+                        Brokerage Plan
+                    </div>
+                    <b>
+                        <p style="font-weight: 60px;font-size: 20px; color:#0d6efd">Lite</p>
+                    </b>
+                    <b>
+                        <p style="font-size: 25px;">&#8377;10/Order</p>
+                    </b>
+                    <p>
+                        <span>Digital-only Services</span>
+                        with great brokerages rate
+                    </p>
+                    <p>
+                        <span class="bi bi-check green-color"> </span>
+                        Flat Brokerages
+                    </p>
+                    <p>
+                        <span class="bi bi-check green-color"> </span>
+                        A digital-only plan
+                    </p>
+                    <p>
+                        <span class="bi bi-check green-color"> </span>
+                        Pay as you use the tools<br><br>
+                    </p>
+                    <!-- <p style="padding-top: 20%;">View Full Plan</p> -->
+                    <button type="button" class="btn btn-primary planButton" data-bs-toggle="modal"
+                        data-bs-target="#myModal">
+                        Choose Plan
+                    </button>
+                    <div class="modal fade modal-xl" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header ">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">LOGIN</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="emailVal"
+                                                aria-describedby="emailHelp" placeholder="Enter your email address">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone
+                                                else.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="passVal"
+                                                placeholder="Enter your password">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+                                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                        </div>
+                                        <div id="loginDiv">
+                                            <span id="login">Login</span>
+                                        </div>
+                                        <center>
+                                            <div>
+                                                <span>new user?? </span><span><a href="signUpForm.html">signup
+                                                        now</a></span>
+                                            </div>
+                                        </center>
+                                        <div class="text-center">
+                                            <a href="#" class="">Forgot Password ?</a>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <b>
-                    <p style="font-weight: 60px;font-size: 20px; color: orange">Elite</p>
-                </b>
-                <b>
-                    <p style="font-size: 25px;">&#8377;7/Order</p>
-                </b>
-                <p>
-                    <span>Rich on features,</span>
-                    Rich on features, high on privileges
-                </p>
-                <p>
-                    <span class="bi bi-check green-color"> </span>
-                    Free access to tools
-                </p>
-                <p>
-                    <span class="bi bi-check green-color"> </span>
-                    No minimum orders
-                </p>
-                <p>
-                    <span class="bi bi-check green-color"> </span>
-                    Value-added services included
-                </p>
-                <!-- <p style="padding-top: 20%;">View Full Plan</p> -->
-                <button type="button" class="btn btn-primary planButton" data-bs-toggle="modal"
-                    data-bs-target="#myModal" style="background-color: orange;">
-                    Choose Plan
-                </button>
-            </div>
-            <div class="subscriptionData subscriptionred">
-                <div class="row" style="justify-content: flex-end;font-size: 12px; color: rgb(250, 71, 71);">
-                    Brokerage Plan
+                <div class="subscriptionData subscriptionyellow">
+                    <div class="row" style="justify-content: flex-end;font-size: 12px; color: orange;">
+                        Brokerage Plan
+                    </div>
+                    <b>
+                        <p style="font-weight: 60px;font-size: 20px; color: orange">Elite</p>
+                    </b>
+                    <b>
+                        <p style="font-size: 25px;">&#8377;7/Order</p>
+                    </b>
+                    <p>
+                        <span>Rich on features,</span>
+                        Rich on features, high on privileges
+                    </p>
+                    <p>
+                        <span class="bi bi-check green-color"> </span>
+                        Free access to tools
+                    </p>
+                    <p>
+                        <span class="bi bi-check green-color"> </span>
+                        No minimum orders
+                    </p>
+                    <p>
+                        <span class="bi bi-check green-color"> </span>
+                        Value-added services included
+                    </p>
+                    <!-- <p style="padding-top: 20%;">View Full Plan</p> -->
+                    <button type="button" class="btn btn-primary planButton" data-bs-toggle="modal"
+                        data-bs-target="#myModal" style="background-color: orange;">
+                        Choose Plan
+                    </button>
                 </div>
-                <b>
-                    <p style="font-weight: 60px;font-size: 20px;color: rgb(250, 71, 71);">Premium</p>
-                </b>
-                <b>
-                    <p style="font-size: 25px;">0.30%/Order</p>
-                </b>
-                <p>
-                    <span>All the benefits of Elite,</span>
-                    plus a whole lot more
-                </p>
-                <p>
-                    <span class="bi bi-check green-color"> </span>
-                    Direct access
-                </p>
-                <p>
-                    <span class="bi bi-check green-color"> </span>
-                    Discounted demat charges
-                </p>
-                <p>
-                    <span class="bi bi-check green-color"> </span>
-                    Digital add on plan<br>
-                </p>
-                <!-- <p style="padding-top: 20%;">View Full Plan</p> -->
-                <button type="button" class="btn btn-primary planButton" data-bs-toggle="modal"
-                    data-bs-target="#myModal" style="background-color:  rgb(250, 71, 71);">
-                    Choose Plan
-                </button>
+                <div class="subscriptionData subscriptionred">
+                    <div class="row" style="justify-content: flex-end;font-size: 12px; color: rgb(250, 71, 71);">
+                        Brokerage Plan
+                    </div>
+                    <b>
+                        <p style="font-weight: 60px;font-size: 20px;color: rgb(250, 71, 71);">Premium</p>
+                    </b>
+                    <b>
+                        <p style="font-size: 25px;">0.30%/Order</p>
+                    </b>
+                    <p>
+                        <span>All the benefits of Elite,</span>
+                        plus a whole lot more
+                    </p>
+                    <p>
+                        <span class="bi bi-check green-color"> </span>
+                        Direct access
+                    </p>
+                    <p>
+                        <span class="bi bi-check green-color"> </span>
+                        Discounted demat charges
+                    </p>
+                    <p>
+                        <span class="bi bi-check green-color"> </span>
+                        Digital add on plan<br>
+                    </p>
+                    <!-- <p style="padding-top: 20%;">View Full Plan</p> -->
+                    <button type="button" class="btn btn-primary planButton" data-bs-toggle="modal"
+                        data-bs-target="#myModal" style="background-color:  rgb(250, 71, 71);">
+                        Choose Plan
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid research-report-block">
-        <div class="research-image-block">
-            <div class="research-image"><img src="https://www.nuvamawealth.com/assets/images/home/home_research.svg">
+        <div class="container-fluid research-report-block">
+            <div class="research-image-block">
+                <div class="research-image"><img
+                        src="https://www.nuvamawealth.com/assets/images/home/home_research.svg">
+                </div>
+                <div class="research-text">Research Reports & Recommendations
+                    <p class="research-text-inner">We conduct extensive research for our clients. We delve deep into
+                        over 250 stocks to generate
+                        over 200 institutional-grade research reports a year.</p>
+                </div>
             </div>
-            <div class="research-text">Research Reports & Recommendations
-                <p class="research-text-inner">We conduct extensive research for our clients. We delve deep into
-                    over 250 stocks to generate
-                    over 200 institutional-grade research reports a year.</p>
+        </div>
+
+
+
+
+        <div class="container-fluid d-flex mb-5 mt-2">
+            <img src="https://www.nuvamawealth.com/assets/images/home/emt_screen1.png" alt="" width="650px"
+                height="450px">
+            <div class="container" style="padding-left: 60px; padding-top: 130px; width: 500px;">
+                <b class="makingmarket">Making Market Accessible </b>
+                <p>Download Our Mobile App to find Insightful charts, Advanced Watchlists, and a comprehensive market
+                    section with easy access. Stay on top of your game to become financially secure in no time.
+                </p>
+                <button class="btn  btn-dark link-color:white link-hover-color:danger"><a href="coming-soon.html"
+                        style="text-decoration: none; color: white;">Download
+                        app</a></button>
             </div>
         </div>
-    </div>
-
-
-
-
-    <div class="container-fluid d-flex mb-5 mt-2">
-        <img src="https://www.nuvamawealth.com/assets/images/home/emt_screen1.png" alt="" width="650px" height="450px">
-        <div class="container" style="padding-left: 60px; padding-top: 130px; width: 500px;">
-            <b class="makingmarket">Making Market Accessible </b>
-            <p>Download Our Mobile App to find Insightful charts, Advanced Watchlists, and a comprehensive market
-                section with easy access. Stay on top of your game to become financially secure in no time.
-            </p>
-            <button class="btn  btn-dark link-color:white link-hover-color:danger"><a href="coming-soon.html"
-                    style="text-decoration: none; color: white;">Download
-                    app</a></button>
+        <div class="container-fluid get-started text-center">
+            <div class="get-started-text">
+                Take your first step<br>
+                towards unlimited financial opportunities
+                <br>
+                <p class="get-started-inner">Open a trading account today and get personalized advice for lifetime!</p>
+            </div>
+            <div class="get-started-btn">get started </div>
         </div>
-    </div>
-    <div class="container-fluid get-started text-center">
-        <div class="get-started-text">
-            Take your first step<br>
-            towards unlimited financial opportunities
-            <br>
-            <p class="get-started-inner">Open a trading account today and get personalized advice for lifetime!</p>
-        </div>
-        <div class="get-started-btn">get started </div>
-    </div>
 
-    <div class="container mt-5">
-        <table class="table table-bordered table-hover">
-            <tr>
-                <th class="text-center" colspan="6">TOP COMPANIES IN INDIA</th>
-            </tr>
-            <tr class="first-element">
-                <td>Company Name</td>
-                <td>Last Price</td>
-                <td>Change</td>
-                <td>Market cap</td>
-                <td>Net Sales</td>
-                <td>Net Profit</td>
-            </tr>
-            <tr>
-                <td class="first-element">Reliance</td>
-                <td>2336.65</td>
-                <td class="text-danger">-19.40</td>
-                <td>1,580,903.13</td>
-                <td>423703.00</td>
-                <td>39084.00</td>
-            </tr>
-            <tr>
-                <td class="first-element">TCS</td>
-                <td>3537.65</td>
-                <td class="text-danger">-3.30 </td>
-                <td>1,294,407.72 </td>
-                <td>160341.00</td>
-                <td>38187.00 </td>
-            </tr>
-            <tr>
-                <td class="first-element">HDFC BANK</td>
-                <td>1608.55</td>
-                <td class="text-success">6.55 </td>
-                <td>924,296.00 </td>
-                <td>127753.12</td>
-                <td>21899.52</td>
-            </tr>
-            <tr>
-                <td class="first-element">Infosys</td>
-                <td>1608</td>
-                <td class="text-danger">-3.30 </td>
-                <td>676,890.84 </td>
-                <td>21235.00</td>
-                <td>46,063.00 </td>
-            </tr>
-        </table>
-    </div>>
+        <div class="container mt-5">
+            <table class="table table-bordered table-hover">
+                <tr>
+                    <th class="text-center" colspan="6">TOP COMPANIES IN INDIA</th>
+                </tr>
+                <tr class="first-element">
+                    <td>Company Name</td>
+                    <td>Last Price</td>
+                    <td>Change</td>
+                    <td>Market cap</td>
+                    <td>Net Sales</td>
+                    <td>Net Profit</td>
+                </tr>
+                <tr>
+                    <td class="first-element">Reliance</td>
+                    <td>2336.65</td>
+                    <td class="text-danger">-19.40</td>
+                    <td>1,580,903.13</td>
+                    <td>423703.00</td>
+                    <td>39084.00</td>
+                </tr>
+                <tr>
+                    <td class="first-element">TCS</td>
+                    <td>3537.65</td>
+                    <td class="text-danger">-3.30 </td>
+                    <td>1,294,407.72 </td>
+                    <td>160341.00</td>
+                    <td>38187.00 </td>
+                </tr>
+                <tr>
+                    <td class="first-element">HDFC BANK</td>
+                    <td>1608.55</td>
+                    <td class="text-success">6.55 </td>
+                    <td>924,296.00 </td>
+                    <td>127753.12</td>
+                    <td>21899.52</td>
+                </tr>
+                <tr>
+                    <td class="first-element">Infosys</td>
+                    <td>1608</td>
+                    <td class="text-danger">-3.30 </td>
+                    <td>676,890.84 </td>
+                    <td>21235.00</td>
+                    <td>46,063.00 </td>
+                </tr>
+            </table>
+        </div>>
 
-    <div class="container-fluid partner mt-5 mb-5">
-        <center>
-            <div class="partner-text">Our Platform Partners</div>
-        </center>
-        <div class="row justify-content-center">
-            <div class="col-md-3 mt-5"><img src="https://www.nuvamawealth.com/assets/images/smallcase.jpg" alt=""
-                    class="partner-img"></div>
-            <div class="col-md-3 mt-5"><img src="	https://www.nuvamawealth.com/assets/images/Stratzy.jpg" alt=""
-                    srcset="" class="partner-img-stra"></div>
-            <div class="col-md-3 mt-5"><img src="	https://www.nuvamawealth.com/assets/images/pivottrading.jpg" alt=""
-                    class="partner-img"></div>
-            <div class="col-md-3 mt-5"><img src="	https://www.nuvamawealth.com/assets/images/quantsapp.png" alt=""
-                    class="partner-img"></div>
+        <div class="container-fluid partner mt-5 mb-5">
+            <center>
+                <div class="partner-text">Our Platform Partners</div>
+            </center>
+            <div class="row justify-content-center">
+                <div class="col-md-3 mt-5"><img src="https://www.nuvamawealth.com/assets/images/smallcase.jpg" alt=""
+                        class="partner-img"></div>
+                <div class="col-md-3 mt-5"><img src="	https://www.nuvamawealth.com/assets/images/Stratzy.jpg" alt=""
+                        srcset="" class="partner-img-stra"></div>
+                <div class="col-md-3 mt-5"><img src="	https://www.nuvamawealth.com/assets/images/pivottrading.jpg"
+                        alt="" class="partner-img"></div>
+                <div class="col-md-3 mt-5"><img src="	https://www.nuvamawealth.com/assets/images/quantsapp.png" alt=""
+                        class="partner-img"></div>
+            </div>
         </div>
     </div>
     </div>
