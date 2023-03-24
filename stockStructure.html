@@ -39,22 +39,41 @@
       )
   </script>
 
- <style>
-  .hoverr:hover{
-    background-color: rgba(0, 0, 0, 0.059);
-  }
-  .box-hover:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  <style>
+    .hoverr:hover {
+      background-color: rgba(0, 0, 0, 0.059);
+    }
 
-  }
-  #one_month
-  {
-    padding: 5px;
-  }
-  #mainbox{
-    padding-top: 100px;
-  }
- </style> 
+    .box-hover:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+    #one_month {
+      padding: 5px;
+    }
+
+    #mainbox {
+      padding-top: 100px;
+    }
+
+    .rightcolumn {
+      float: left !important;
+      width: 25% !important;
+      padding-left: 20px !important;
+    }
+
+    .leftcolumn {
+      float: left !important;
+      width: 75% !important;
+    }
+
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      /* padding: 20px; */
+    }
+  </style>
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </head>
 
@@ -98,7 +117,7 @@
       Figures as of 17 Feb 2023, 5:05 PM
       <a class="text-decoration-none text-dark" href="#" role="button">Share</a>
     </div>
-    <nav class="mt-3 mb-3 navbar navbar-expand-sm">
+    <nav class="mt-3 mb-3 navbar navbar-expand-sm ">
       <div class="container justify-content-evenly">
         <ul class="navbar-nav">
           <li class="nav-item p-3">
@@ -109,10 +128,12 @@
 
           <li class="nav-item p-3">
 
-            <a class="nav-link hoverr" style="text-decoration: none; color: black; font-size: 20px;" href="#section2">Graph</a>
+            <a class="nav-link hoverr" style="text-decoration: none; color: black; font-size: 20px;"
+              href="#section2">Graph</a>
           </li>
           <li class="nav-item p-3">
-            <a class="nav-link hoverr" style="text-decoration: none; color: black; font-size: 20px;" href="#section3">Key
+            <a class="nav-link hoverr" style="text-decoration: none; color: black; font-size: 20px;"
+              href="#section3">Key
               Ratios</a>
           </li>
           <li class="nav-item p-3">
@@ -124,7 +145,8 @@
               href="#section5">ShareHolding Pattern</a>
           </li>
           <li class="nav-item p-3">
-            <a class="nav-link hoverr" style="text-decoration: none; color: black; font-size: 20px;" href="#section6">About</a>
+            <a class="nav-link hoverr" style="text-decoration: none; color: black; font-size: 20px;"
+              href="#section6">About</a>
           </li>
         </ul>
       </div>
@@ -133,7 +155,8 @@
     <div id="chart">
       <div class="toolbar d-flex" id="toolbarbtns">
         <div class="dropdown me-3">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
             Graph Options
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -141,37 +164,27 @@
             <li><button class="dropdown-item" onclick="candle()" id="btn2">Candle Stick</button></li>
           </ul>
         </div>
-        <button class="btn btn-dark me-3" id="one_month"
-            
-            >
+        <button class="btn btn-dark me-3" id="one_month">
           1M
         </button>
-        
-        <button class="btn btn-dark me-3" id="six_months"
-            
-            >
+
+        <button class="btn btn-dark me-3" id="six_months">
           6M
         </button>
-        
-        <button class="btn btn-dark active me-3" id="one_year"
-            
-            >
+
+        <button class="btn btn-dark active me-3" id="one_year">
           1Y
         </button>
-        
-        <button class="btn btn-dark me-3" id="ytd"
-            
-            >
+
+        <button class="btn btn-dark me-3" id="ytd">
           YTD
         </button>
-        
-        <button class="btn btn-dark me-4" id="all"
-            
-            >
+
+        <button class="btn btn-dark me-4" id="all">
           ALL
         </button>
       </div>
-    
+
       <div id="chart-timeline"></div>
       <div id="chart-timeline2"></div>
     </div>
@@ -257,91 +270,92 @@
     </div>
     <div id="section4" class="mt-5 border border-dark boxes w-100 p-2 table-responsive-sm">
       <div class="mt-5 mb-5" style="margin-left: 3%;">
-      <p><b>Profit & Loss</b></p>
-      <table class="table table-responsive-sm" style="border-bottom: 1px">
-        <tr>
-          <th align="center" ></td>
-          <th align="center" class="hoverr">FY22</td>
-          <th align="center" class="hoverr">FY21</td>
-          <th align="center" class="hoverr">FY20</td>
-          <!-- <th align="center" class="hoverr">Trend 2018-22</td> -->
-        </tr>
-        <tr>
-          <th align="center" class="hoverr">Sales</td>
-          <td align="center" class="sale hoverr"></td>
-          <td align="center" class="sale hoverr"></td>
-          <td align="center" class="sale hoverr"></td>
-        </tr>
-        <tr>
-          <th align="center" class="hoverr hoverr">Direct Expenditure</td>
-          <td align="center" class="direct hoverr"></td>
-          <td align="center" class="direct hoverr"></td>
-          <td align="center" class="direct hoverr"></td>
-        </tr>
-        <tr>
-          <th align="center" class="hoverr">Gross Profit</td>
-          <td align="center" class="gross hoverr"></td>
-          <td align="center" class="gross hoverr"></td>
-          <td align="center" class="gross hoverr"></td>
-        </tr>
-        <tr>
-          <th align="center" class="hoverr">Operating Profit</td>
-          <td align="center" class="operating hoverr"></td>
-          <td align="center" class="operating hoverr"></td>
-          <td align="center" class="operating hoverr">
-          </td>
-        </tr>
-        <tr>
-          <th align="center" class="hoverr">Other Income</td>
-          <td align="center" class="income hoverr"></td>
-          <td align="center" class="income hoverr"></td>
-          <td align="center" class="income hoverr"></td>
-        </tr>
-        <tr>
-          <th align="center" class="hoverr">Interest</td>
-          <td align="center" class="interest hoverr"></td>
-          <td align="center" class="interest hoverr"></td>
-          <td align="center" class="interest hoverr"></td>
-        </tr>
-        <tr>
-          <th align="center" class="hoverr">Depreciation</td>
-          <td align="center" class="depriciation hoverr"></td>
-          <td align="center" class="depriciation hoverr"></td>
-          <td align="center" class="depriciation hoverr"></td>
-        </tr>
-        <tr>
-          <th align="center" class="hoverr">Profit Before Tax</td>
-          <td align="center" class="pbTax hoverr"></td>
-          <td align="center" class="pbTax hoverr"></td>
-          <td align="center" class="pbTax hoverr"></td>
-        </tr>
-        <tr>
-          <th align="center" class="hoverr">Tax</td>
-          <td align="center" class="tax hoverr"></td>
-          <td align="center" class="tax hoverr"></td>
-          <td align="center" class="tax hoverr">
-          <!-- <th align="center" class="hoverr"> -->
-        </tr>
-        <tr>
-          <th align="center" class="hoverr">Profit After Tax</td>
-          <td align="center" class="paTax hoverr"></td>
-          <td align="center" class="paTax hoverr"></td>
-          <td align="center" class="paTax hoverr"></td>
-        </tr>
-        <tr>
-          <th align="center" class="hoverr">EPS</td>
-          <td align="center" class="eps hoverr"></td>
-          <td align="center" class="eps hoverr"></td>
-          <td align="center" class="eps hoverr"></td>
-        </tr>
-        <tr>
-          <th align="center" class="hoverr">Dividend Payout (%)</td>
-          <td align="center" class="divi hoverr"></td>
-          <td align="center" class="divi hoverr"></td>
-          <td align="center" class="divi hoverr"></td>
-        </tr>
-      </table>
-    </div>
+        <p><b>Profit & Loss</b></p>
+        <table class="table table-responsive-sm" style="border-bottom: 1px">
+          <tr>
+            <th align="center">
+              </td>
+            <th align="center" class="hoverr">FY22</td>
+            <th align="center" class="hoverr">FY21</td>
+            <th align="center" class="hoverr">FY20</td>
+              <!-- <th align="center" class="hoverr">Trend 2018-22</td> -->
+          </tr>
+          <tr>
+            <th align="center" class="hoverr">Sales</td>
+            <td align="center" class="sale hoverr"></td>
+            <td align="center" class="sale hoverr"></td>
+            <td align="center" class="sale hoverr"></td>
+          </tr>
+          <tr>
+            <th align="center" class="hoverr hoverr">Direct Expenditure</td>
+            <td align="center" class="direct hoverr"></td>
+            <td align="center" class="direct hoverr"></td>
+            <td align="center" class="direct hoverr"></td>
+          </tr>
+          <tr>
+            <th align="center" class="hoverr">Gross Profit</td>
+            <td align="center" class="gross hoverr"></td>
+            <td align="center" class="gross hoverr"></td>
+            <td align="center" class="gross hoverr"></td>
+          </tr>
+          <tr>
+            <th align="center" class="hoverr">Operating Profit</td>
+            <td align="center" class="operating hoverr"></td>
+            <td align="center" class="operating hoverr"></td>
+            <td align="center" class="operating hoverr">
+            </td>
+          </tr>
+          <tr>
+            <th align="center" class="hoverr">Other Income</td>
+            <td align="center" class="income hoverr"></td>
+            <td align="center" class="income hoverr"></td>
+            <td align="center" class="income hoverr"></td>
+          </tr>
+          <tr>
+            <th align="center" class="hoverr">Interest</td>
+            <td align="center" class="interest hoverr"></td>
+            <td align="center" class="interest hoverr"></td>
+            <td align="center" class="interest hoverr"></td>
+          </tr>
+          <tr>
+            <th align="center" class="hoverr">Depreciation</td>
+            <td align="center" class="depriciation hoverr"></td>
+            <td align="center" class="depriciation hoverr"></td>
+            <td align="center" class="depriciation hoverr"></td>
+          </tr>
+          <tr>
+            <th align="center" class="hoverr">Profit Before Tax</td>
+            <td align="center" class="pbTax hoverr"></td>
+            <td align="center" class="pbTax hoverr"></td>
+            <td align="center" class="pbTax hoverr"></td>
+          </tr>
+          <tr>
+            <th align="center" class="hoverr">Tax</td>
+            <td align="center" class="tax hoverr"></td>
+            <td align="center" class="tax hoverr"></td>
+            <td align="center" class="tax hoverr">
+              <!-- <th align="center" class="hoverr"> -->
+          </tr>
+          <tr>
+            <th align="center" class="hoverr">Profit After Tax</td>
+            <td align="center" class="paTax hoverr"></td>
+            <td align="center" class="paTax hoverr"></td>
+            <td align="center" class="paTax hoverr"></td>
+          </tr>
+          <tr>
+            <th align="center" class="hoverr">EPS</td>
+            <td align="center" class="eps hoverr"></td>
+            <td align="center" class="eps hoverr"></td>
+            <td align="center" class="eps hoverr"></td>
+          </tr>
+          <tr>
+            <th align="center" class="hoverr">Dividend Payout (%)</td>
+            <td align="center" class="divi hoverr"></td>
+            <td align="center" class="divi hoverr"></td>
+            <td align="center" class="divi hoverr"></td>
+          </tr>
+        </table>
+      </div>
     </div>
     <!-- ------------------------------------------------------------------------- -->
     <div id="section5" class="mt-5 border border-dark boxes w-100 p-2">
@@ -375,116 +389,157 @@
       <!-- -------------------------------------------------------------------------- -->
       <h5>AUMs with <span class="fw-bold">LIC Housing Finance Ltd</span></h5>
       <div class="table-responsive-sm">
-      <table class="table table-borderless ">
-        <tr>
-          <th align="center" </td>
-          <th align="center" class="hoverr">AUM(Cr.)</td>
-          <th align="center" class="hoverr">%AUM in Stock</td>
-          <th align="center" class="hoverr">%Stack</td>
-          <th align="center" class="hoverr">Current Value</td>
-        </tr>
-        <tr>
-          <th align="center" class="hoverr">Nippon India Arbitrage Fund</td>
-          <td align="center" class="hoverr">9,087.86</td>
-          <td align="center" class="hoverr">0.07</td>
-          <td align="center" class="hoverr">0.032</td>
-          <td align="center" class="hoverr">6.36</td>
-        </tr>
-        <tr>
-          <th align="center" class="hoverr">DSP Equity Opportunities Fund</td>
-          <td align="center" class="hoverr">7,224.71</td>
-          <td align="center" class="hoverr">2.42</td>
-          <td align="center" class="hoverr">0.021</td>
-          <td align="center" class="hoverr">269.28</td>
-        </tr>
-        <tr>
-          <th align="center" class="hoverr">Nippon India Balanced Advantage Fund</td>
-          <td align="center" class="hoverr">6,709.50</td>
-          <td align="center" class="hoverr">0.31</td>
-          <td align="center" class="hoverr">0.003</td>
-          <td align="center" class="hoverr">34.21</td>
-        </tr>
-        <tr>
-          <th align="center" class="hoverr">Tata Digital India Fund</td>
-          <td align="center" class="hoverr">9,061.67</td>
-          <td align="center" class="hoverr">18.10</td>
-          <td align="center" class="hoverr">0.127</td>
-          <td align="center" class="hoverr">1,645.59</td>
-        </tr>
-        <tr>
-          <th align="center" class="hoverr">ICICI Pru Focused Equity Fund</td>
-          <td align="center" class="hoverr">3,868.94</td>
-          <td align="center" class="hoverr">4.15</td>
-          <td align="center" class="hoverr">0.707</td>
-          <td align="center" class="hoverr">160.52</td>
-        </tr>
-      </table>
+        <table class="table table-borderless ">
+          <tr>
+            <th align="center" </td>
+            <th align="center" class="hoverr">AUM(Cr.)</td>
+            <th align="center" class="hoverr">%AUM in Stock</td>
+            <th align="center" class="hoverr">%Stack</td>
+            <th align="center" class="hoverr">Current Value</td>
+          </tr>
+          <tr>
+            <th align="center" class="hoverr">Nippon India Arbitrage Fund</td>
+            <td align="center" class="hoverr">9,087.86</td>
+            <td align="center" class="hoverr">0.07</td>
+            <td align="center" class="hoverr">0.032</td>
+            <td align="center" class="hoverr">6.36</td>
+          </tr>
+          <tr>
+            <th align="center" class="hoverr">DSP Equity Opportunities Fund</td>
+            <td align="center" class="hoverr">7,224.71</td>
+            <td align="center" class="hoverr">2.42</td>
+            <td align="center" class="hoverr">0.021</td>
+            <td align="center" class="hoverr">269.28</td>
+          </tr>
+          <tr>
+            <th align="center" class="hoverr">Nippon India Balanced Advantage Fund</td>
+            <td align="center" class="hoverr">6,709.50</td>
+            <td align="center" class="hoverr">0.31</td>
+            <td align="center" class="hoverr">0.003</td>
+            <td align="center" class="hoverr">34.21</td>
+          </tr>
+          <tr>
+            <th align="center" class="hoverr">Tata Digital India Fund</td>
+            <td align="center" class="hoverr">9,061.67</td>
+            <td align="center" class="hoverr">18.10</td>
+            <td align="center" class="hoverr">0.127</td>
+            <td align="center" class="hoverr">1,645.59</td>
+          </tr>
+          <tr>
+            <th align="center" class="hoverr">ICICI Pru Focused Equity Fund</td>
+            <td align="center" class="hoverr">3,868.94</td>
+            <td align="center" class="hoverr">4.15</td>
+            <td align="center" class="hoverr">0.707</td>
+            <td align="center" class="hoverr">160.52</td>
+          </tr>
+        </table>
       </div>
     </div>
     <!-- ---------------------------------------------------------------------------- -->
-    <div id="section6" class="mt-5 border border-dark boxes p-2" style="width:70%;">
-      <div class="mb-5 mt-5" style="margin-left: 3%;">
-      <h5>About LIC Housing Finance Ltd</h5>
-      <div style="width: 50%" class="table-responsive-sm">
-        <table class="table table-borderless">
-          <tr>
-            <td align="center" class="text-left" id="bse">BSE: 500253</td>
-            <td align="center" class="text-left" id="nse">NSE: LICHSGFIN</td>
-            <td align="center" class="text-left" id="isin">ISIN: INE115A01026</td>
-          </tr>
-        </table>
+    <div class="row ">
+      <div id="section6" class="mt-5 border border-dark boxes p-2 leftcolumn" style="width:70%;">
+        <div class="mb-5 mt-5" style="margin-left: 3%;">
+          <h5>About LIC Housing Finance Ltd</h5>
+          <div style="width: 50%" class="table-responsive-sm">
+            <table class="table table-borderless">
+              <tr>
+                <td align="center" class="text-left" id="bse">BSE: 500253</td>
+                <td align="center" class="text-left" id="nse">NSE: LICHSGFIN</td>
+                <td align="center" class="text-left" id="isin">ISIN: INE115A01026</td>
+              </tr>
+            </table>
+          </div>
+          <br>
+          <p>
+            Company Website:
+            <a href="http://www.tcs.com/">lichousing.com</a>
+          </p>
+          <p id="compDet"></p>
+          <div style="width: 100%">
+            <table class="table justify-content-center width-100 table-borderless">
+              <tr>
+                <th align="center" class="hoverr">Board of Directors:</td>
+              </tr>
+              <tr>
+                <b>
+                  <td align="center" id="chair"></td>
+                </b>
+                <td align="center" class="hoverr">Chairman (Non-Executive)</td>
+              </tr>
+              <tr>
+                <b>
+                  <td align="center" id="indeDir"></td>
+                </b>
+                <td align="center" class="hoverr">Non-Exec. & Independent Dir.</td>
+              </tr>
+              <tr>
+                <b>
+                  <td align="center" id="nonIndeDir"></td>
+                </b>
+                <td align="center" class="hoverr">Non-Exec. & Non-Independent Dir.</td>
+              </tr>
+              <tr>
+                <td align="center" id="ceo"></td>
+                <td align="center" class="hoverr">Managing Director & CEO</td>
+              </tr>
+              <tr>
+                <td align="center" id="coo"></td>
+                <td align="center" class="hoverr">Managing Director & COO</td>
+              </tr>
+              <tr>
+                <td align="center" id="nonIndeDir1"></td>
+                <td align="center" class="hoverr">Non-Exe. & Independent Dir.</td>
+              </tr>
+              <tr>
+                <td align="center" id="nonIndeDir2"></td>
+                <td align="center" class="hoverr">Non-Exe. & Independent Dir.</td>
+              </tr>
+              <tr>
+                <td align="center" id="nonIndeDir3"></td>
+                <td align="center" class="hoverr">Non-Exe. & Independent Dir.</td>
+              </tr>
+              <tr>
+                <td align="center" id="nonIndeDir4"></td>
+                <td align="center" class="hoverr">Non-Exe. & Independent Dir.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
-      <br>
-      <p>
-        Company Website:
-        <a href="http://www.tcs.com/">lichousing.com</a>
-      </p>
-      <p id="compDet"></p>
-      <div style="width: 100%">
-        <table class="table justify-content-center width-100 table-borderless">
-          <tr>
-            <th align="center" class="hoverr">Board of Directors:</td>
-          </tr>
-          <tr>
-            <b><td align="center" id="chair"></td></b>
-            <td align="center" class="hoverr">Chairman (Non-Executive)</td>
-          </tr>
-          <tr>
-            <b><td align="center" id="indeDir"></td></b>
-            <td align="center" class="hoverr">Non-Exec. & Independent Dir.</td>
-          </tr>
-          <tr>
-            <b><td align="center" id="nonIndeDir"></td></b>
-            <td align="center" class="hoverr">Non-Exec. & Non-Independent Dir.</td>
-          </tr>
-          <tr>
-            <td align="center" id="ceo"></td>
-            <td align="center" class="hoverr">Managing Director & CEO</td>
-          </tr>
-          <tr>
-            <td align="center" id="coo"></td>
-            <td align="center" class="hoverr">Managing Director & COO</td>
-          </tr>
-          <tr>
-            <td align="center" id="nonIndeDir1"></td>
-            <td align="center" class="hoverr">Non-Exe. & Independent Dir.</td>
-          </tr>
-          <tr>
-            <td align="center" id="nonIndeDir2"></td>
-            <td align="center" class="hoverr">Non-Exe. & Independent Dir.</td>
-          </tr>
-          <tr>
-            <td align="center" id="nonIndeDir3"></td>
-            <td align="center" class="hoverr">Non-Exe. & Independent Dir.</td>
-          </tr>
-          <tr>
-            <td align="center" id="nonIndeDir4"></td>
-            <td align="center" class="hoverr">Non-Exe. & Independent Dir.</td>
-          </tr>
-        </table>
+      <div class="rightcolumn mt-5">
+        <div class="card">
+          <h2>NEWS</h2>
+            <!-- <img class="fakeimg" style="height:100px;"
+              src="https://www.valueresearchonline.com/content-assets/images/35023_20180118_howididit__w150__h84__.jpg"
+              alt="">
+
+          <p class="">The HomeMaker INVESTOR</p> -->
+        </div>
+        <div class="card">
+          <h3>Popular Post</h3>
+          <div class="card">
+            <img src="https://images.moneycontrol.com/static-mcnews/2023/02/stocks_sensex_nifty_stockmarket2-770x433.jpg?impolicy=website&width=135&height=80" alt="" class="fakeimg">
+            <br>
+            <p>
+              A trendline break out trade in Dabur
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="https://tpc.googlesyndication.com/simgad/15696523387899104242?" alt="" class="fakeimg">
+            <p>Be a professional trader</p>
+          </div>
+          <div class="card">
+            <img src="https://images.moneycontrol.com/static-mcnews/2023/03/stocks_sensex_nifty_stockmarket-770x433.jpg?impolicy=website&width=135&height=80" alt="" class="fakeimg">
+            <p>
+              Commodity Futures | A trendline breakout in Copper
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
+
+
     <!-- ---------------------------------------------------------------------------- -->
   </div>
   <!-- <nav class="navbar navbar-expand-sm mainNavCss mt-5" style="padding: 30px">
@@ -548,4 +603,5 @@
   <div id="footer"></div>
 </body>
 <script src="stockStructure.js"></script>
+
 </html>

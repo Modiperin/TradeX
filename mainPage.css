@@ -66,6 +66,10 @@ body {
 .bottomSvgRow {
   padding-left: 210px;
 }
+.td1:hover
+{
+  background-color:  rgba(0, 0, 0, 0.059);
+}
 
 .bottomSvgMain:hover {
   box-shadow: -10px 4px 40px gainsboro;
@@ -120,7 +124,7 @@ body {
 
 .boxContentData:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: red;
+  color: red !important;
 }
 
 .floater {

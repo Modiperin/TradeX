@@ -43,7 +43,7 @@
     border: 2px solid white;
     text-align: center;
     border-radius: 10px;
-    margin-top: -2px;
+    margin-top: 10px;
     margin-left: -25px;
     /* padding-top: 1.5px; */
 }
@@ -143,5 +143,6 @@ li:hover .dropdown1 {
   right: 40px;
   border-radius: 20px;
   margin-top: 5px;
+  margin-left: 5px;
 }
 
