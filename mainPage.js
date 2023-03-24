@@ -52,7 +52,7 @@ document.querySelectorAll(".planButton").forEach(elem => elem.addEventListener("
         })
     }
     else{
-        window.location.href='dashBoard.html'
+        window.location.href='PaymentGateway.html'
     } 
 }))
 // Get the button:
