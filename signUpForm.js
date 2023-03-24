@@ -367,19 +367,19 @@ formSubmitBtn.addEventListener("click", async function (event) {
       window.localStorage.setItem(finalEmail, JSON.stringify(user));
       let formData = new FormData();
       formData.append("file", fileupload.files[0]);
-      await fetch("http://192.168.203.124:3000/upload/uploadFile", {
+      await fetch("http://192.168.225.117:3000/upload/uploadFile", {
         method: "POST",
         body: formData,
       });
       let formData1 = new FormData();
       formData1.append("file", fileupload1.files[0]);
-      await fetch("http://192.168.203.124:3000/upload/uploadFile", {
+      await fetch("http://192.168.225.117:3000/upload/uploadFile", {
         method: "POST",
         body: formData1,
       });
       let formData2 = new FormData();
       formData2.append("file", fileupload2.files[0]);
-      await fetch("http://192.168.203.124:3000/upload/uploadFile", {
+      await fetch("http://192.168.225.117:3000/upload/uploadFile", {
         method: "POST",
         body: formData2,
       });

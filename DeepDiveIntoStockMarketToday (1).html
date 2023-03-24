@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Tradex</title>
+    <link rel="icon" href="homebanner.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        $(function () { $("#nav").load('nav.html'); });
+        $(function () { $("#footer").load('Footerr.html'); });
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arima:wght@300&family=Barlow+Condensed:ital,wght@1,200&family=Heebo:wght@600&family=Inter:wght@300&family=Permanent+Marker&family=Raleway:wght@300&family=Rubik:wght@400;500;900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(228, 227, 227);
+        }
+        .mainNavCss {
+            background-color: #03002f;
+        }
+
+        .navList {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .hvr-r {
+            color: white;
+        }
+
+        .hvr-r:hover {
+            color: tomato;
+        }
+
+        .tab-head-padd {
+            padding: 20px;
+            /* padding-top: 0px; */
+        }
+
+        td {
+            padding-left: 20px;
+            /* padding-right:40px; */
+            padding-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(94, 94, 94);
+            font-size: 15px;
+        }
+
+        .hoverr:hover {
+            background-color: rgba(90, 90, 90, 0.123);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav"></div>
+    <div class="container-fluid p-5 text-center" style="width:900px;">
+        <h3 class="text-center" style="margin-top: 80px;">
+            Deep Dive into Stock Markets Today
+        </h3>
+        <p style="margin-top:30px;">
+            <i>Here we dissect all the <span style="color: #03002f;" class="fw-bold">stock market</span> information
+                into different categories which make the information more insightful for you to take smarter, faster
+                decisions. The categories includes <span style="color: #03002f;" class="fw-bold">top gainers, top
+                    losers, 52 week high stocks, 52 week low</span> stocks and many more.</i>
+        </p>
+    </div>
+    <div class="container mt-5">
+        <table class="table table-responsive-sm table-borderless ">
+            <tr>
+                <th align="center" class="hoverr">
+                    <center>Stock name</center>
+                </th>
+                <th align="center" class="hoverr">
+                    <center>Price</center>
+                    </td>
+                <th align="center" class="hoverr">
+                    <center>Cap Market Value</center>
+                    </td>
+
+                <th align="center" class="hoverr">
+                    <center>View Stocks</center>
+                    </td>
+            </tr>
+            <tr>
+                <th align="center" class="hoverr">
+                    <center>Adani</center>
+                    </td>
+                <td align="center" class="hoverr">9,087.86</td>
+                <td align="center" class="hoverr">0.07</td>
+                <td align="center"><button class="btn btn-dark" onclick="getStockDet('ADANI')">CLICK TO SEE </button></td>
+            </tr>
+            <tr>
+                <th align="center" class="hoverr">
+                    <center>TCS</center>
+                    </td>
+                <td align="center" class="hoverr">7,224.71</td>
+                <td align="center" class="hoverr">2.42</td>
+                <td align="center"><button class="btn btn-dark getStockDet" onclick="getStockDet('TCS')">CLICK TO SEE </button></td>
+
+            </tr>
+            <tr>
+                <th align="center" class="hoverr">
+                    <center>Infosys</center>
+                    </td>
+                <td align="center" class="hoverr">6,709.50</td>
+                <td align="center" class="hoverr">0.31</td>
+                <td align="center"><button class="btn btn-dark">CLICK TO SEE </button></td>
+
+            </tr>
+            <tr>
+                <th align="center" class="hoverr">
+                    <center>Reliance</center>
+                    </td>
+                <td align="center" class="hoverr">9,061.67</td>
+                <td align="center" class="hoverr">18.10</td>
+                <td align="center"><button class="btn btn-dark">CLICK TO SEE </button></td>
+
+            </tr>
+            <tr>
+                <th align="center" class="hoverr">
+                    <center>HDFC Bank</center>
+                    </td>
+                <td align="center" class="hoverr">3,868.94</td>
+                <td align="center" class="hoverr">4.15</td>
+                <td align="center"><button class="btn btn-dark">CLICK TO SEE </button></td>
+            </tr>
+        </table>
+    </div>
+    <footer id="footer"></footer>
+</body>
+<script src="deepDive.js"></script>
+</html>
