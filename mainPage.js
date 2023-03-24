@@ -7,10 +7,10 @@ if(loggedUser!=null)
     document.getElementById('welcome').innerHTML='Welcome '+loggedUser.name
     // document.getElementById('welcome').innerHTML="Welcome"
 }
-function callStock(stockname){
-    window.sessionStorage.setItem('stockname',stockname)
-    window.location.href='stockStructure.html'
-}
+// function callStock(stockname){
+//     window.sessionStorage.setItem('stockname',stockname)
+//     window.location.href='stockStructure.html'
+// }
 
 document.querySelectorAll(".planButton").forEach(elem => elem.addEventListener("click", ()=>{
     console.log('perin')
