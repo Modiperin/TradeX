@@ -1,35 +1,46 @@
-function addTowatchList()
-{
-  var stock=document.getElementById('stockValue').value
-  var list=window.localStorage.getItem('watchList')
-  if(list==null)
-  {
-    var data={
-      stockName:[stock]
+function addTowatchList() {
+  var user = JSON.parse(window.sessionStorage.getItem("1"))
+  if (user != null) {
+    var stock = document.getElementById('stockValue').value
+    var list = window.localStorage.getItem('watchList')
+    if (list == null) {
+      var data = {
+        stockName: [stock]
+      }
+      window.localStorage.setItem('watchList', JSON.stringify(data))
     }
-    window.localStorage.setItem('watchList',JSON.stringify(data))
+    else {
+      list = JSON.parse(list)
+      if (!(list.stockName.includes(stock))) {
+        list.stockName.push(stock)
+        window.localStorage.setItem('watchList', JSON.stringify(list))
+      }
+    }
+    console.log(list)
+    console.log(stock)
   }
   else{
-    list=JSON.parse(list)
-    if(!(list.stockName.includes(stock)))
-    {
-      list.stockName.push(stock)
-      window.localStorage.setItem('watchList',JSON.stringify(list))
-    }
+    let logeed=document.getElementById('no')
+    logeed.innerHTML='Please Login First To get the wishlist'
+    logeed.style.color='red'
+    setTimeout(() => {
+      logeed.style.display = 'none';
+    }, 5000);
   }
-  console.log(list)
-  console.log(stock)
+
 }
 async function apicall() {
   var url =
-    "http://192.168.225.117:3000/stock/getStock/" +
+    // "http://192.168.225.117:3000/stock/getStock/" +
+    // window.sessionStorage.getItem("stockname");
+    "http://192.168.43.234:3000/stock/getStock/" +
     window.sessionStorage.getItem("stockname");
   var res = await fetch(url, {
     method: "GET",
   });
   var data = await res.json();
   console.log(data.shortName);
-  document.getElementById('stockValue').value=data.shortName;
+  document.getElementById('stockValue').value = data.shortName;
   // console.log(data.overView.eps)
   document.getElementById("shortName").innerHTML = data.shortName;
   document.getElementById("fullName").innerHTML = data.fullName;

@@ -68,7 +68,8 @@ document.getElementById("signUp1").addEventListener("click", () => {
 
 document.getElementById("searchBox").addEventListener("click", handle);
 document.getElementById("searchBox").addEventListener("blur", dehandle);
-
+var ulField = document.getElementById('dropdown1');
+var txt = document.getElementById("searchBox").value;
 function dehandle() {
   document.getElementById("searchImage").src = "icons8-search-50.png";
 }
@@ -76,7 +77,8 @@ function dehandle() {
 async function handle() {
   document.getElementById("searchImage").src = "icons8-search.gif";
   document.getElementById("searchBox").style.borderRadius = "20px";
-  var url = "http://192.168.225.117:3000/stock/getStock";
+  // var url = "http://192.168.225.117:3000/stock/getStock";
+  var url = "http://192.168.43.234:3000/stock/getStock";
   var res = await fetch(url, {
     method: "GET",
   });
@@ -93,20 +95,20 @@ document.getElementById("searchBox").addEventListener("keyup", () => {
   var txt = document.getElementById("searchBox").value;
   find = [];
   console.log(txt.trim().length);
-  // console.log(typeof(txt))
-  console.log(txt.trim().length);
   console.log(find);
   if (txt.trim().length > 0) {
     var find = stockNames.filter((x) => x.startsWith(txt));
     console.log(typeof find);
-    let names = "";
+    // let ulField = document.getElementById('dropdown1');
+    ulField.addEventListener('click', selectItem);
+    ulField.innerHTML=" "
     for (var i = 0; i < find.length; i++) {
-      names = names + find[i] + "<br>";
+      ulField.innerHTML = ulField.innerHTML + `<li>${find[i]}</li>`;
     }
-    // document.getElementById('dropdown1').style.padding='10px'
-    document.getElementById("writer").innerHTML = names;
-  } else {
-    document.getElementById("writer").innerHTML = " ";
+  }
+  else{
+    let ulField = document.getElementById('dropdown1');
+    ulField.innerHTML=" "
   }
 });
 const navbarItem = document.querySelector("li");
@@ -121,6 +123,16 @@ navbarItem.addEventListener("mouseleave", () => {
 });
 document.getElementById("s").addEventListener("click", () => {
   var txt = document.getElementById("searchBox").value;
-  window.sessionStorage.setItem("stockname", txt);
-  window.location.href = "stockStructure.html";
+  if(txt.trim().length)
+  {
+    window.sessionStorage.setItem("stockname", txt);
+    window.location.href = "stockStructure.html";
+  }
 });
+function selectItem({ target }) {
+  let txt = document.getElementById('searchBox');
+  if (target.tagName === 'LI') {
+    txt.value = target.textContent;
+    ulField.innerHTML = ``;
+  }
+}

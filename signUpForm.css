@@ -571,9 +571,45 @@ body {
 	border-radius: 8px;
 
 }
-.fileUpload123{
-	color: #4daf7c;
-  	height: 60px;
-  position: relative;
-  width: 100%;
-}
+.custom-file-upload {
+	border: 1px solid #ccc;
+	display: inline-block;
+	padding: 6px 12px;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #555;
+	background-color: #fff;
+	transition: all 0.3s ease;
+	background: linear-gradient(to bottom, #fff, #f2f2f2);
+  }
+  .custom-file-upload::before {
+	content: "\f093";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	margin-right: 5px;
+  }
+  .custom-file-upload:hover {
+	background-color: #ddd;
+  }
+  input[type="file"] {
+	display: none;
+  }
+  input[type="file"]:not(:focus) + .custom-file-upload::after {
+	content: "File Selected";
+	color: green;
+	font-weight: bold;
+  }
+  /* This is optional, it adds an icon to the label */
+  .custom-file-upload i {
+	margin-right: 5px;
+  }
+  .upload{
+	color: #07074D;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 24px;
+	display: block;
+	margin-bottom: 10px;
+  }
