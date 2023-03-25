@@ -9,414 +9,541 @@
 	<script>document.getElementsByTagName("html")[0].className += " js";</script>
 	<link rel="stylesheet" href="faq_style.css">
 	<title>FAQ</title>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+	<script src="https://code.jquery.com/jquery-3.6.3.js"
+		integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+		<link rel="icon" href="homebanner.png" type="image/x-icon">
+	<script>
+		$(function () { $("#nav").load('nav.html'); });
+		$(function () { $("#footer").load('Footerr.html'); });
+	</script>
+	<style>
+		#myBtn {
+			display: none;
+			/* Hidden by default */
+			position: fixed;
+			/* Fixed/sticky position */
+			bottom: 20px;
+			/* Place the button at the bottom of the page */
+			right: 30px;
+			/* Place the button 30px from the right */
+			z-index: 99;
+			/* Make sure it does not overlap */
+			border: none;
+			/* Remove borders */
+			outline: none;
+			/* Remove outline */
+			background-color: red;
+			/* Set a background color */
+			color: white;
+			/* Text color */
+			cursor: pointer;
+			/* Add a mouse pointer on hover */
+			padding: 15px;
+			/* Some padding */
+			border-radius: 30px;
+			/* Rounded corners */
+			font-size: 18px;
+			/* Increase font size */
+		}
+
+		#myBtn:hover {
+			background-color: #555;
+			/* Add a dark-grey background on hover */
+		}
+	</style>
 </head>
 
 <body>
-	<header class="cd-header flex flex-column flex-center">
-		<div class="text-component text-center">
-			<h1>Frequently Asked Questions</h1>
-		</div>
-	</header>
+	<!-- <nav id="nav"></nav> -->
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb d-flex">
+			<li class="breadcrumb-item"><a href="mainPage.html">Home page</a></li>
+			<li class="breadcrumb-item active" aria-current="page">FAQ</li>
+		</ol>
+	</nav>
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="up-arrow.png"
+			style="height: 30px; width: 30px;"></button>
+	<div>
 
-	<section class="cd-faq js-cd-faq container max-width-md margin-top-lg margin-bottom-lg">
-		<ul class="cd-faq__categories">
-			<li><a class="cd-faq__category ttt cd-faq__category-selected truncate" href="#Fund Transfer">Fund Transfer</a>
-			</li>
-			<li><a class="cd-faq__category ttt truncate" href="#Mutual Funds">Mutual Funds</a></li>
-			<li><a class="cd-faq__category ttt truncate" href="#account">Account</a></li>
-			<li><a class="cd-faq__category ttt truncate" href="#IPO Application">IPO Application</a></li>
-			<li><a class="cd-faq__category ttt truncate" href="#Investing and Trading">Investing and Trading</a></li>
-			<li><a class="cd-faq__category ttt truncate" href="#Our Brokerage Plans">Our Brokerage Plans</a></li>
-		</ul> <!-- cd-faq__categories -->
+		<header class="cd-header flex flex-column flex-center">
+			<div class="text-component text-center">
+				<h1>Frequently Asked Questions</h1>
+			</div>
+		</header>
 
-		<div class="cd-faq__items">
-			<ul id="Fund Transfer" class="cd-faq__group">
-				<li class="cd-faq__title">
-					<h2>Fund Transfer</h2>
+		<section class="cd-faq js-cd-faq container max-width-md margin-top-lg margin-bottom-lg">
+			<ul class="cd-faq__categories">
+				<li><a class="cd-faq__category ttt cd-faq__category-selected truncate" href="#Fund Transfer">Fund
+						Transfer</a>
 				</li>
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What is UPI transfer?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>Unified Payments Interface (UPI) is an instant payment system developed by the National
-								Payments Corporation of India (NPCI), which allows you to instantly transfer money
-								between any two parties' bank accounts.</p>
-						</div>
-					</div> <!-- cd-faq__content -->
+				<li><a class="cd-faq__category ttt truncate" href="#Mutual Funds">Mutual Funds</a></li>
+				<li><a class="cd-faq__category ttt truncate" href="#account">Account</a></li>
+				<li><a class="cd-faq__category ttt truncate" href="#IPO Application">IPO Application</a></li>
+				<li><a class="cd-faq__category ttt truncate" href="#Investing and Trading">Investing and Trading</a>
 				</li>
+				<li><a class="cd-faq__category ttt truncate" href="#Our Brokerage Plans">Our Brokerage Plans</a></li>
+			</ul> <!-- cd-faq__categories -->
 
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What are the benefits of doing a UPI
-							transaction?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>
-								Enables instant fund transfer from 110+ banks.
-								Instant Transfer for clients with e-collect banks.
-								Quicker process to add funds.
-							</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
+			<div class="cd-faq__items">
+				<ul id="Fund Transfer" class="cd-faq__group">
+					<li class="cd-faq__title">
+						<h2>Fund Transfer</h2>
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What is UPI transfer?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Unified Payments Interface (UPI) is an instant payment system developed by the
+									National
+									Payments Corporation of India (NPCI), which allows you to instantly transfer money
+									between any two parties' bank accounts.</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
 
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>How much time does it take for funds to be added to my
-							account via UPI ?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>The funds are added to the trading account instantly, on successfully adding them through
-								UPI.
-							</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What are the benefits of doing a UPI
+								transaction?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>
+									Enables instant fund transfer from 110+ banks.
+									Instant Transfer for clients with e-collect banks.
+									Quicker process to add funds.
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
 
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What is the limit of fund transfer through UPI
-							?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>The limit on fund transfer through UPI is 1 lac per transaction, and total of 1 lac per
-								day.</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
-			</ul> <!-- cd-faq__group -->
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>How much time does it take for funds to be added to
+								my
+								account via UPI ?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>The funds are added to the trading account instantly, on successfully adding them
+									through
+									UPI.
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
 
-			<ul id="Mutual Funds" class="cd-faq__group">
-				<li class="cd-faq__title">
-					<h2>Mutual Funds</h2>
-				</li>
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What is e-Mandate?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>As the name suggests, e-Mandate implies electronic mandate and so it is completely
-								paperless. When you generate an e-Mandate. the exchange facilitates online approval of
-								your mandate from your bank account via NPCI. In this process, you don't need to submit
-								any physical duly signed mandate form instead you are reqired to e-Sign the mandate
-								generated using Aadhaar OTP. To do this process, you are supposed to click on the link
-								in the email triggered from the exchange.</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What is the limit of fund transfer through UPI
+								?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>The limit on fund transfer through UPI is 1 lac per transaction, and total of 1 lac
+									per
+									day.</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+				</ul> <!-- cd-faq__group -->
 
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What are the benefits of e-Mandate?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>
+				<ul id="Mutual Funds" class="cd-faq__group">
+					<li class="cd-faq__title">
+						<h2>Mutual Funds</h2>
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What is e-Mandate?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>As the name suggests, e-Mandate implies electronic mandate and so it is completely
+									paperless. When you generate an e-Mandate. the exchange facilitates online approval
+									of
+									your mandate from your bank account via NPCI. In this process, you don't need to
+									submit
+									any physical duly signed mandate form instead you are reqired to e-Sign the mandate
+									generated using Aadhaar OTP. To do this process, you are supposed to click on the
+									link
+									in the email triggered from the exchange.</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
 
-								Just 3-day approvals instead of 40+ days for the x-mandate.
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What are the benefits of e-Mandate?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>
 
-								Experience paperless process. No more signing and sending a hard copy of the x-mandate.
+									Just 3-day approvals instead of 40+ days for the x-mandate.
 
-								A 3-step process. Enter Amount. Verify email. Provide an eSignature.
+									Experience paperless process. No more signing and sending a hard copy of the
+									x-mandate.
 
-								Highly secured process with Aadhaar verification.
-							</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
+									A 3-step process. Enter Amount. Verify email. Provide an eSignature.
 
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>I have purchased an SIP, by when will the units be
-							credited to my account?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>Units will be credited into your demat a/c usually on T+2 working days. Payout of MF
-								units can vary as per the schemes settlement cycle.
-								MF Units can be checked in the holding section. </p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
-			</ul> <!-- cd-faq__group -->
+									Highly secured process with Aadhaar verification.
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
 
-			<ul id="account" class="cd-faq__group">
-				<li class="cd-faq__title">
-					<h2>Account</h2>
-				</li>
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>How do I open a TradeX Trading Account?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>Click on the Open an account button on top menu of the website or from our TradeX Markets
-								app to begin the online trading account opening process. If you have all the documents
-								in hand, the process should not take more than 15 minutes.</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>I have purchased an SIP, by when will the units be
+								credited to my account?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Units will be credited into your demat a/c usually on T+2 working days. Payout of MF
+									units can vary as per the schemes settlement cycle.
+									MF Units can be checked in the holding section. </p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+				</ul> <!-- cd-faq__group -->
 
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What documents should I keep handy?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>Please keep the following documents ready:
-								KYC Documents -
-								Your PAN Card (Mandatory Id proof)
-								and your Aadhar Card/ Driving Licence/ Passport/ Voter Id/ Nrega Job card
-								<br>
-								Proof of Bank Account -
-								Personalised signed cancel cheque leaf/ Bank Statement – Latest (Last 3 months)/ Bank
-								Passbook with Bank stamp and sign (Front page)
-							</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
+				<ul id="account" class="cd-faq__group">
+					<li class="cd-faq__title">
+						<h2>Account</h2>
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>How do I open a TradeX Trading Account?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Click on the Open an account button on top menu of the website or from our TradeX
+									Markets
+									app to begin the online trading account opening process. If you have all the
+									documents
+									in hand, the process should not take more than 15 minutes.</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
 
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What is the annual maintenance charge for a Demat
-							Account?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>Lite plan:
-								The annual maintenance charge for the first year is FREE. From the second year onwards,
-								you will be charged Rs. 300 + tax as applicable per year.
-								<br>
-								Elite plan:
-								The annual maintenance charge for the first year is FREE. From the second year onwards,
-								you will be charged Rs. 500 + tax as applicable per year.
-							</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What documents should I keep handy?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Please keep the following documents ready:
+									KYC Documents -
+									Your PAN Card (Mandatory Id proof)
+									and your Aadhar Card/ Driving Licence/ Passport/ Voter Id/ Nrega Job card
+									<br>
+									Proof of Bank Account -
+									Personalised signed cancel cheque leaf/ Bank Statement – Latest (Last 3 months)/
+									Bank
+									Passbook with Bank stamp and sign (Front page)
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
 
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>Do I need to keep any minimum balance for running this
-							account?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>There is no specific criteria to keep minimum amount in your trading account. You can
-								invest any amount as per your convenience.</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
-			</ul> <!-- cd-faq__group -->
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What is the annual maintenance charge for a Demat
+								Account?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Lite plan:
+									The annual maintenance charge for the first year is FREE. From the second year
+									onwards,
+									you will be charged Rs. 300 + tax as applicable per year.
+									<br>
+									Elite plan:
+									The annual maintenance charge for the first year is FREE. From the second year
+									onwards,
+									you will be charged Rs. 500 + tax as applicable per year.
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
 
-			<ul id="IPO Application" class="cd-faq__group">
-				<li class="cd-faq__title">
-					<h2>IPO Application</h2>
-				</li>
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What do I do if my IPO order is rejected/not executed and
-							amount is blocked?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>In this scenario, please raise a request with your bank to get the amount unblocked. Any
-								amount that is blocked against an unsuccessful bid in an IPO would automatically be
-								unblocked post the allotment of shares. This might take a couple of days.</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>Do I need to keep any minimum balance for running
+								this
+								account?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>There is no specific criteria to keep minimum amount in your trading account. You can
+									invest any amount as per your convenience.</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+				</ul> <!-- cd-faq__group -->
 
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>How much time does it take for the amount blocked for an
-							IPO application to get released if the request is cancelled?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>Any amount that is blocked against an unsuccessful bid in an IPO would automatically be
-								unblocked post the allotment of shares. This might take a couple of days.</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
+				<ul id="IPO Application" class="cd-faq__group">
+					<li class="cd-faq__title">
+						<h2>IPO Application</h2>
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What do I do if my IPO order is rejected/not executed
+								and
+								amount is blocked?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>In this scenario, please raise a request with your bank to get the amount unblocked.
+									Any
+									amount that is blocked against an unsuccessful bid in an IPO would automatically be
+									unblocked post the allotment of shares. This might take a couple of days.</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
 
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What are the requirements for applying for an IPO through
-							TradeX?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>You require the following to apply for an IPO with TradeX:<br>
-								1. Demat account<br>
-								2. UPI ID</p><br>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
-			</ul> <!-- cd-faq__group -->
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>How much time does it take for the amount blocked for
+								an
+								IPO application to get released if the request is cancelled?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Any amount that is blocked against an unsuccessful bid in an IPO would automatically
+									be
+									unblocked post the allotment of shares. This might take a couple of days.</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
 
-			<ul id="Investing and Trading" class="cd-faq__group">
-				<li class="cd-faq__title">
-					<h2>Investing and Trading</h2>
-				</li>
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What is a Limit Order?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>A Limit Order is an order to buy or sell a stock at a specific price. A Buy Limit Order
-								can only be executed at the limit price or lower, while a Sell Limit Order can only be
-								executed at the limit price or higher. A limit order is not guaranteed to execute.</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What are the requirements for applying for an IPO
+								through
+								TradeX?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>You require the following to apply for an IPO with TradeX:<br>
+									1. Demat account<br>
+									2. UPI ID</p><br>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+				</ul> <!-- cd-faq__group -->
 
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What is IOC Validity Type?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>An Immediate or Cancel (IOC) order allows a trading member to buy or sell a security as
-								soon as the order is released in the market, failing which the order will be removed
-								from the market. A partial match is possible for the order, and the unmatched portion of
-								the order is cancelled immediately.</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
+				<ul id="Investing and Trading" class="cd-faq__group">
+					<li class="cd-faq__title">
+						<h2>Investing and Trading</h2>
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What is a Limit Order?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>A Limit Order is an order to buy or sell a stock at a specific price. A Buy Limit
+									Order
+									can only be executed at the limit price or lower, while a Sell Limit Order can only
+									be
+									executed at the limit price or higher. A limit order is not guaranteed to execute.
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
 
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What is Day Order Type?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>
-								A Day Order is an order to buy or sell a security that automatically expires, if not
-								executed on the day the order was placed. A day order is an order that is good for that
-								day only.
-							</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What is Day Order Type?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>
-								A Day Order is an order to buy or sell a security that automatically expires, if not
-								executed on the day the order was placed. A day order is an order that is good for that
-								day only.
-							</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What is Day Order Type?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>
-								A Day Order is an order to buy or sell a security that automatically expires, if not
-								executed on the day the order was placed. A day order is an order that is good for that
-								day only.
-							</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What is Day Order Type?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>
-								A Day Order is an order to buy or sell a security that automatically expires, if not
-								executed on the day the order was placed. A day order is an order that is good for that
-								day only.
-							</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What is IOC Validity Type?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>An Immediate or Cancel (IOC) order allows a trading member to buy or sell a security
+									as
+									soon as the order is released in the market, failing which the order will be removed
+									from the market. A partial match is possible for the order, and the unmatched
+									portion of
+									the order is cancelled immediately.</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
 
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What is EOS Validity Type?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>EOS is exclusive to the BSE segment. It is an order to buy or sell a security that
-								automatically expires, if not executed by 3:30 pm.</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
-			</ul> <!-- cd-faq__group -->
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What is Day Order Type?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>
+									A Day Order is an order to buy or sell a security that automatically expires, if not
+									executed on the day the order was placed. A day order is an order that is good for
+									that
+									day only.
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What is Day Order Type?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>
+									A Day Order is an order to buy or sell a security that automatically expires, if not
+									executed on the day the order was placed. A day order is an order that is good for
+									that
+									day only.
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What is Day Order Type?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>
+									A Day Order is an order to buy or sell a security that automatically expires, if not
+									executed on the day the order was placed. A day order is an order that is good for
+									that
+									day only.
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What is Day Order Type?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>
+									A Day Order is an order to buy or sell a security that automatically expires, if not
+									executed on the day the order was placed. A day order is an order that is good for
+									that
+									day only.
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
 
-			<ul id="Our Brokerage Plans" class="cd-faq__group">
-				<li class="cd-faq__title">
-					<h2>Our Brokerage Plans</h2>
-				</li>
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What are some key features of the TradeX Lite plan?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>
-								Low flat brokerage rate of Rs.10/order<br>
-								F&O, intraday trades against collateral as well as cash<br>
-								Automated leverage (no need to pledge)<br>
-								Access to our award winning platforms and advisory
-							</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What are some key features of the TradeX Lite plan?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>
-								Low flat brokerage rate of Rs.10/order<br>
-								F&O, intraday trades against collateral as well as cash<br>
-								Automated leverage (no need to pledge)<br>
-								Access to our award winning platforms and advisory
-							</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What are some key features of the TradeX Lite plan?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>
-								Low flat brokerage rate of Rs.10/order<br>
-								F&O, intraday trades against collateral as well as cash<br>
-								Automated leverage (no need to pledge)<br>
-								Access to our award winning platforms and advisory
-							</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What are some key features of the TradeX Lite plan?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>
-								Low flat brokerage rate of Rs.10/order<br>
-								F&O, intraday trades against collateral as well as cash<br>
-								Automated leverage (no need to pledge)<br>
-								Access to our award winning platforms and advisory
-							</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What are some key features of the TradeX Lite plan?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>
-								Low flat brokerage rate of Rs.10/order<br>
-								F&O, intraday trades against collateral as well as cash<br>
-								Automated leverage (no need to pledge)<br>
-								Access to our award winning platforms and advisory
-							</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What is EOS Validity Type?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>EOS is exclusive to the BSE segment. It is an order to buy or sell a security that
+									automatically expires, if not executed by 3:30 pm.</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+				</ul> <!-- cd-faq__group -->
 
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What are the charges levied per order under the TradeX Lite plan ?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>Lite plan charges are flat Rs 10  per oder.</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
+				<ul id="Our Brokerage Plans" class="cd-faq__group">
+					<li class="cd-faq__title">
+						<h2>Our Brokerage Plans</h2>
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What are some key features of the TradeX Lite
+								plan?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>
+									Low flat brokerage rate of Rs.10/order<br>
+									F&O, intraday trades against collateral as well as cash<br>
+									Automated leverage (no need to pledge)<br>
+									Access to our award winning platforms and advisory
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What are some key features of the TradeX Lite
+								plan?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>
+									Low flat brokerage rate of Rs.10/order<br>
+									F&O, intraday trades against collateral as well as cash<br>
+									Automated leverage (no need to pledge)<br>
+									Access to our award winning platforms and advisory
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What are some key features of the TradeX Lite
+								plan?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>
+									Low flat brokerage rate of Rs.10/order<br>
+									F&O, intraday trades against collateral as well as cash<br>
+									Automated leverage (no need to pledge)<br>
+									Access to our award winning platforms and advisory
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What are some key features of the TradeX Lite
+								plan?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>
+									Low flat brokerage rate of Rs.10/order<br>
+									F&O, intraday trades against collateral as well as cash<br>
+									Automated leverage (no need to pledge)<br>
+									Access to our award winning platforms and advisory
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What are some key features of the TradeX Lite
+								plan?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>
+									Low flat brokerage rate of Rs.10/order<br>
+									F&O, intraday trades against collateral as well as cash<br>
+									Automated leverage (no need to pledge)<br>
+									Access to our award winning platforms and advisory
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
 
-				<li class="cd-faq__item">
-					<a class="cd-faq__trigger" href="#0"><span>What are the TradeX Lite and TradeX Elite plans?</span></a>
-					<div class="cd-faq__content">
-						<div class="text-component">
-							<p>The TradeX Lite and TradeX Elite plans are the all new brokerage plan offering from TradeX. With a focus on pocket-friendly pricing the TradeX Lite plan is focused on the self-driven customer who likes to take control of his / her investments.
-							<br>
-							With premium features, advisory and dedicated relationship manager the TradeX Elite plan focuses on delivering the entire TradeX experience at a slightly premium price.</p>
-						</div>
-					</div> <!-- cd-faq__content -->
-				</li>
-			</ul> <!-- cd-faq__group -->
-		</div> <!-- cd-faq__items -->
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What are the charges levied per order under the
+								TradeX Lite plan ?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>Lite plan charges are flat Rs 10 per oder.</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
 
-		<a href="#0" class="cd-faq__close-panel text-replace">Close</a>
+					<li class="cd-faq__item">
+						<a class="cd-faq__trigger" href="#0"><span>What are the TradeX Lite and TradeX Elite
+								plans?</span></a>
+						<div class="cd-faq__content">
+							<div class="text-component">
+								<p>The TradeX Lite and TradeX Elite plans are the all new brokerage plan offering from
+									TradeX. With a focus on pocket-friendly pricing the TradeX Lite plan is focused on
+									the self-driven customer who likes to take control of his / her investments.
+									<br>
+									With premium features, advisory and dedicated relationship manager the TradeX Elite
+									plan focuses on delivering the entire TradeX experience at a slightly premium price.
+								</p>
+							</div>
+						</div> <!-- cd-faq__content -->
+					</li>
+				</ul> <!-- cd-faq__group -->
+			</div> <!-- cd-faq__items -->
 
-		<div class="cd-faq__overlay" aria-hidden="true"></div>
-	</section> <!-- cd-faq -->
+			<a href="#0" class="cd-faq__close-panel text-replace">Close</a>
+
+			<div class="cd-faq__overlay" aria-hidden="true"></div>
+		</section> <!-- cd-faq -->
+	</div>
 	<script src="faq_util.js"></script> <!-- util functions included in the CodyHouse framework -->
 	<script src="faq_main.js"></script>
 </body>
+<script>
+	
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
 </html>
