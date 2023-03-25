@@ -55,7 +55,7 @@ var barChartOptions = {
     show: false
   },
   xaxis: {
-    categories: ["Laptop", "Phone", "Monitor", "Headphones", "Camera"],
+    categories: ["TCS", "ADANI", "LICHSF", "ADANI WILMAR", "INFOSYS"],
   },
   yaxis: {
     title: {
@@ -121,3 +121,32 @@ var loggedUser=window.sessionStorage.getItem('1')
 loggedUser=JSON.parse(loggedUser)
   console.log(loggedUser.name)
   document.getElementById('dashName').innerHTML=loggedUser.name+"'s Inventory"
+document.getElementById('logout').addEventListener('click',()=>{
+  window.sessionStorage.clear()
+  window.location.href='mainPage.html'
+})
+document.getElementById('wishlist').addEventListener('click',()=>{
+  var ulField = document.getElementById('ullist');
+  ulField.innerHTML=""
+  var list=window.localStorage.getItem('watchList')
+  list=JSON.parse(list)
+  for(var i=0;i<list.stockName.length;i++)
+  {
+    ulField.innerHTML = ulField.innerHTML + `<li>${list.stockName[i]}</li>`;
+    // ulField.addEventListener('click', selectItem(list.stockName[i]));
+    // ulField.addEventListener('click', ({target})=>{
+    //   console.log(list.stockName[i])
+    //   if (target.tagName === 'LI') {
+    //     window.sessionStorage.setItem("stockname", target.textContent);
+    //     window.location.href='stockStructure.html'
+    //   }
+    // });
+  }
+})
+// function selectItem({target},item)
+// {
+//   if (target.tagName === 'LI') {
+//     window.sessionStorage.setItem("stockname", item);
+//     window.location.href='stockStructure.html'
+//   }
+// }
