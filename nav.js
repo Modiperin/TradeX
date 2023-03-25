@@ -78,7 +78,7 @@ async function handle() {
   document.getElementById("searchImage").src = "icons8-search.gif";
   document.getElementById("searchBox").style.borderRadius = "20px";
   // var url = "http://192.168.225.117:3000/stock/getStock";
-  var url = "http://192.168.43.234:3000/stock/getStock";
+  var url = "http://192.168.225.117:3000/stock/getStock";
   var res = await fetch(url, {
     method: "GET",
   });

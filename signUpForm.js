@@ -355,7 +355,7 @@ formSubmitBtn.addEventListener("click", async function (event) {
       let formData = new FormData();
       let fileInput = document.getElementById('file-upload');
       formData.append("file", fileInput.files[0]);
-      fetch("http://192.168.43.234:3000/upload/uploadFile", {
+      fetch("http://192.168.225.117:3000/upload/uploadFile", {
         method: "POST",
         body: formData,
       });
