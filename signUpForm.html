@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tradex</title>
-    <link rel="icon" href="stock-market.png" type="image/x-icon">
+  <link rel="icon" href="homebanner.png" type="image/x-icon">
 	<link rel="stylesheet" href="signUpForm.css">
 </head>
 
@@ -38,8 +38,8 @@
 						</div>
 						<div>
 							Mobile Number <span id="errmob" style="color: red;"></span>
-							</label> <input type="tel" pattern="[0-9]{10}" id="mobile"
-								required="required" class="formbold-form-input" />
+							</label> <input type="tel" pattern="[0-9]{10}" id="mobile" required="required"
+								class="formbold-form-input" />
 						</div>
 					</div>
 					<div class="formbold-input-flex">
@@ -56,12 +56,6 @@
 						Address <span id="erradd" style="color: red;"></span> </label> <input type="text" name="Address"
 							id="Address" placeholder="Flat 4, 24 Castle Street, Perth, PH1 3JY"
 							class="formbold-form-input" />
-					</div>
-
-					<div class="container">
-						<div class="f" data-text="Select your file!">
-						  <input name="" class="ileUpload123" type="file"  value="">
-						</div>
 					</div>
 				</div>
 
@@ -101,29 +95,16 @@
 							<div class="center">
 								<form method="post">
 									<div class="title">
-										<h1>Upload Aadhar Card</h1>
+										<h1 class="upload">Upload Aadhar Card</h1>
 									</div>
-									<div class="dropzone">
+									<!-- <div class="dropzone">
 										<input type="file" name="file" id="fileupload" name="fileupload" />
-									</div>
-									<div class="title">
-										<h1>Upload Pan Card</h1>
-									</div>
-									<div class="dropzone">
-										<input type="file" name="file" id="fileupload1" name="fileupload" />
-									</div>
-									<div class="title">
-										<h1>Upload Pass Book</h1>
-									</div>
-									<div class="dropzone">
-										<input type="file" name="file" id="fileupload2" name="fileupload" />
-									</div>
-
-									<div class="container">
-										  <div class="file-upload-wrapper" data-text="Select your file!">
-											<input name="file-upload-field" type="file" class="file-upload-field" value="">
-										  </div>
-									  </div>
+									</div> -->
+									<label for="file-upload" class="custom-file-upload">
+										<i class="fas fa-cloud-upload-alt"></i> Choose File
+									  </label>
+									  <input id="file-upload" type="file" onchange="displayFileName()"/>
+									  <p id="file-name"></p>
 								</form>
 								<div id="fileError" style="color: red;"></div>
 							</div>
@@ -176,7 +157,8 @@
 					</button>
 					<button class="subBtn" value="1234">check Validation</button>
 				</div>
-				<div class="agree">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, officiis quia? Accusantium
+				<div class="agree">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, officiis quia?
+					Accusantium
 					nostrum modi reprehenderit provident animi repudiandae eveniet, consequatur quas iste veritatis
 					quam, nisi magni optio vel quod obcaecati?</div>
 			</form>

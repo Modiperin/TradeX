@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Tradex</title>
-    <link rel="icon" href="stock-market.png" type="image/x-icon">
+    <link rel="icon" href="homebanner.png" type="image/x-icon">
 
     <!-- Montserrat Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -51,11 +51,6 @@
           </li>
           <li class="sidebar-list-item">
             <a href="#">
-              <span class="material-icons-outlined">inventory_2</span> Products
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#">
               <span class="material-icons-outlined">fact_check</span> Inventory
             </a>
           </li>
@@ -71,14 +66,20 @@
           </li>
           <li class="sidebar-list-item">
             <a href="#">
-              <span class="material-icons-outlined">poll</span> Reports
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#">
               <span class="material-icons-outlined">settings</span> Settings
             </a>
           </li>
+          <li class="sidebar-list-item" id="logout">
+            <a href="#">
+              <span class="material-icons-outlined">inventory_2</span> Logout
+            </a>
+          </li>
+          <li class="sidebar-list-item" id="wishlist">
+            <a href="#">
+              <span class="material-icons-outlined"></span> Wishlist
+            </a>
+          </li>
+          <ul id="ullist"></ul>
         </ul>
       </aside>
       <!-- End Sidebar -->
@@ -89,10 +90,10 @@
 
           <div class="card">
             <div class="card-inner">
-              <p class="text-primary">PRODUCTS</p>
+              <p class="text-primary">Current Stocks</p>
               <span class="material-icons-outlined text-blue">inventory_2</span>
             </div>
-            <span class="text-primary font-weight-bold">249</span>
+            <span class="text-primary font-weight-bold">69</span>
           </div>
 
           <div class="card">
@@ -100,7 +101,7 @@
               <p class="text-primary">PURCHASE ORDERS</p>
               <span class="material-icons-outlined text-orange">add_shopping_cart</span>
             </div>
-            <span class="text-primary font-weight-bold">83</span>
+            <span class="text-primary font-weight-bold">69</span>
           </div>
 
           <div class="card">
@@ -113,10 +114,10 @@
 
           <div class="card">
             <div class="card-inner">
-              <p class="text-primary">INVENTORY ALERTS</p>
+              <p class="text-primary">IPO Invested</p>
               <span class="material-icons-outlined text-red">notification_important</span>
             </div>
-            <span class="text-primary font-weight-bold">56</span>
+            <span class="text-primary font-weight-bold">96</span>
           </div>
 
         </div>
@@ -124,12 +125,12 @@
         <div class="charts">
 
           <div class="charts-card">
-            <p class="chart-title">Top 5 Products</p>
+            <p class="chart-title">Top 5 Stocks</p>
             <div id="bar-chart"></div>
           </div>
 
           <div class="charts-card">
-            <p class="chart-title">Purchase and Sales Orders</p>
+            <p class="chart-title">Profit</p>
             <div id="area-chart"></div>
           </div>
 

@@ -1,22 +1,6 @@
-.searchBox {
-    border-radius: 20px;
-    background-color: #343150;
-    border-color: #343150;
-    width: 300px;
-    height: 30px;
-    margin-top: 10px;
-    margin-left: -5px;
-    padding-left: 30px;
-}
-
 .mainNavCss {
     background-color: #03002f;
 }
-
-/* .navList {
-    color: rgba(255, 255, 255, 0.7);
-} */
-
 .openAccount{
     width: 150px;
     height: 30px;
@@ -119,10 +103,10 @@
 {
     color: red;
 }
-.dropdown1 {
-  display: none;
+li .dropdown1 {
+  display: block;
   position: absolute;
-  top: 50px;
+  top: 55px;
   left: 54.5%;
   z-index: 1;
   background-color: white;
@@ -139,10 +123,22 @@ li:hover .dropdown1 {
   height: 40px;
   width: 40px;
   background-color: white;
+  color: white;
   display: inline-block;
   right: 40px;
   border-radius: 20px;
   margin-top: 5px;
   margin-left: 5px;
+}
+.searchBox {
+  border-radius: 20px;
+  background-color: #343150;
+  border-color: #343150;
+  color: aliceblue;
+  width: 300px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: -5px;
+  padding-left: 30px;
 }
 

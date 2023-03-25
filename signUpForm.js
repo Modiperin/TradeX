@@ -308,14 +308,9 @@ formSubmitBtn.addEventListener("click", async function (event) {
       formSubmitBtn.textContent = "Next Step";
     });
   } else if (stepMenuThree.className == "formbold-step-menu3 active") {
-    console.log(fileupload.files[0]);
-    console.log(fileupload1.files[0]);
-    console.log(fileupload2.files[0]);
-    if (
-      fileupload.files[0] != undefined &&
-      fileupload1.files[0] != undefined &&
-      fileupload2.files[0] != undefined
-    ) {
+    let fileInput = document.getElementById('file-upload');
+    console.log(fileInput.files[0]);
+    if (fileInput.files[0] != undefined) {
       console.log("Good to go");
       event.preventDefault();
       console.log("stepthree to stepfour");
@@ -335,7 +330,7 @@ formSubmitBtn.addEventListener("click", async function (event) {
       formSubmitBtn.disabled = true;
     } else {
       document.getElementById("fileError").innerHTML =
-        "*Please Upload All the files";
+        "*Please Upload the file";
     }
     formBackBtn2.addEventListener("click", function (event) {
       event.preventDefault();
@@ -357,6 +352,13 @@ formSubmitBtn.addEventListener("click", async function (event) {
     console.log("stepThree to stepFour");
     console.log(firstname);
     if (!isError3) {
+      let formData = new FormData();
+      let fileInput = document.getElementById('file-upload');
+      formData.append("file", fileInput.files[0]);
+      fetch("http://192.168.43.234:3000/upload/uploadFile", {
+        method: "POST",
+        body: formData,
+      });
       var user = {
         name: finalName,
         mobile: finalMobile,
@@ -365,26 +367,15 @@ formSubmitBtn.addEventListener("click", async function (event) {
       };
       console.log(user);
       window.localStorage.setItem(finalEmail, JSON.stringify(user));
-      let formData = new FormData();
-      formData.append("file", fileupload.files[0]);
-      await fetch("http://192.168.225.117:3000/upload/uploadFile", {
-        method: "POST",
-        body: formData,
-      });
-      let formData1 = new FormData();
-      formData1.append("file", fileupload1.files[0]);
-      await fetch("http://192.168.225.117:3000/upload/uploadFile", {
-        method: "POST",
-        body: formData1,
-      });
-      let formData2 = new FormData();
-      formData2.append("file", fileupload2.files[0]);
-      await fetch("http://192.168.225.117:3000/upload/uploadFile", {
-        method: "POST",
-        body: formData2,
-      });
       document.querySelector("form").submit();
+      console.log('doneAdded')
       window.location.href = "mainPage.html";
     }
   }
 });
+function displayFileName() {
+  const fileInput = document.getElementById('file-upload');
+  const fileName = fileInput.value.split(/(\\|\/)/g).pop(); // get the file name from the full file path
+  const fileNameDisplay = document.getElementById('file-name');
+  fileNameDisplay.textContent = fileName;
+}
