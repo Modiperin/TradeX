@@ -33,7 +33,7 @@ async function apicall() {
   var url =
     // "http://192.168.225.117:3000/stock/getStock/" +
     // window.sessionStorage.getItem("stockname");
-    "http://192.168.43.234:3000/stock/getStock/" +
+    "http://192.168.225.117:3000/stock/getStock/" +
     window.sessionStorage.getItem("stockname");
   var res = await fetch(url, {
     method: "GET",
@@ -126,6 +126,7 @@ async function apicall() {
   document.getElementById("bse").innerHTML = "BSE" + ":" + data.bse;
   document.getElementById("compDet").innerHTML = data.compDet;
   document.getElementById("isin").innerHTML = "ISIN:" + data.isin;
+  document.getElementById('FullNameStock').innerHTML='About'+data.fullName
 }
 apicall();
 area();
