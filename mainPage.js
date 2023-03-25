@@ -73,15 +73,21 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
 document.getElementById("stock").addEventListener("click", () => {
     window.location.href = "DeepDiveIntoStockMarketToday (1).html";
 });
+function fun()
+{
+    window.location.href = "DeepDiveIntoStockMarketToday (1).html";
+
+}
 
 document.getElementById("insurance").addEventListener("click", () => {
     window.location.href = "insurance.html";
 });
 
-ipo = 'Ipo Will Coming Soon for More updates connect with us'
+ipo = 'Ipo Will be Coming Soon , for More updates stay tuned'
 document.getElementById("ipo_").addEventListener("click", () => {
     window.localStorage.setItem('ipo', ipo)
     window.location.href = "coming-soon.html";
