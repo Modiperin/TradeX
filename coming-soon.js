@@ -2,6 +2,8 @@ console.log("Function load now");
 
 var i = 0;
 // Get the element you want to add the span to
+ipo2=window.localStorage.getItem("ipo")
+document.getElementById('ipo').innerHTML=ipo2;
 var txt = 'Coming Soon..';
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 

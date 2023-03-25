@@ -101,7 +101,10 @@ body {
   margin-left: 40px;
   margin-top: -30px;
 }
-
+.mainBoxDiv a{
+text-decoration: none; 
+color: black;
+}
 .boxContent {
   justify-content: space-around;
   flex-direction: row;
